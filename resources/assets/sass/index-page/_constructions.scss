@@ -1,0 +1,160 @@
+#constructions {
+	width: 100%;
+	height: 450px;
+	.container-construct {
+		width: 1349px;
+		height: 100%;
+		margin: 0 auto;
+		.left {
+			width: 30%;
+			height: 100%;
+			position: relative;
+			float: left;
+			.block-1 {
+				position: absolute;
+				top: 10%;
+				width: 75%;
+				height: 80%;
+				background-image: url('../img/const-1.jpg');
+				background-size: cover;
+			}
+			.block-2 {
+				position: absolute;
+				top: 20%;
+				right: 0;
+				width: 55%;
+				height: 60%;
+				background-image: url('../img/const-2.jpg');
+				background-size: cover;
+			}
+		}
+		.right {
+			width: 70%;
+			height: 100%;
+			float: right;
+			#right-top {
+				width: 100%;
+				height: 75%;
+				#const-text {
+					float: left;
+					width: 38%;
+					height: 100%;
+					text-transform: uppercase;
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-end;
+					padding-left:  25px;
+					color: $main-text-color;
+					padding-bottom: 50px;
+					h3 {
+						font-size: 2em;
+					}
+					p {
+						color: $main-text-color;
+						font-size: 0.9em;
+						line-height: 1em;
+						margin-bottom: 25px;
+					}
+					a {
+						display: block;
+						width: 90%;
+						height: 40px;
+						line-height: 40px;
+						text-align: center;
+						font-size: 1.5em;
+						background-color: $orange-bg-color;
+						margin-left: 10px;
+					}
+				}
+				#const-building {
+					width: 62%;
+					float: right;
+					height: 100%;
+					overflow: hidden;
+					img {
+						width: 100%;
+					}					
+				}
+			}
+			#right-bot {
+				width: 95%;
+				height: 25%;
+				float: right;
+				background-color: $orange-bg-color;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				-webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+				clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+				div {
+					width: 20%;
+					text-align: left;
+					p:first-child {
+						font-size: 2.5em;
+						color: $main-text-color;
+						margin-bottom: 0;
+						line-height: 1em;
+					}
+					p:last-child {
+						text-transform: uppercase;
+						font-size: 1.5em;
+						color: $main-text-color;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media only screen
+and (min-width: 1920px) {
+#constructions {
+	height: 700px;
+	padding-top: 50px;
+	.container-construct {
+		width: 100%;
+		.left {
+			.block-1 {}
+			.block-2 {}
+		}
+		.right {
+			#right-top {
+				#const-text {
+					padding-left: 50px;
+					justify-content: center;
+					h3 {
+						padding-top: 50px;
+						font-size: 3em;
+					}
+					p {
+						font-size: 0.9em;
+						line-height: 1.5em;
+						max-height: 50%;
+						overflow: hidden;
+					}
+					a {
+						width: 75%;
+						height: 50px;
+						line-height: 50px;
+						font-size: 1.8em;
+					}
+				}
+				#const-building {
+					img {}					
+				}
+			}
+			#right-bot {
+				div {
+					p:first-child {
+						font-size: 3.5em;
+					}
+					p:last-child {}
+				}
+			}
+		}
+	}
+}
+
+}

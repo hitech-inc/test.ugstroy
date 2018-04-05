@@ -1,0 +1,136 @@
+#services {
+	width: 100%;
+	height: 450px;
+	.container-serve {
+		margin: 0 auto;
+		width: $full-container-width;
+		height: 100%;
+		.serve:first-child {
+			height: 100%;
+			width: 30%;
+			float: left;
+			display: flex;
+			align-items: center;
+			div {
+				-webkit-clip-path: polygon(0 0, 86% 0, 100% 100%, 14% 100%);
+						clip-path: polygon(0 0, 86% 0, 100% 100%, 14% 100%);
+					overflow: hidden;
+					height: 80%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+		.serve:last-child {
+			height: 100%;
+			width: 70%;
+			float: right;
+			.row-1 {
+				width: 100%;
+				height: 32%;
+				padding-top: 5%;
+				text-transform: uppercase;
+				color: $main-text-color;
+				h3 {
+					font-size: 3em;
+					margin-bottom: 0;
+					line-height: 1em;
+				}
+				h4 {
+					font-size: 2em;
+				}
+			}
+			.row-2 {
+				width: 100%;
+				height: 68%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: center;
+				div {
+					width: 80%;
+					height: 70%;
+					display: flex;
+					align-items: center;
+					overflow: hidden;
+				    -webkit-clip-path: polygon(0 0, 88% 0, 100% 100%, 12% 100%);
+							clip-path: polygon(0 0, 88% 0, 100% 100%, 12% 100%);
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+@media only screen
+and (min-width: 1920px) {
+#services {
+	width: 100%;
+	height: 700px;
+	.container-serve {
+		margin: 0 auto;
+		width: 100%;
+		height: 100%;
+		.serve:first-child {
+			height: 100%;
+			width: 30%;
+			float: left;
+			display: flex;
+			align-items: center;
+			div {
+				-webkit-clip-path: polygon(0 0, 83% 0, 100% 100%, 17% 100%);
+						clip-path: polygon(0 0, 83% 0, 100% 100%, 17% 100%);
+					overflow: hidden;
+					height: 80%;
+					width: 100%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+		.serve:last-child {
+			height: 100%;
+			width: 70%;
+			float: right;
+			.row-1 {
+				width: 100%;
+				height: 32%;
+				padding-top: 7%;
+				text-transform: uppercase;
+				color: $main-text-color;
+				h3 {
+					font-size: 4em;
+					margin-bottom: 0;
+					line-height: 1em;
+				}
+				h4 {
+					font-size: 2.5em;
+				}
+			}
+			.row-2 {
+				width: 100%;
+				height: 68%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: center;
+				div {
+					width: 80%;
+					height: 65%;
+					display: flex;
+					align-items: center;
+					overflow: hidden;
+				    -webkit-clip-path: polygon(0 0, 89% 0, 100% 100%, 11% 100%);
+							clip-path: polygon(0 0, 89% 0, 100% 100%, 11% 100%);
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+}

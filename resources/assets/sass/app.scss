@@ -2,12 +2,26 @@
 @import "fonts";
 @import "variables";
 @import 'clear';
+
+// HEADER
+//
 @import "header";
 
 
 
 // INDEX PAGE
 // 
-@import "index-page";
+@import "index-page/main-block"; 
+@import "index-page/second-block";
+@import "index-page/more-info";
+@import "index-page/services";
+@import "index-page/projects";
+@import "index-page/constructions"; 
+@import "index-page/feedback"; 
+@import "index-page/team"; 
+@import "index-page/last-news"; 
+@import "index-page/sponsors"; 
 
- @import "footer";
+// FOOTER
+//
+@import "footer";

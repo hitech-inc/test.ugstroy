@@ -1,0 +1,149 @@
+#feedback {
+	width: 100%;
+	margin-top: 100px;
+	height: 550px;
+	display: flex;
+	align-items: center;
+	background-image: url(../img/feedback-bg.jpg);
+	text-transform: uppercase;
+	.container-fb {
+		width: 1140px;
+		margin: 0 auto;
+		height: 80%;
+		#left-fb {
+			width: 50%;
+			float: left;
+			.fb-row-1 {
+				width: 100%;
+				height: 30%;
+				h5 {
+					color: $main-text-color;
+					margin-bottom: 10px;
+					margin-top: 10px;
+				}
+				p {
+					color: $main-text-color;
+					width: 80%;
+					font-size: 1.25em;
+					line-height: 1.25em;
+				}
+			}
+			.fb-row-2 {
+				width: 100%;
+				height: 70%;
+				div {
+					width: 45%;
+					height: 50%;
+				}
+				div:first-child {
+					float: left;
+					img {
+						width: 80%;
+					}
+				}
+				div:last-child {
+					width: 55%;
+					float: right;
+					p {
+						color: $main-text-color;
+						line-height: 1.3em;
+						width: 80%;
+						font-size: 0.8em;
+					}
+				}
+			}
+		}
+		#right-fb {
+			width: 50%;
+			float: right;
+			h3 {
+				color: $main-text-color;
+				font-size: 2em;
+			}
+			p {
+				color: $main-text-color;
+				line-height: 1em;
+				width: 80%;
+			}
+			form {
+				color: $main-text-color;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				align-items: center;
+				height: 70%;
+				input {
+					flex: 0 0 48%;
+					margin: 0 0 20px 0;
+					color: $main-text-color;
+					height: 35px;
+					padding: 2px 10px;
+					border: 0;
+					text-transform: uppercase;
+				}
+				textarea {
+					color: $main-text-color;
+					text-transform: uppercase;
+					flex: 0 0 100%;
+					border: 0;
+					height: 150px;
+					resize: none;
+					padding: 5px 10px;
+				}
+				input[type="submit"] {
+					background-color: $orange-bg-color;
+					border: 0;
+					outline: 0;
+					color: $main-text-color;
+					flex: 0 0 30%;
+					margin-top: 20px;
+					height: 45px;
+					font-size: 1.5em;
+				}
+			}
+		}
+	}
+}
+
+@media only screen
+and (min-width: 1920px) {
+#feedback {
+	.container-fb {
+		width: 1240px;
+		#left-fb {
+			.fb-row-1 {
+				h5 {
+				}
+				p {
+				}
+			}
+			.fb-row-2 {
+				div {
+				}
+				div:first-child {
+					img {
+					}
+				}
+				div:last-child {
+					p {
+					}
+				}
+			}
+		}
+		#right-fb {
+			h3 {
+			}
+			p {
+			}
+			form {
+				input {
+				}
+				textarea {
+				}
+				input[type="submit"] {
+				}
+			}
+		}
+	}
+}
+}

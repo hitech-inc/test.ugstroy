@@ -22,9 +22,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.</p>
 		</div>
 	</div>
-	
 </div>
-
 <div id="more-info">
 		<div id="rotated">
 			<img src="img/more.png" alt="more">
@@ -52,7 +50,26 @@
 		<div></div>
 	</div>
 </div>
-@include('frontend.partials._services')
+<div id="services">
+	<div class="container-serve">
+		<div class="serve">
+			<div>
+				<img src="img/service-big.jpg" alt="service-big">	
+			</div>
+		</div>
+		<div class="serve">
+			<div class="row-1">
+				<h3>Наши услуги</h3>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>	
+			</div>
+			<div class="row-2">
+				<div><img src="img/service-small-1.jpg" alt="service-small"></div>
+				<div><img src="img/service-small-2.jpg" alt="service-small"></div>
+				<div><img src="img/service-small-3.jpg" alt="service-small"></div>
+			</div>
+		</div>
+	</div>
+</div>
 <div id="projects">
 	<div id="rotated-2">
 		<img src="img/projects-text.png" alt="more-text">
@@ -74,9 +91,72 @@
 	</div>
 	<div></div>
 </div>
-@include('frontend.partials._constructions')
-@include('frontend.partials._feedback')
-
+<div id="constructions">
+	<div class="container-construct">
+		<div class="left">
+			<div class="block-1"></div>
+			<div class="block-2"></div>
+		</div>
+		<div class="right">
+			<div id="right-top">
+				<div id="const-text">
+					<h3>#Лучшие конструкции</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consectetur temporibus veritatis amet sapiente minima ex. Iste ut qui debitis, voluptatem reiciendis aspernatur distinctio porro, nulla, nostrum totam asperiores nemo.</p>
+					<a href="#want-to-buy">Хочу купить квартиру у вас!</a>
+				</div>
+				<div id="const-building">
+					<img src="img/building.png" alt="building">
+				</div>
+			</div>
+			<div id="right-bot">
+				<div>
+					<p>598</p>
+					<p>Проекты</p>
+				</div>
+				<div>
+					<p>5128</p>
+					<p>Клиенты</p>
+				</div>
+				<div>
+					<p>4390</p>
+					<p>Успешно</p>
+				</div>
+				<div>
+					<p>109</p>
+					<p>Награды</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="feedback">
+	<div class="container-fb">
+		<div id="left-fb">
+			<div class="fb-row-1">
+				<h5>Наши клиенты</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem deleniti, laborum sequi veniam unde, fugit</p>
+			</div>
+			<div class="fb-row-2">
+				<div><img src="img/feedback-man.png" alt="man"></div>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus consectetur excepturi dicta possimus expedita fugit dolores, cumque rerum sapiente similique id necessitatibus rem ad eveniet nesciunt soluta incidunt corporis at sunt reprehenderit distinctio enim, dolor corrupti ducimus dolorem. Sit distinctio possimus nemo, optio deserunt tempore, tenetur quis unde quas perferendis praesentium voluptate dolorum cumque neque omnis? Pariatur nesciunt voluptatum eligendi alias commodi molestiae veniam harum dignissimos aspernatur. Obcaecati debitis expedita voluptas laboriosam dicta amet deleniti, autem, impedit nemo quibusdam mollitia.</p>
+				</div>
+			</div>
+		</div>
+		<div id="right-fb">
+			<h3>Оставить отзыв</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quia necessitatibus doloremque ipsam quisquam debitis magnam cupiditate dolor pariatur qui, in aut neque, ducimus asperiores.</p>
+			<form action="">
+				<input type="text" name="name"  placeholder="Имя">
+				<input type="text" name="email" placeholder="Email">
+				<input type="text" name="phone" placeholder="Телефон">
+				<input type="text" name="object" placeholder="Объект">
+				<textarea name="text" placeholder="Сообщение"></textarea>
+				<input type="submit" value="ОТПРАВИТЬ">
+			</form>
+		</div>
+	</div>
+</div>
 <div id="team">
 	<div class="container-team">
 		<h3>Наша команда</h3>
@@ -109,7 +189,6 @@
 		</div>		
 	</div>
 </div>
-
 <div id="last-news">
 	<div class="container-news">
 		<div class="news-row-1">
@@ -180,8 +259,6 @@
 			</div>
 		</div>		
 	</div>
-
-
 </div>
 
 

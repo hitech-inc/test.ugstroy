@@ -1,6 +1,34 @@
-
 #sponsors {
 	width: 100%;
-	height: 2200px;
-	background-color: yellow;
+	height: 220px;
+	.container-sponsors {
+		width: 1349px;
+		height: 100%;
+		margin: 0 auto;
+		text-transform: uppercase;
+		h3 {
+			line-height: 0.8em;
+			margin-top: 0;
+			padding-top: 20px;
+			font-size: 3em;
+			margin-bottom: 0;
+			margin-bottom: 10px;
+			text-align: center;
+			color: $main-text-color;
+			height: 25%;				
+		}
+		.sponsors-row {
+			width: 100%;
+			height: 75%;
+			display: flex;
+			div {
+				display: flex;
+				align-items: center;
+				img {
+					width: 70%;
+					margin: 0 auto;	
+				}
+			}
+		}
+	}
 }

@@ -6127,6 +6127,10 @@ container {
     outline: none;
     height: 25px; }
 
+@media only screen and (min-width: 1920px) {
+  #nav {
+    margin-top: 0px; } }
+
 #main-block {
   width: 100%;
   height: 536px;
@@ -6154,6 +6158,39 @@ container {
   #main-block h1 {
     font-size: 3.5em;
     font-weight: unset; }
+
+@media only screen and (min-width: 1920px) {
+  #main-block {
+    width: 100%;
+    height: 770px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../img/main.jpg");
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    #main-block p {
+      text-transform: none;
+      font-size: 1.2em;
+      width: 40%;
+      line-height: 1em; }
+    #main-block a {
+      margin-top: 30px;
+      display: block;
+      width: 180px;
+      height: 45px;
+      background-color: #fff;
+      line-height: 45px;
+      font-size: 1.3em; }
+    #main-block h1 {
+      font-size: 4em;
+      font-weight: unset; }
+    #main-block h3 {
+      font-size: 2.5em; } }
 
 #second-block {
   width: 100%;
@@ -6242,6 +6279,21 @@ container {
   #more-info div:last-child {
     height: 100%; }
 
+@media only screen and (min-width: 1920px) {
+  #more-info {
+    grid-template-columns: 220px 1140px 220px; }
+    #more-info #rotated {
+      justify-content: flex-start; }
+      #more-info #rotated img {
+        width: 100px; }
+    #more-info .container-more .row:last-child {
+      height: 78%; }
+      #more-info .container-more .row:last-child div {
+        width: 25%; }
+      #more-info .container-more .row:last-child div.chosen {
+        width: 24%;
+        height: 89%; } }
+
 #services {
   width: 100%;
   height: 450px; }
@@ -6294,6 +6346,61 @@ container {
           clip-path: polygon(0 0, 88% 0, 100% 100%, 12% 100%); }
           #services .container-serve .serve:last-child .row-2 div img {
             width: 100%; }
+
+@media only screen and (min-width: 1920px) {
+  #services {
+    width: 100%;
+    height: 700px; }
+    #services .container-serve {
+      margin: 0 auto;
+      width: 100%;
+      height: 100%; }
+      #services .container-serve .serve:first-child {
+        height: 100%;
+        width: 30%;
+        float: left;
+        display: flex;
+        align-items: center; }
+        #services .container-serve .serve:first-child div {
+          -webkit-clip-path: polygon(0 0, 83% 0, 100% 100%, 17% 100%);
+          clip-path: polygon(0 0, 83% 0, 100% 100%, 17% 100%);
+          overflow: hidden;
+          height: 80%;
+          width: 100%; }
+          #services .container-serve .serve:first-child div img {
+            width: 100%; }
+      #services .container-serve .serve:last-child {
+        height: 100%;
+        width: 70%;
+        float: right; }
+        #services .container-serve .serve:last-child .row-1 {
+          width: 100%;
+          height: 32%;
+          padding-top: 7%;
+          text-transform: uppercase;
+          color: #000; }
+          #services .container-serve .serve:last-child .row-1 h3 {
+            font-size: 4em;
+            margin-bottom: 0;
+            line-height: 1em; }
+          #services .container-serve .serve:last-child .row-1 h4 {
+            font-size: 2.5em; }
+        #services .container-serve .serve:last-child .row-2 {
+          width: 100%;
+          height: 68%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center; }
+          #services .container-serve .serve:last-child .row-2 div {
+            width: 80%;
+            height: 65%;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            -webkit-clip-path: polygon(0 0, 89% 0, 100% 100%, 11% 100%);
+            clip-path: polygon(0 0, 89% 0, 100% 100%, 11% 100%); }
+            #services .container-serve .serve:last-child .row-2 div img {
+              width: 100%; } }
 
 #projects {
   width: 100%;
@@ -6361,6 +6468,18 @@ container {
         background-image: url(../img/project-7.jpg); }
   #projects div:last-child {
     height: 100%; }
+
+@media only screen and (min-width: 1920px) {
+  #projects {
+    grid-template-columns: 250px 1140px 250px; }
+    #projects #rotated-2 {
+      justify-content: flex-start; }
+      #projects #rotated-2 img {
+        width: 100px; }
+    #projects .container-projects .projects-row-1 h3 {
+      font-size: 3em; }
+    #projects div:last-child {
+      height: 100%; } }
 
 #constructions {
   width: 100%;
@@ -6454,6 +6573,31 @@ container {
             color: #000;
             margin-bottom: 0; }
 
+@media only screen and (min-width: 1920px) {
+  #constructions {
+    height: 700px;
+    padding-top: 50px; }
+    #constructions .container-construct {
+      width: 100%; }
+      #constructions .container-construct .right #right-top #const-text {
+        padding-left: 50px;
+        justify-content: center; }
+        #constructions .container-construct .right #right-top #const-text h3 {
+          padding-top: 50px;
+          font-size: 3em; }
+        #constructions .container-construct .right #right-top #const-text p {
+          font-size: 0.9em;
+          line-height: 1.5em;
+          max-height: 50%;
+          overflow: hidden; }
+        #constructions .container-construct .right #right-top #const-text a {
+          width: 75%;
+          height: 50px;
+          line-height: 50px;
+          font-size: 1.8em; }
+      #constructions .container-construct .right #right-bot div p:first-child {
+        font-size: 3.5em; } }
+
 #feedback {
   width: 100%;
   margin-top: 100px;
@@ -6542,6 +6686,10 @@ container {
           height: 45px;
           font-size: 1.5em; }
 
+@media only screen and (min-width: 1920px) {
+  #feedback .container-fb {
+    width: 1240px; } }
+
 #team {
   width: 100%;
   height: 500px;
@@ -6592,6 +6740,12 @@ container {
         background-image: url(../img/team-2.jpg); }
       #team .container-team .team-row .team-block:nth-child(3) div:nth-child(1) {
         background-image: url(../img/team-3.jpg); }
+
+@media only screen and (min-width: 1920px) {
+  #team {
+    height: 550px; }
+    #team .container-team {
+      width: 1240px; } }
 
 #last-news {
   width: 100%;
@@ -6684,6 +6838,14 @@ container {
       #last-news .container-news .news-row-2 .news:nth-child(3) .news-span {
         background-image: url(../img/news-3.jpg); }
 
+@media only screen and (min-width: 1920px) {
+  #last-news .container-news {
+    width: 1340px; }
+    #last-news .container-news .news-row-1 {
+      height: 25%; }
+    #last-news .container-news .news-row-2 {
+      height: 75%; } }
+
 #sponsors {
   width: 100%;
   height: 220px; }
@@ -6715,15 +6877,14 @@ container {
 
 footer {
   width: 100%;
-  height: 540px; }
+  height: 540px;
+  background-image: url(../img/footer-bg.jpg);
+  background-size: cover; }
 
 .footer-container {
   width: 1349px;
   height: 500px;
-  margin: 0 auto;
-  background: #fff;
-  background-image: url(../img/footer-bg.jpg);
-  background-size: cover; }
+  margin: 0 auto; }
   .footer-container #contacts {
     width: 100%;
     height: 25%;
