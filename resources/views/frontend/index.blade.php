@@ -24,15 +24,16 @@
 	</div>
 </div>
 <div id="more-info">
+	<div class="container-more-info">
 		<div id="rotated">
 			<img src="img/more.png" alt="more">
 		</div>
 		<div class="container-more">
-			<div class="row">
+			<div class="row-more">
 				<h3>Узнать больше</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel facere quas, doloremque aliquid commodi ea odit</p>
 			</div>
-			<div class="row">
+			<div class="row-more">
 				<div>
 					<h3>Высокий рейтинг</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto reprehenderit doloribus id eum, pariatur modi corporis quae amet blanditiis neque velit optio tenetur, magnam obcaecati tempore, dicta hic delectus dolor corrupti laudantium esse sequi fugiat. Suscipit praesentium ullam nobis animi.</p>
@@ -71,25 +72,27 @@
 	</div>
 </div>
 <div id="projects">
-	<div id="rotated-2">
-		<img src="img/projects-text.png" alt="more-text">
-	</div>
-	<div class="container-projects">
-		<div class="projects-row-1">
-			<h3>Последние проекты</h3>
-			<h4>Lorem ipsum dolor sit amet, consectetur</h4>
+	<div class="wrapper-projects">
+		<div id="rotated-2">
+			<img src="img/projects-text.png" alt="more-text">
 		</div>
-		<div class="projects-row-2">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
+		<div class="container-projects">
+			<div class="projects-row-1">
+				<h3>Последние проекты</h3>
+				<h4>Lorem ipsum dolor sit amet, consectetur</h4>
+			</div>
+			<div class="projects-row-2">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
 		</div>
+		<div></div>		
 	</div>
-	<div></div>
 </div>
 <div id="constructions">
 	<div class="container-construct">
