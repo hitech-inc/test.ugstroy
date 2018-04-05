@@ -40,7 +40,7 @@
 					width: 38%;
 					height: 100%;
 					text-transform: uppercase;
-					display: flex;
+					@include flex();
 					flex-direction: column;
 					justify-content: flex-end;
 					padding-left:  25px;
@@ -81,7 +81,7 @@
 				height: 25%;
 				float: right;
 				background-color: $orange-bg-color;
-				display: flex;
+				@include flex();
 				justify-content: flex-end;
 				align-items: center;
 				-webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
@@ -114,7 +114,7 @@ and (min-width: 1920px) {
 	height: 700px;
 	padding-top: 50px;
 	.container-construct {
-		width: 100%;
+		width: 1920px;
 		.left {
 			.block-1 {}
 			.block-2 {}

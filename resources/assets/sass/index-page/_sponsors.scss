@@ -20,9 +20,9 @@
 		.sponsors-row {
 			width: 100%;
 			height: 75%;
-			display: flex;
+			@include flex();
 			div {
-				display: flex;
+				@include flex();
 				align-items: center;
 				img {
 					width: 70%;

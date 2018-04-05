@@ -6115,6 +6115,10 @@ container {
 #search {
   margin-top: -15px;
   float: right;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   align-items: center;
   width: 180px;
@@ -6140,6 +6144,10 @@ container {
   background-image: url("../img/main.jpg");
   text-transform: uppercase;
   text-align: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6169,6 +6177,10 @@ container {
     background-image: url("../img/main.jpg");
     text-transform: uppercase;
     text-align: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6195,6 +6207,10 @@ container {
 #second-block {
   width: 100%;
   height: 400px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   align-items: center;
   background: #f7f7f7; }
@@ -6204,6 +6220,10 @@ container {
     width: 1140px;
     height: 80%;
     margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     align-items: center;
     overflow: hidden; }
@@ -6220,11 +6240,19 @@ container {
     width: 1300px;
     height: 100%;
     margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     justify-content: center; }
     #more-info .container-more-info #rotated {
       width: 80px;
       height: 100%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
       display: flex;
       align-items: center; }
       #more-info .container-more-info #rotated img {
@@ -6252,6 +6280,10 @@ container {
       #more-info .container-more-info .container-more .row-more:last-child {
         width: 100%;
         height: 75%;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
         display: flex;
         justify-content: center;
         align-items: center; }
@@ -6313,6 +6345,10 @@ container {
       height: 100%;
       width: 30%;
       float: left;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
       display: flex;
       align-items: center; }
       #services .container-serve .serve:first-child div {
@@ -6342,16 +6378,24 @@ container {
         width: 100%;
         height: 68%;
         margin: 0 auto;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
         display: flex;
         justify-content: center; }
         #services .container-serve .serve:last-child .row-2 div {
           width: 80%;
           height: 70%;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
           display: flex;
           align-items: center;
           overflow: hidden;
-          -webkit-clip-path: polygon(0 0, 88% 0, 100% 100%, 12% 100%);
-          clip-path: polygon(0 0, 88% 0, 100% 100%, 12% 100%); }
+          -webkit-clip-path: polygon(0 0, 89.5% 0, 100% 100%, 10.5% 100%);
+          clip-path: polygon(0 0, 89.5% 0, 100% 100%, 10.5% 100%); }
           #services .container-serve .serve:last-child .row-2 div img {
             width: 100%; }
 
@@ -6361,12 +6405,16 @@ container {
     height: 700px; }
     #services .container-serve {
       margin: 0 auto;
-      width: 100%;
+      width: 1920px;
       height: 100%; }
       #services .container-serve .serve:first-child {
         height: 100%;
         width: 30%;
         float: left;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
         display: flex;
         align-items: center; }
         #services .container-serve .serve:first-child div {
@@ -6397,11 +6445,19 @@ container {
           width: 100%;
           height: 68%;
           margin: 0 auto;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
           display: flex;
           justify-content: center; }
           #services .container-serve .serve:last-child .row-2 div {
             width: 80%;
             height: 65%;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
             display: flex;
             align-items: center;
             overflow: hidden;
@@ -6417,10 +6473,18 @@ container {
     width: 1300px;
     height: 100%;
     margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     justify-content: center; }
     #projects .wrapper-projects #rotated-2 {
       height: 100%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
       display: flex;
       width: 80px;
       align-items: center;
@@ -6447,6 +6511,10 @@ container {
         width: 80%;
         height: 70%;
         margin: 0 auto;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -6537,6 +6605,10 @@ container {
           width: 38%;
           height: 100%;
           text-transform: uppercase;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
@@ -6571,6 +6643,10 @@ container {
         height: 25%;
         float: right;
         background-color: #fcca00;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -6595,7 +6671,7 @@ container {
     height: 700px;
     padding-top: 50px; }
     #constructions .container-construct {
-      width: 100%; }
+      width: 1920px; }
       #constructions .container-construct .right #right-top #const-text {
         padding-left: 50px;
         justify-content: center; }
@@ -6619,6 +6695,10 @@ container {
   width: 100%;
   margin-top: 100px;
   height: 550px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   align-items: center;
   background-image: url(../img/feedback-bg.jpg);
@@ -6672,6 +6752,10 @@ container {
         width: 80%; }
       #feedback .container-fb #right-fb form {
         color: #000;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -6710,6 +6794,10 @@ container {
 #team {
   width: 100%;
   height: 500px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   align-items: center; }
   #team .container-team {
@@ -6731,6 +6819,10 @@ container {
     #team .container-team .team-row {
       width: 100%;
       height: 70%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
       display: flex;
       justify-content: space-between; }
       #team .container-team .team-row .team-block {
@@ -6792,6 +6884,10 @@ container {
     #last-news .container-news .news-row-2 {
       width: 100%;
       height: 70%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
       display: flex;
       justify-content: center;
       align-items: center; }
@@ -6812,6 +6908,10 @@ container {
             height: 30px;
             background-color: #fcca00;
             border-radius: 12px;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
             display: flex;
             justify-content: center;
             align-items: center; }
@@ -6833,6 +6933,10 @@ container {
           height: 50%;
           padding: 20px 0;
           text-transform: uppercase;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
           display: flex;
           flex-direction: column;
           justify-content: space-around; }
@@ -6884,8 +6988,16 @@ container {
     #sponsors .container-sponsors .sponsors-row {
       width: 100%;
       height: 75%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
       display: flex; }
       #sponsors .container-sponsors .sponsors-row div {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
         display: flex;
         align-items: center; }
         #sponsors .container-sponsors .sponsors-row div img {
@@ -6906,6 +7018,10 @@ footer {
     width: 100%;
     height: 25%;
     background: rgba(31, 45, 48, 0.39);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6930,6 +7046,10 @@ footer {
         float: right;
         width: 50%;
         height: 100%;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
         display: flex;
         justify-content: center;
         flex-direction: column; }
@@ -6950,6 +7070,10 @@ footer {
     .footer-container #links .links-bot {
       width: 100%;
       height: 35%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
       display: flex;
       overflow: hidden; }
       .footer-container #links .links-bot div {
