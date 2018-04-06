@@ -33,7 +33,7 @@
         <!-- Sidebar Menu -->
 
         <ul class="sidebar-menu">
-            @include('backend.layouts.menu')
+            @include('layouts.menu')
         </ul>
         <!-- /.sidebar-menu -->
     </section>

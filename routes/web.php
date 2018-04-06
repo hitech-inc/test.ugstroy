@@ -19,3 +19,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::resource('pages', 'PageController');
+
+Route::resource('trades', 'TradeController');
+
+Route::resource('rases', 'RaseController');
+
+Route::resource('pages', 'PageController');
+
+Route::resource('pages', 'PageController');
