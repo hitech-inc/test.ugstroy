@@ -150,7 +150,7 @@ return [
 
             'enabled'       => true,
 
-            'menu_file'     => 'backend/layouts/menu.blade.php',
+            'menu_file'     => 'layouts/menu.blade.php',
         ],
     ],
 
