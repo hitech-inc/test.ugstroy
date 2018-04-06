@@ -37,7 +37,7 @@ return [
 
         'api_test'          => base_path('tests/'),
 
-        'views'             => base_path('resources/views/'),
+        'views'             => base_path('resources/views/backend/'),
 
         'schema_files'      => base_path('resources/model_schemas/'),
 
@@ -150,7 +150,7 @@ return [
 
             'enabled'       => true,
 
-            'menu_file'     => 'layouts/menu.blade.php',
+            'menu_file'     => 'backend/layouts/menu.blade.php',
         ],
     ],
 
