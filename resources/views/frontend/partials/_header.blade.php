@@ -11,18 +11,21 @@
 	<div class="menu-container">
 		<div class="logo">
 			<a href="#home">
-				<img src="img/logo.png" alt="logo">
+				<img src="/img/logo.png" alt="logo">
 			</a>
 		</div>
 		<div id="nav">
 			<ul>
-				<li><a href="#home">Главная</a></li>
-				<li><a href="#about">О нас</a></li>
-				<li><a href="#services">Услуги</a></li>
-				<li><a href="#prices">Прайсы</a></li>
-				<li><a href="#projects">Проекты</a></li>
-				<li><a href="#blog">Блог</a></li>
-				<li><a href="#contacts">Контакты</a></li>
+				@foreach($menus as $menu)
+				<li><a href="{{$menu->url}}">{{$menu->title}}</a></li>
+				@endforeach
+<!-- 				<li><a href="#home">Главная</a></li>
+<li><a href="#about">О нас</a></li>
+<li><a href="#services">Услуги</a></li>
+<li><a href="#prices">Прайсы</a></li>
+<li><a href="#projects">Проекты</a></li>
+<li><a href="#blog">Блог</a></li>
+<li><a href="#contacts">Контакты</a></li> -->
 			</ul>
 		</div>
 		<div id="search">

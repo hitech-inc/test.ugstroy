@@ -2,7 +2,9 @@
     <thead>
         <tr>
             <th>Title</th>
-        <th>Alias</th>
+        <th>Slug</th>
+        <th>Category</th>
+        <th>Img</th>
         <th>Text</th>
             <th colspan="3">Action</th>
         </tr>
@@ -11,7 +13,9 @@
     @foreach($pages as $page)
         <tr>
             <td>{!! $page->title !!}</td>
-            <td>{!! $page->alias !!}</td>
+            <td>{!! $page->slug!!}</td>
+            <td>{!! $page->category !!}</td>
+            <td>{!! $page->img !!}</td>
             <td>{!! $page->text !!}</td>
             <td>
                 {!! Form::open(['route' => ['pages.destroy', $page->id], 'method' => 'delete']) !!}

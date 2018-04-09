@@ -10,10 +10,22 @@
     <p>{!! $page->title !!}</p>
 </div>
 
-<!-- Alias Field -->
+<!-- Url Field -->
 <div class="form-group">
-    {!! Form::label('alias', 'Alias:') !!}
-    <p>{!! $page->alias !!}</p>
+    {!! Form::label('slug', 'Slug') !!}
+    <p>{!! $page->slug !!}</p>
+</div>
+
+<!-- Category Field -->
+<div class="form-group">
+    {!! Form::label('category', 'Category:') !!}
+    <p>{!! $page->category !!}</p>
+</div>
+
+<!-- Img Field -->
+<div class="form-group">
+    {!! Form::label('img', 'Img:') !!}
+    <p>{!! $page->img !!}</p>
 </div>
 
 <!-- Text Field -->

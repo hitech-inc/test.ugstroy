@@ -4,10 +4,22 @@
     {!! Form::text('title', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Alias Field -->
+<!-- Url Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('alias', 'Alias:') !!}
-    {!! Form::text('alias', null, ['class' => 'form-control']) !!}
+    {!! Form::label('slug', 'Slug:') !!}
+    {!! Form::text('slug', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Category Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('category', 'Category:') !!}
+    {!! Form::text('category', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Img Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('img', 'Img:') !!}
+    {!! Form::text('img', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Text Field -->

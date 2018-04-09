@@ -55,7 +55,7 @@
 	<div class="container-serve">
 		<div class="serve">
 			<div>
-				<img src="img/service-big.jpg" alt="service-big">	
+				<a href="#R"><img src="img/service-big.jpg" alt="service-big"></a>
 			</div>
 		</div>
 		<div class="serve">
@@ -64,9 +64,9 @@
 				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>	
 			</div>
 			<div class="row-2">
-				<div><img src="img/service-small-1.jpg" alt="service-small"></div>
-				<div><img src="img/service-small-2.jpg" alt="service-small"></div>
-				<div><img src="img/service-small-3.jpg" alt="service-small"></div>
+				@foreach($pages as $page)
+				<div><a href="{{$page->category}}{{$page->slug}}"><img src="img/{{$page->img}}" alt="service-small"></a></div>
+				@endforeach
 			</div>
 		</div>
 	</div>

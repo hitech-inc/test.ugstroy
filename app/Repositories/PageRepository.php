@@ -8,7 +8,7 @@ use InfyOm\Generator\Common\BaseRepository;
 /**
  * Class PageRepository
  * @package App\Repositories
- * @version April 6, 2018, 11:37 am UTC
+ * @version April 9, 2018, 6:11 am UTC
  *
  * @method Page findWithoutFail($id, $columns = ['*'])
  * @method Page find($id, $columns = ['*'])
@@ -21,7 +21,9 @@ class PageRepository extends BaseRepository
      */
     protected $fieldSearchable = [
         'title',
-        'alias',
+        'url',
+        'category',
+        'img',
         'text'
     ];
 

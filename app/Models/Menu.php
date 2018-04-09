@@ -6,21 +6,18 @@ use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class Page
+ * Class Menu
  * @package App\Models
- * @version April 9, 2018, 6:11 am UTC
+ * @version April 9, 2018, 5:03 am UTC
  *
  * @property string title
  * @property string url
- * @property string category
- * @property string img
- * @property string text
  */
-class Page extends Model
+class Menu extends Model
 {
     use SoftDeletes;
 
-    public $table = 'pages';
+    public $table = 'menus';
     
 
     protected $dates = ['deleted_at'];
@@ -28,10 +25,7 @@ class Page extends Model
 
     public $fillable = [
         'title',
-        'slug',
-        'category',
-        'img',
-        'text'
+        'url'
     ];
 
     /**
@@ -41,10 +35,7 @@ class Page extends Model
      */
     protected $casts = [
         'title' => 'string',
-        'slug' => 'string',
-        'category' => 'string',
-        'img' => 'string',
-        'text' => 'string'
+        'url' => 'string'
     ];
 
     /**
@@ -54,8 +45,7 @@ class Page extends Model
      */
     public static $rules = [
         'title' => 'required',
-        'slug' => 'required',
-        'category' => 'required'
+        'url' => 'required'
     ];
 
     

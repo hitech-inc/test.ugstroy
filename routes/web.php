@@ -11,21 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
-
+Route::get('/', 'FrontendController@index');
+Route::get('/services/{slug?}', 'FrontendController@getServicePage');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::resource('pages', 'PageController');
 
-Route::resource('trades', 'TradeController');
 
-Route::resource('rases', 'RaseController');
-
-Route::resource('pages', 'PageController');
+Route::resource('menus', 'MenuController');
 
 Route::resource('pages', 'PageController');
