@@ -23,3 +23,6 @@ Route::get('/home', 'HomeController@index');
 Route::resource('menus', 'MenuController');
 
 Route::resource('pages', 'PageController');
+
+
+Route::resource('categories', 'CategoryController');
