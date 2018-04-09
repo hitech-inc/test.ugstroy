@@ -1,8 +1,9 @@
 var gulp = require('gulp'),
-	sass = require('gulp-sass'),
-	plumber = require('gulp-plumber'),
-	uglify = require('gulp-uglify'),
-  livereload = require('gulp-livereload');
+  	sass = require('gulp-sass'),
+  	plumber = require('gulp-plumber'),
+  	uglify = require('gulp-uglify'),
+    livereload = require('gulp-livereload'),
+    concat = require('gulp-concat');
 
 // Styles Task
 // SASS
@@ -17,9 +18,10 @@ gulp.task('sass', function () {
 // Scripts Task
 // JS
 gulp.task('scripts', function () {
-  	gulp.src('resources/assets/js/*.js')
-  	.pipe(plumber())
-    .pipe(uglify())
+  	gulp.src(['resources/assets/js/*.js','node_modules/dropzone/dist/dropzone.js'])
+    .pipe(plumber())
+    .pipe(concat('app.js'))
+  	.pipe(uglify())
     .pipe(gulp.dest('public/js'));
 });
 

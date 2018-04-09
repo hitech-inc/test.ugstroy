@@ -26,5 +26,8 @@
         "popper.js": "^1.12",
         "vue": "^2.5.7"
     },
-    "dependencies": {}
+    "dependencies": {
+        "dropzone": "^5.4.0",
+        "gulp-concat": "^2.6.1"
+    }
 }
