@@ -1,10 +1,10 @@
 <div class="topline">
 	
-	<div>
-		<a href="#sign-in">Вход</a>
-		<span>/</span>
-		<a href="#sign-up">Регистрация</a>
-	</div>
+<!-- 	<div>
+	<a href="#sign-in">Вход</a>
+	<span>/</span>
+	<a href="#sign-up">Регистрация</a>
+</div> -->
 	<p>Время работы 09:00 - 18:00 (Пн-Пт) +7(7252)555555</p>
 </div>
 <div class="menu">

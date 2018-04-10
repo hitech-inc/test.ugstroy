@@ -12,7 +12,11 @@
 */
 
 Route::get('/', 'FrontendController@index');
-Route::get('/services/{slug?}', 'FrontendController@getServicePage');
+Route::get('/services', 'FrontendController@services');
+Route::get('/services/{slug}', 'FrontendController@getServicePage');
+Route::get('/about', 'FrontendController@about');
+Route::get('/projects', 'FrontendController@projects');
+Route::get('/contacts', 'FrontendController@contacts');
 
 Auth::routes();
 
