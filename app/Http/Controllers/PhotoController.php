@@ -156,7 +156,7 @@ class PhotoController extends AppBaseController
     {
 
         if($request->hasFile('file')){
-            $time = Carbon::now()->format('Ymd');
+            $time = Carbon::now()->format('Ymd-His');
             $file = $request->file('file');
             $extension = $file->extension();
             $filename = $time."_".$file->getClientOriginalName();
