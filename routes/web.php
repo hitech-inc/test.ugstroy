@@ -23,7 +23,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::post('/upload', 'PhotoController@upload')->name('upload');
-
+Route::get('/projectsasd', 'ProjectController@indexFilter')->name('filter');
 
 
 Route::resource('menus', 'MenuController');
@@ -34,3 +34,5 @@ Route::resource('pages', 'PageController');
 Route::resource('categories', 'CategoryController');
 
 Route::resource('photos', 'PhotoController');
+
+Route::resource('projects', 'ProjectController');
