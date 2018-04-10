@@ -33,7 +33,8 @@ class Project extends Model
         'area',
         'finish',
         'lat',
-        'lng'
+        'lng',
+        'slug'
     ];
 
     /**
@@ -48,7 +49,8 @@ class Project extends Model
         'area' => 'string',
         'finish' => 'string',
         'lat' => 'string',
-        'lng' => 'string'
+        'lng' => 'string',
+        'slug' => 'string'
     ];
 
     /**

@@ -6,6 +6,7 @@
         <th>Type</th>
         <th>Area</th>
         <th>Finish</th>
+        <th>Slug</th>
             <th colspan="3">Action</th>
         </tr>
     </thead>
@@ -17,6 +18,7 @@
             <td>{!! $project->type !!}</td>
             <td>{!! $project->area !!}</td>
             <td>{!! $project->finish !!}</td>
+            <td>{!! $project->slug !!}</td>
             <td>
                 {!! Form::open(['route' => ['projects.destroy', $project->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

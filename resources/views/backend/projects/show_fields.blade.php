@@ -34,6 +34,12 @@
     <p>{!! $project->finish !!}</p>
 </div>
 
+<!-- Slug Field -->
+<div class="form-group">
+    {!! Form::label('slug', 'Slug:') !!}
+    <p>{!! $project->slug !!}</p>
+</div>
+
 <div class="form-group">
     {!! Form::label('lat', 'Lat:') !!}
     <p>{!! $project->lat !!}</p>
