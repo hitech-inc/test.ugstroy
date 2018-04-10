@@ -7060,6 +7060,29 @@ container {
           width: 70%;
           margin: 0 auto; }
 
+#projects-page {
+  width: 1140px;
+  height: 600px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+  #projects-page .inner {
+    height: 100%;
+    width: 50%; }
+    #projects-page .inner div {
+      width: 100%; }
+      #projects-page .inner div a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        #projects-page .inner div a img {
+          width: 100%; }
+      #projects-page .inner div h3 {
+        color: #000; }
+
 footer {
   width: 100%;
   height: 540px;

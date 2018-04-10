@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Menu;
 use App\Models\Page;
+use App\Models\Project;
 
 class FrontendController extends Controller
 {
@@ -45,12 +46,26 @@ class FrontendController extends Controller
 
         return view('frontend.contacts',compact('menus'));
     }
+
+    public function objects($id)
+    {
+        $menus = $this->getMenu();
+        $objects = Project::all()->where('category',$id);
+        return view('frontend.objects',compact('menus','objects'));
+    }
+
+    public function object()
+    {
+        $menus = $this->getMenu();
+
+        return view('frontend.object',compact('menus'));
+    }
+
     public function getServicePage($slug)
     {
         $service = Page::all()->where('slug', $slug)->first();
         $menus = $this->getMenu();
-        return view('frontend.service',compact('service','menus'));
-            
+        return view('frontend.service',compact('service','menus'));   
     }
 
     public function getMenu() {
