@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
+use App\Models\Photo;
 
 class ProjectController extends AppBaseController
 {
@@ -82,14 +83,16 @@ class ProjectController extends AppBaseController
     public function show($id)
     {
         $project = $this->projectRepository->findWithoutFail($id);
-
+        $alt = 'special-alt-object-photos-id'.$project['id'];
+        $photos = Photo::all()->where('alt',$alt);
         if (empty($project)) {
             Flash::error('Project not found');
 
             return redirect(route('projects.index'));
         }
 
-        return view('backend.projects.show')->with('project', $project);
+        return view('backend.projects.show',compact('photos'))->with(['project'=> $project,
+    																	'alt' => $alt]);
     }
 
     /**
