@@ -20,7 +20,6 @@ gulp.task('sass', function () {
 gulp.task('scripts', function () {
   	gulp.src(['resources/assets/js/*.js','node_modules/dropzone/dist/dropzone.js'])
     .pipe(plumber())
-    .pipe(concat('app.js'))
   	.pipe(uglify())
     .pipe(gulp.dest('public/js'));
 });
