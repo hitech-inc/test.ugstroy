@@ -34,6 +34,17 @@
     <p>{!! $project->finish !!}</p>
 </div>
 
+<div class="form-group">
+    {!! Form::label('lat', 'Lat:') !!}
+    <p>{!! $project->lat !!}</p>
+</div>
+
+<div class="form-group">
+    {!! Form::label('lng', 'Lng:') !!}
+    <p>{!! $project->lng !!}</p>
+</div>
+
+
 <!-- Created At Field -->
 <div class="form-group">
     {!! Form::label('created_at', 'Created At:') !!}

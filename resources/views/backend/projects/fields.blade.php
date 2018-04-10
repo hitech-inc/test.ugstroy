@@ -31,6 +31,18 @@
     {!! Form::text('finish', null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- Lat Field -->
+<div class="form-group col-sm-3">
+    {!! Form::label('lat', 'Широта:') !!}
+    {!! Form::text('lat', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Lng Field -->
+<div class="form-group col-sm-3">
+    {!! Form::label('lng', 'Долгота:') !!}
+    {!! Form::text('lng', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}

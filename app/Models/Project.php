@@ -31,7 +31,9 @@ class Project extends Model
         'category',
         'type',
         'area',
-        'finish'
+        'finish',
+        'lat',
+        'lng'
     ];
 
     /**
@@ -44,7 +46,9 @@ class Project extends Model
         'category' => 'string',
         'type' => 'string',
         'area' => 'string',
-        'finish' => 'string'
+        'finish' => 'string',
+        'lat' => 'string',
+        'lng' => 'string'
     ];
 
     /**
@@ -55,7 +59,9 @@ class Project extends Model
     public static $rules = [
         'title' => 'required',
         'category' => 'required',
-        'type' => 'required'
+        'type' => 'required',
+        'lat' => 'numeric',
+        'lng' => 'numeric'
     ];
 
     
