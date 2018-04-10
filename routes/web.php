@@ -18,7 +18,7 @@ Route::get('/about', 'FrontendController@about');
 Route::get('/all-projects', 'FrontendController@projects');
 Route::get('/contacts', 'FrontendController@contacts');
 Route::get('/objects/{id}', 'FrontendController@objects')->name('object');
-Route::get('/object/{slug}', 'FrontendController@object');
+Route::get('/object/{slug}', 'FrontendController@object')->name('object_page');
 
 Auth::routes();
 

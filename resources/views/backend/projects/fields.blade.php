@@ -8,8 +8,12 @@
 <div class="form-group col-sm-6">
     {!! Form::label('category', 'Category:') !!}
     <select name="category" id="category" class="form-control">
-        <option value="Построенные объекты">Построенные объекты</option>
-        <option value="Строящиеся объекты">Строящиеся объекты</option>
+        @if($project->category == "Построенные объекты")
+        <option value="Построенные объекты" {{$selected = 'selected'}}>Построенные объекты</option>
+        @endif
+        @if($project->category == "Строящиеся объекты")
+        <option value="Строящиеся объекты"  {{$selected = 'selected'}}>Строящиеся объекты</option>
+        @endif
     </select>
 </div>
 

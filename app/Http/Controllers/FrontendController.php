@@ -54,11 +54,11 @@ class FrontendController extends Controller
         return view('frontend.objects',compact('menus','objects'));
     }
 
-    public function object()
+    public function object($slug)
     {
         $menus = $this->getMenu();
-
-        return view('frontend.object',compact('menus'));
+        $object = Project::where('slug',$slug)->first();
+        return view('frontend.object',compact('menus'))->with('object', $object);
     }
 
     public function getServicePage($slug)
