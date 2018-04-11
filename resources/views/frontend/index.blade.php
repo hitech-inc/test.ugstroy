@@ -134,7 +134,7 @@
 		</div>
 	</div>
 </div>
-<div id="feedback">
+<!-- <div id="feedback">
 	<div class="container-fb">
 		<div id="left-fb">
 			<div class="fb-row-1">
@@ -161,7 +161,7 @@
 			</form>
 		</div>
 	</div>
-</div>
+</div> -->
 <div id="team">
 	<div class="container-team">
 		<h3>Наша команда</h3>
@@ -194,7 +194,7 @@
 		</div>		
 	</div>
 </div>
-<div id="last-news">
+<!-- <div id="last-news">
 	<div class="container-news">
 		<div class="news-row-1">
 			<h3>Последние новости</h3>
@@ -242,7 +242,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 <div id="sponsors">
 	<div class="container-sponsors">
 			<h3>Наши спонсоры</h3>

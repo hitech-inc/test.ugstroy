@@ -1,29 +1,525 @@
-#projects-page {
-	width: 1140px;
-	height: 600px;
-	margin: 0 auto;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	.inner {
+#projects-block {
+	width: 100%;
+	height: 536px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url('../img/projects-bg.jpg');
+	text-transform: uppercase;
+	text-align: center;
+	@include flex();
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  p {
+  	line-height: 1em;
+  	text-transform: none;
+	font-size: 0.9em;
+	width: 50%;
+  }
+	a {
+		width: 240px;
+		background-color: $orange-bg-color;
+		display: block;
+		height: 45px;
+		line-height: 45px;
+		font-size: 1.3em;
+	}
+	h1 {
+		line-height: 1em;
+		font-size: 3.5em;
+		font-weight: unset;
+	}
+	h3 {
+		margin-bottom: 0;
+	}
+} 
+
+#projects-last {
+	width: 100%;
+	height: 550px;
+	.container-last-projects {
+		width: 1349px;
 		height: 100%;
-		width: 50%;
-		div {
+		margin: 0 auto;
+		background-image: url(../img/last-proj-bg.png);
+		background-repeat: no-repeat;
+		.lprojects-row-1 {
 			width: 100%;
-			
-			a {
-				display: block;
-				width: 100%;
-				height: 100%;
-				img {
-					width: 100%;
-				} 
-			}
+			height: 25%;
+			text-transform: uppercase;
+			text-align: center;
+			color: $main-text-color;
 			h3 {
-				color: #000;
-			}			
+				padding-top: 20px;
+				font-size: 2em;
+				margin-bottom: 0;
+			}
+			h4 {
+				font-size: 2em;
+			}
+		}
+		.lprojects-row-2 {
+			width: 100%;
+			padding-left: 10%;
+			height: 55%;
+			margin: 0 auto;
+			.lp-center:first-child {
+				padding-top: 2%;
+				width: 40%;
+				height: 100%;
+				float: left;
+				text-transform: uppercase;
+				h3 {
+					text-transform: uppercase;
+					color: #000;
+					font-size: 3em;
+					margin-bottom: 0;
+				}
+				p {
+					text-transform: uppercase;
+					color: #000;
+					line-height: 1.3em;
+				}
+				a {
+					width: 220px;
+					background-color: $orange-bg-color;
+					display: block;
+					height: 35px;
+					line-height: 35px;
+					font-size: 1.3em;
+					text-align: center;									
+				}
+			}
+			.lp-center:last-child {
+				width: 60%;
+				float: right;
+				height: 100%;
+				overflow: hidden;
+				img {
+					width: 120%;
+				}		
+			}
+		}
+		.lprojects-row-3 {
+			width: 100%;
+			height: 20%;
+			.lp3-left {
+				width: 30%;
+				float: left;
+				height: 100%;
+			}
+			.lp3-right {
+				width: 70%;
+				float: right;
+				height: 100%;
+				@include flex(); 
+				background-color: $orange-bg-color;
+				justify-content: flex-end;
+				align-items: center;
+				padding-left: 5%;
+				-webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+				clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+				div {
+					flex: 0 0 30%;
+					text-align: left;
+					p:first-child {
+						font-size: 2.5em;
+						color: $main-text-color;
+						margin-bottom: 0;
+						line-height: 1em;
+					}
+					p:last-child {
+						text-transform: uppercase;
+						font-size: 1.5em;
+						color: $main-text-color;
+						margin-bottom: 0;
+						line-height: 1em;
+					}					
+				}
+			}
+		}
+	}	
+}
+
+#p-finished {
+	width: 100%;
+	height: 700px;
+	.pf-container {
+		width: 1300px;
+		height: 100%;
+		margin: 0 auto;
+		.pf-left {
+			float: left;
+			height: 100%;
+			@include flex();
+			width: 12.5%;
+			align-items: center;
+			justify-content: center;
+			img {
+				width: 50%;
+			}
+		}
+		.pf-right {
+			padding-top: 5%;
+			padding-left: 4%;
+			height: 100%;
+			width: 82%;
+			float: left;
+			text-transform: uppercase;
+			.pfr-row-1 {
+				width: 100%;
+				height: 80%;
+				position: relative;
+				.finished-slide {
+					z-index: 99;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: url(../img/f-obj.jpg) no-repeat;
+					background-size: cover;
+					background-position: top center;
+					.bbb {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						padding-left: 10%;
+						background-color: rgba(0,0,0,0.4);
+						@include flex();
+						justify-content: center;
+						flex-direction: column;
+						h1 {
+							font-size: 7em;
+							line-height: 1em;
+						}
+						h3 {
+							font-size: 2em;
+							margin-bottom: 0;
+						}
+						p {
+							width: 40%;
+							font-size: 1.2em;
+							line-height: 1em;
+						}
+						a {
+							width: 180px;
+							background-color: $orange-bg-color;
+							display: block;
+							height: 35px;
+							line-height: 35px;
+							font-size: 1.3em;
+							text-align: center;									
+						}
+					}
+				}
+				.pickline {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					z-index: 100;
+					@include flex();
+					height: 15px;
+					div {
+						height: 100%;
+						flex: 1;
+						margin-right: 5px;
+						background-color: $orange-bg-color;
+					}
+					div:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+			.pfr-row-2 {
+				width: 100%;
+				height: 20%;
+				p {
+					padding-top: 2%;
+					color: #000;
+					line-height: 1em;
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+}
+
+
+#p-not-finished {
+	width: 100%;
+	height: 700px;
+	.pnf-container {
+		width: 1300px;
+		height: 100%;
+		margin: 0 auto;
+		.pnf-left {
+			padding-top: 5%;
+			padding-left: 4%;
+			height: 100%;
+			width: 82%;
+			float: left;
+			text-transform: uppercase;
+			.pnfr-row-1 {
+				width: 100%;
+				height: 80%;
+				position: relative;
+				.not-finished-slide {
+					z-index: 99;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: url(../img/nf-obj.jpg) no-repeat;
+					background-size: cover;
+					background-position: top center;
+					.ccc {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						padding-left: 10%;
+						background-color: rgba(0,0,0,0.4);
+						@include flex();
+						justify-content: center;
+						flex-direction: column;
+						h1 {
+							font-size: 7em;
+							line-height: 1em;
+						}
+						h3 {
+							font-size: 2em;
+							margin-bottom: 0;
+						}
+						p {
+							width: 40%;
+							font-size: 1.2em;
+							line-height: 1em;
+						}
+						a {
+							width: 180px;
+							background-color: $orange-bg-color;
+							display: block;
+							height: 35px;
+							line-height: 35px;
+							font-size: 1.3em;
+							text-align: center;									
+						}
+					}
+				}
+				.pickline2 {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					z-index: 100;
+					@include flex();
+					height: 15px;
+					div {
+						height: 100%;
+						flex: 1;
+						margin-right: 5px;
+						background-color: $orange-bg-color;
+					}
+					div:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+			.pnfr-row-2 {
+				width: 100%;
+				height: 20%;
+				p {
+					padding-top: 2%;
+					color: #000;
+					line-height: 1em;
+					font-size: 1.2em;
+				}
+			}
+		}
+		.pnf-right {
+			float: right;
+			height: 100%;
+			@include flex();
+			width: 12.5%;
+			align-items: center;
+			justify-content: center;
+			img {
+				width: 50%;
+			}
+		}
+	}
+}
+
+#p-plan {
+	width: 100%;
+	height: 1100px;
+	.pp-container {
+		width: 1300px;
+		height: 100%;
+		margin: 0 auto;
+		.pp-left {
+			float: left;
+			height: 100%;
+			@include flex();
+			width: 12.5%;
+			align-items: center;
+			justify-content: center;
+			img {
+				width: 50%;
+			}
+		}
+		.pp-right {
+			padding-top: 5%;
+			padding-left: 4%;
+			height: 100%;
+			width: 82%;
+			float: left;
+			text-transform: uppercase;
+			.pp-row-1 {
+				width: 100%;
+				height: 60%;
+				position: relative;
+				.pp-slide {
+					z-index: 99;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: url(../img/p-obj.jpg) no-repeat;
+					background-size: cover;
+					background-position: top center;
+					.ddd {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						padding-left: 10%;
+						background-color: rgba(0,0,0,0.4);
+						@include flex();
+						justify-content: center;
+						flex-direction: column;
+						h1 {
+							font-size: 7em;
+							line-height: 1em;
+						}
+						h3 {
+							font-size: 2em;
+							margin-bottom: 0;
+						}
+						p {
+							width: 40%;
+							font-size: 1.2em;
+							line-height: 1em;
+						}
+						a {
+							width: 180px;
+							background-color: $orange-bg-color;
+							display: block;
+							height: 35px;
+							line-height: 35px;
+							font-size: 1.3em;
+							text-align: center;									
+						}
+					}
+				}
+				.pp-pickline {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					z-index: 100;
+					@include flex();
+					height: 15px;
+					div {
+						height: 100%;
+						flex: 1;
+						margin-right: 5px;
+						background-color: $orange-bg-color;
+					}
+					div:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+			.pp-row-2 {
+				width: 100%;
+				height: 15%;
+				p {
+					padding-top: 2%;
+					color: #000;
+					line-height: 1em;
+					font-size: 1.2em;
+				}
+			}
+			.pp-row-3 {
+				height: 15%;
+				width: 100%;
+				position: relative;
+				@include flex();
+				align-items: center;
+				justify-content: center;
+				div {
+					flex: 0 0 21%;
+					height: 100%;
+					margin: 0 10px;
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+						background: url(../img/pps-1.jpg) no-repeat center center;
+					}
+				}
+				span.left-arrow {
+					display: block;
+					width: 22px;
+					height: 29px;
+					position: absolute;
+					top: 41%;
+					left: 0;					
+					background: url(../img/left-arrow.png) center center no-repeat;
+				}
+				span.right-arrow {
+					display: block;
+					width: 22px;
+					height: 29px;
+					position: absolute;
+					top: 41%;
+					right:  0;
+					background: url(../img/right-arrow.png) center center no-repeat;	
+				}
+			}
+		}
+	}
+}
+
+@media only screen 
+and (min-width: 1920px) {
+	#p-finished {
+		height: 900px;
+		.pf-container {
+			width: 1800px;			
+		}		
+	}
+	#p-not-finished {
+		height: 900px;
+		.pnf-container {
+			width: 1800px;
+		}
+		
+	}
+	#p-plan {
+		height: 1440px;
+		.pp-container {
+			width: 1800px;
 		}
 	}
 }

@@ -80,7 +80,60 @@
 		height: 25px;
 	}
 }
+// NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY 
+@media only screen
+and(min-width: 1024px)
+and(max-width: 1279px){
+.topline {
+	font-size: 16px;
+	div {
+		padding-right: 25px;
+		a {}
+	}
+	p {
+		padding-right: 55px;
+	}
+}
 
+.menu {}
+
+.menu-container {
+	width: 960px;
+}
+
+.logo {
+	width: 100px;
+	a {
+		line-height: 130px;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+#nav {
+	margin-top: -15px;
+	width: 720px;
+	ul {
+		li {
+			width: 80px;
+			padding: 0 10px;
+			line-height: 130px;
+		}
+	}
+}
+
+#search {
+	margin-top: -15px;
+	width: 140px;
+	input{
+		width: 100%;
+		border-bottom: 2px solid #ccc;
+		height: 25px;
+	}
+}
+
+}
 // NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY 
 @media only screen
 and(min-width: 1280px)
