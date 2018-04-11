@@ -4,7 +4,8 @@
 <div id="contacts-block">
   <h1>Эффективная коммуникация</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.</p>
-  <a href="#button">Связаться с нами</a>
+<!--   <a href="#button">Связаться с нами<span></span><span>Связаться с нами</span></a> -->
+  <a href="#button" class="Btn">Связаться с нами</a>
 </div>
 
 <div id="calls">
