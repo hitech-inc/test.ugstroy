@@ -19,6 +19,7 @@ class MenuController extends AppBaseController
     public function __construct(MenuRepository $menuRepo)
     {
         $this->menuRepository = $menuRepo;
+        $this->middleware('auth');
     }
 
     /**

@@ -22,6 +22,7 @@ class PhotoController extends AppBaseController
     public function __construct(PhotoRepository $photoRepo)
     {
         $this->photoRepository = $photoRepo;
+        $this->middleware('auth');
     }
 
     /**

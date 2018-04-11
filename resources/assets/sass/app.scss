@@ -5,13 +5,13 @@
 @import 'clear';
 
 // HEADER
-//
+
 @import "header";
 
 
 
 // INDEX PAGE
-// 
+
 @import "index-page/main-block"; 
 @import "index-page/second-block";
 @import "index-page/more-info";
@@ -26,10 +26,15 @@
 // PROJECTS PAGE
 @import "projects"; 
 
+// ABOUT US PAGE
+@import "about"; 
+
+// CONTACTS PAGE
+@import "contacts"; 
 
 
 
 // FOOTER
-//
+
 @import "footer";
 
