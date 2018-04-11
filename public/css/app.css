@@ -6095,7 +6095,6 @@ container {
       vertical-align: middle; }
 
 #nav {
-  margin-top: -15px;
   height: 100%;
   width: 840px;
   float: left;
@@ -6113,7 +6112,6 @@ container {
       line-height: 130px; }
 
 #search {
-  margin-top: -15px;
   float: right;
   display: -webkit-flex;
   display: -moz-flex;
@@ -7923,7 +7921,7 @@ container {
 
 @media only screen and (min-width: 1920px) {
   #contacts-block {
-    height: 770px; }
+    height: 740px; }
     #contacts-block h1 {
       font-size: 4em; }
     #contacts-block p {
@@ -7993,6 +7991,13 @@ container {
 .serviceDesc a {
   color: #949494;
   text-transform: uppercase; }
+
+@media only screen and (min-width: 1920px) {
+  .mainImg {
+    height: 740px; }
+    .mainImg p {
+      font-size: 1.2em;
+      line-height: 1em; } }
 
 footer {
   width: 100%;
