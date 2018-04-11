@@ -7942,11 +7942,9 @@ container {
     height: 300px; }
     #socials h3 {
       font-size: 4em; }
-    #socials .social-con {
-      width: 1903px; }
-      #socials .social-con div {
-        width: 130px;
-        height: 130px; } }
+    #socials .social-con div {
+      width: 130px;
+      height: 130px; } }
 
 .containerServices {
   width: 100%;
