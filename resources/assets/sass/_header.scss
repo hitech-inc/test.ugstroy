@@ -243,7 +243,11 @@ and(max-width: 1439px){
 // NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY 
 @media only screen
 and(min-width: 1920px) {
-	#nav {
-		margin-top: 0px;
-	}
+#nav {
+	margin-top: 0px;
+}
+#search {
+	margin-top: 0;
+}
+
 }
