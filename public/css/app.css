@@ -7616,6 +7616,220 @@ container {
     #p-plan .pp-container {
       width: 1800px; } }
 
+#contacts-block {
+  width: 100%;
+  height: 536px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/contacts-bg.jpg");
+  text-transform: uppercase;
+  text-align: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #contacts-block p {
+    line-height: 1em;
+    text-transform: none;
+    font-size: 0.9em;
+    width: 50%; }
+  #contacts-block a {
+    width: 240px;
+    background-color: #fcca00;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.3em; }
+  #contacts-block h1 {
+    line-height: 1em;
+    font-size: 3.5em;
+    font-weight: unset; }
+
+#calls {
+  width: 100%;
+  height: 700px; }
+  #calls .c-container {
+    width: 1300px;
+    height: 100%;
+    margin: 0 auto; }
+    #calls .c-container .c-left {
+      padding-top: 5%;
+      height: 100%;
+      width: 87.5%;
+      float: left;
+      text-transform: uppercase;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      align-items: center; }
+      #calls .c-container .c-left .cl-left {
+        width: 40%;
+        height: 100%;
+        float: left; }
+        #calls .c-container .c-left .cl-left img {
+          width: 100%; }
+      #calls .c-container .c-left .cl-right {
+        height: 60%;
+        float: right;
+        width: 60%; }
+        #calls .c-container .c-left .cl-right h3 {
+          color: #000;
+          font-size: 2.5em; }
+        #calls .c-container .c-left .cl-right p {
+          color: #000;
+          font-size: 2em;
+          line-height: 1em;
+          margin-bottom: 0; }
+        #calls .c-container .c-left .cl-right div {
+          width: 100%;
+          height: 50px;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          align-items: center; }
+          #calls .c-container .c-left .cl-right div span {
+            float: left;
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+            background-size: contain; }
+          #calls .c-container .c-left .cl-right div .clrsa {
+            background-image: url(../img/tel.png); }
+          #calls .c-container .c-left .cl-right div .clrsb {
+            background-image: url(../img/email.png); }
+          #calls .c-container .c-left .cl-right div p {
+            margin-bottom: 0; }
+    #calls .c-container .c-right {
+      float: right;
+      height: 100%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      width: 12.5%;
+      align-items: center;
+      justify-content: center; }
+      #calls .c-container .c-right img {
+        width: 70%; }
+
+#c-map {
+  width: 100%;
+  height: 700px; }
+  #c-map .cm-container {
+    width: 1349px;
+    height: 100%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center; }
+    #c-map .cm-container .cm-left {
+      float: left;
+      height: 100%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      width: 15%;
+      align-items: center;
+      justify-content: center; }
+      #c-map .cm-container .cm-left img {
+        width: 50%; }
+    #c-map .cm-container .cm-right {
+      float: right;
+      width: 85%;
+      height: 80%; }
+      #c-map .cm-container .cm-right #map {
+        width: 100%;
+        height: 100%; }
+
+#socials {
+  width: 100%;
+  height: 200px; }
+  #socials h3 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #000;
+    text-transform: uppercase;
+    height: 25%; }
+  #socials .social-con {
+    width: 100%;
+    background-color: #f8f8f8;
+    height: 75%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #socials .social-con div {
+      width: 100px;
+      height: 100px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #socials .social-con div a {
+        display: block;
+        width: 58%;
+        height: 58%;
+        background-size: contain; }
+    #socials .social-con div:nth-child(1) a {
+      background-image: url(../img/google.png); }
+    #socials .social-con div:nth-child(2) a {
+      background-image: url(../img/twitter.png); }
+    #socials .social-con div:nth-child(3) a {
+      background-image: url(../img/message.png); }
+    #socials .social-con div:nth-child(4) a {
+      background-image: url(../img/facebook.png); }
+    #socials .social-con div:nth-child(5) a {
+      background-image: url(../img/rss.png); }
+
+@media only screen and (min-width: 1920px) {
+  #contacts-block {
+    height: 770px; }
+    #contacts-block h1 {
+      font-size: 4em; }
+    #contacts-block p {
+      font-size: 1.2em; }
+  #calls .c-container {
+    width: 1903px; }
+    #calls .c-container .c-left .cl-right h3 {
+      font-size: 3em; }
+    #calls .c-container .c-right img {
+      width: 50%; }
+  #c-map .cm-container {
+    width: 1903px; }
+    #c-map .cm-container .cm-left img {
+      width: 43%; }
+  #socials {
+    height: 300px; }
+    #socials h3 {
+      font-size: 4em; }
+    #socials .social-con {
+      width: 1903px; }
+      #socials .social-con div {
+        width: 130px;
+        height: 130px; } }
+
 footer {
   width: 100%;
   height: 540px;
