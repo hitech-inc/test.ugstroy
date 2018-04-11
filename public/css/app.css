@@ -7645,7 +7645,7 @@ container {
 
 #about-text {
   width: 100%;
-  height: 800px;
+  height: 850px;
   position: relative; }
   #about-text .text-container {
     padding-top: 40px;
@@ -7665,10 +7665,11 @@ container {
       margin-bottom: 25px; }
   #about-text #worker {
     position: absolute;
-    bottom: 0;
+    bottom: 12%;
     right: 0;
-    width: 30%;
-    height: 30%; }
+    width: 39%;
+    height: 39%;
+    overflow: hidden; }
     #about-text #worker img {
       width: 100%; }
   #about-text #stats {
@@ -7690,19 +7691,46 @@ container {
     -webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%); }
     #about-text #stats div {
-      flex: 0 0 30%;
+      flex: 0 0 25%;
       text-align: left; }
       #about-text #stats div p:first-child {
         font-size: 2.5em;
         color: #000;
         margin-bottom: 0;
         line-height: 1em; }
+        #about-text #stats div p:first-child sup {
+          color: #000; }
       #about-text #stats div p:last-child {
         text-transform: uppercase;
         font-size: 1.5em;
         color: #000;
         margin-bottom: 0;
         line-height: 1em; }
+    #about-text #stats div:last-child {
+      flex: 0 0 35%; }
+
+@media only screen and (min-width: 1920px) {
+  #about-block {
+    height: 740px; }
+    #about-block h1 {
+      font-size: 3.5em; }
+    #about-block p {
+      font-size: 1.2em;
+      line-height: 1em; }
+  #about-text {
+    height: 950px; }
+    #about-text .text-container {
+      width: 1800px; }
+    #about-text #worker {
+      width: 35%; }
+    #about-text #stats {
+      height: 150px; }
+      #about-text #stats div {
+        flex: 0 0 25%; }
+        #about-text #stats div p:first-child {
+          font-size: 3em; }
+      #about-text #stats div:last-child {
+        flex: 0 0 30%; } }
 
 #contacts-block {
   width: 100%;
