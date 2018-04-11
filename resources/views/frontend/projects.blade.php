@@ -14,7 +14,7 @@
 			<h3>Последние проекты</h3>
 			<h4>Lorem ipsum dolor sit amet, consectetur</h4>
 		</div>
-		<div class="lprojects-row-2">
+		<div class="lprojects-row-2"> 
 			<div class="lp-center">
 				<h3>Дом вашей мечты</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, ex, dolorum! Reiciendis quas tempora ducimus rerum possimus beatae fugit dolore amet, illo minima facilis suscipit at accusamus, eligendi nemo quos soluta ut eveniet. Error in, corrupti, veritatis quae odit adipisci suscipit eveniet at fugit fugiat eum numquam inventore aliquam dignissimos iste laborum hic, sunt itaque ea dolores autem blanditiis! Amet aliquid beatae exercitationem esse, aliquam aut sed laborum animi ullam!</p>

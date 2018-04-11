@@ -7597,6 +7597,12 @@ container {
           background: url(../img/right-arrow.png) center center no-repeat; }
 
 @media only screen and (min-width: 1920px) {
+  #projects-block {
+    height: 740px; }
+  #projects-last {
+    height: 700px; }
+    #projects-last .container-last-projects {
+      width: 1903px; }
   #p-finished {
     height: 900px; }
     #p-finished .pf-container {
