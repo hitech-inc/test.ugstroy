@@ -204,6 +204,11 @@ and (min-width: 1920px) {
 		.c-container {
 			width: 1903px;
 			.c-left {
+				.cl-left {
+					img {
+						width: 70%;
+					}
+				}
 				.cl-right {
 					h3 {
 						font-size: 3em;
