@@ -6140,10 +6140,14 @@ a.Btn-2:active {
   background-color: #fcca00f0 !important;
 } 
  */
-/*! legitRipple.js v1.1.0: ripple.min.css by Matthias Vogt (ISC license) */
-.legitRipple, .legitRipple-custom {
-  overflow: hidden; }
+.Btn {
+  transition: background-color 0.1s linear;
+  background-color: #fff !important; }
 
+.Btn:hover {
+  background-color: #fcca00  !important; }
+
+/*! legitRipple.js v1.1.0: ripple.min.css by Matthias Vogt (ISC license) */
 .legitRipple {
   position: relative;
   -webkit-user-select: none;
@@ -6159,19 +6163,20 @@ a.Btn-2:active {
   transform: translate(-50%, -50%);
   pointer-events: none;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.4);
+  background: white;
   will-change: transform,width,opacity;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   width: 0;
   opacity: 1;
-  -webkit-transition: width .15s linear,opacity .9s ease-out;
-  transition: width .15s linear,opacity .9s ease-out; }
+  -webkit-transition: width .4s ease,opacity .45s ease-out;
+  transition: width .4s ease,opacity .45s ease-out; }
 
 .legitRipple-ripple:before {
   content: "";
   padding-top: 100%;
-  display: block; }
+  display: block;
+  opacity: 0; }
 
 img ~ .legitRipple-ripple {
   z-index: auto; }

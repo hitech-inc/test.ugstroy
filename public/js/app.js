@@ -1,1 +1,1 @@
-var xPos,yPos;$(".Btn").click(function(o){xPos=event.pageX,yPos=event.pageY,console,log(xPos,yPos)}),$(".Btn").ripple({scaleMode:!1,maxDiameter:"100%",fixedPos:[xPos,yPos]});
+"use strict";$(".Btn").ripple({maxDiameter:"5em",dragging:!1,scaleMode:0});

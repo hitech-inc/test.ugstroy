@@ -1,13 +1,7 @@
-var xPos,yPos;
+"use strict";
 
-$(".Btn").click(function(e){
-	xPos = event.pageX;
-	yPos = event.pageY;
-	console.log(xPos." ".yPos);
+$(".Btn").ripple({
+	maxDiameter: "5em",
+    dragging: false,
+    scaleMode: 0
 });
-
-	$(".Btn").ripple({
-	  scaleMode: false,
-	  maxDiameter: "100%",
-	  fixedPos: [xPos, yPos]
-	});

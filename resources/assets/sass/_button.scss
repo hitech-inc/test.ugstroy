@@ -80,3 +80,11 @@ a.Btn-2:active {
   background-color: #fcca00f0 !important;
 } 
  */
+
+.Btn {
+  transition: background-color 0.1s linear;
+  background-color: #fff !important;
+}
+ .Btn:hover {
+  background-color: #fcca00  !important ;
+ }
