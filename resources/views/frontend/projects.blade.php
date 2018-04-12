@@ -51,20 +51,35 @@
 			<img src="/img/finished.png" alt="more-text">
 		</div>
 		<div class="pf-right">
+
 			<div class="pfr-row-1">
-				<div class="finished-slide">
-					<div class="bbb">
-						<h3>15-этажный дом</h3>
-						<h1>«Төбе»</h1>
+<!-- 				<div class="finished-slide">
+			  	@foreach($projects as $project)
+    <div class="bbb item">
+      		<h3>{{$project->type}}</h3>
+			<h1>{{$project->title}}</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nihil.</p>
+			<a href="{{route('object',[$project->slug])}}" class="Btn">Посмотреть</a>						
+    </div>
+			    @endforeach
+</div> -->
+			<div class="owl-carousel owl-theme">
+				@foreach($projects as $project)
+			    <div class="item" data-hash="finished-{{$project->id}}">
+			      		<h3>{{$project->type}}</h3>
+						<h1>{{$project->title}}</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nihil.</p>
-						<a href="#" class="Btn">Посмотреть</a>
-					</div>
-				</div>
+						<a href="{{route('object',[$project->slug])}}" class="Btn">Посмотреть</a>						
+			    </div>
+			    @endforeach
+			</div>
 				<div class="pickline">
-					<div></div>
-					<div></div>
+					@foreach($projects as $project)
+					<div><a href="#finished-{{$project->id}}"></a></div>
+					@endforeach
 				</div>
 			</div>
+
 			<div class="pfr-row-2">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis repellendus perspiciatis libero debitis temporibus laudantium nam, distinctio deleniti enim dignissimos. Excepturi delectus, modi, eos culpa non facilis officia, nisi, eius animi possimus sit veritatis! Ab ducimus, officia facilis obcaecati enim.</p>
 			</div>

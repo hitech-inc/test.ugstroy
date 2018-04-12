@@ -12,8 +12,9 @@
         <div>
             <form action="{{ route('filter') }}" method="get" style="width: 300px; display: flex;">
                 <select name="category" id="category" class="form-control">
-                    <option value="Построенные объекты">Построенные объекты</option>
-                    <option value="Строящиеся объекты">Строящиеся объекты</option>
+                    <option value="Завершенные">Завершенные</option>
+                    <option value="Незавершенные">Незавершенные</option>
+                    <option value="Запланированные">Запланированные</option>
                 </select>
                 <input type="submit" value="Filter">
             </form>

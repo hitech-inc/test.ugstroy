@@ -28,9 +28,8 @@ class FrontendController extends Controller
     public function projects()
     {
         $menus = $this->getMenu();
-
-
-        return view('frontend.projects',compact('menus'));
+        $projects = Project::all();
+        return view('frontend.projects',compact('menus','projects'));
     }
 
     public function services()
@@ -45,13 +44,6 @@ class FrontendController extends Controller
         $menus = $this->getMenu();
 
         return view('frontend.contacts',compact('menus'));
-    }
-
-    public function objects($id)
-    {
-        $menus = $this->getMenu();
-        $objects = Project::all()->where('category',$id);
-        return view('frontend.objects',compact('menus','objects'));
     }
 
     public function object($slug)

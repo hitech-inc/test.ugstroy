@@ -171,69 +171,6 @@
 				width: 100%;
 				height: 80%;
 				position: relative;
-				.finished-slide {
-					z-index: 99;
-					width: 100%;
-					height: 100%;
-					position: absolute;
-					top: 0;
-					left: 0;
-					background: url(../img/f-obj.jpg) no-repeat;
-					background-size: cover;
-					background-position: top center;
-					.bbb {
-						position: absolute;
-						top: 0;
-						left: 0;
-						width: 100%;
-						height: 100%;
-						padding-left: 10%;
-						background-color: rgba(0,0,0,0.4);
-						@include flex();
-						justify-content: center;
-						flex-direction: column;
-						h1 {
-							font-size: 7em;
-							line-height: 1em;
-						}
-						h3 {
-							font-size: 2em;
-							margin-bottom: 0;
-						}
-						p {
-							width: 40%;
-							font-size: 1.2em;
-							line-height: 1em;
-						}
-						a {
-							width: 180px;
-							background-color: $orange-bg-color;
-							display: block;
-							height: 35px;
-							line-height: 35px;
-							font-size: 1.3em;
-							text-align: center;									
-						}
-					}
-				}
-				.pickline {
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					width: 100%;
-					z-index: 100;
-					@include flex();
-					height: 15px;
-					div {
-						height: 100%;
-						flex: 1;
-						margin-right: 5px;
-						background-color: $orange-bg-color;
-					}
-					div:last-child {
-						margin-right: 0;
-					}
-				}
 			}
 			.pfr-row-2 {
 				width: 100%;
@@ -531,4 +468,85 @@ and (min-width: 1920px) {
 			width: 1800px;
 		}
 	}
+}
+
+
+/////////////////////////////////////////////////////////////////////////
+.owl-carousel,
+.owl-stage-outer,
+.owl-stage,
+.owl-item {
+	height: 100%;
+}
+
+.owl-carousel {
+	overflow: hidden;
+}
+.owl-item {
+	background-color: yellow;
+	z-index: 1;
+}
+
+.item {
+	height: 100%;
+	@include flex();
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: rgba(0,0,0,0.4);
+	padding-left: 10%;
+	h1 {
+		font-size: 7em;
+		line-height: 1em;
+	}
+	h3 {
+		font-size: 2em;
+		margin-bottom: 0;
+	}
+	p {
+		width: 40%;
+		font-size: 1.2em;
+		line-height: 1em;
+	}
+	a {
+		width: 180px;
+		background-color: $orange-bg-color;
+		display: block;
+		height: 35px;
+		line-height: 35px;
+		font-size: 1.3em;
+		text-align: center;									
+	}
+}
+
+
+.pickline {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	@include flex();
+	height: 15px;
+	div {
+		height: 100%;
+		flex: 1;
+		margin-right: 5px;
+		background-color: $orange-bg-color;
+		a {
+			display: block;
+			height: 100%;
+		}
+		a.active {
+			background-color: #e4b700;
+		}
+	}
+	div:last-child {
+		margin-right: 0;
+	}
+}
+
+@keyframes fill {
+    from {width: 0;}
+    to {width: 100%;}
 }

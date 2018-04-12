@@ -1,1 +1,1 @@
-"use strict";$(".Btn").ripple({maxDiameter:"5em",dragging:!1,scaleMode:0});
+"use strict";$(".Btn").ripple({maxDiameter:"5em",dragging:!1,scaleMode:0}),$(".owl-carousel").owlCarousel({loop:!0,margin:10,responsive:{0:{items:1}},autoplay:!0,autoplaySpeed:1e3,autoplayTimeout:5e3,autoplayHoverPause:!0,URLhashListener:!0,startPosition:"URLHash"});

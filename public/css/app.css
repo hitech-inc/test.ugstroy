@@ -7420,68 +7420,6 @@ img ~ .legitRipple-ripple {
         width: 100%;
         height: 80%;
         position: relative; }
-        #p-finished .pf-container .pf-right .pfr-row-1 .finished-slide {
-          z-index: 99;
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          background: url(../img/f-obj.jpg) no-repeat;
-          background-size: cover;
-          background-position: top center; }
-          #p-finished .pf-container .pf-right .pfr-row-1 .finished-slide .bbb {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            padding-left: 10%;
-            background-color: rgba(0, 0, 0, 0.4);
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
-            display: flex;
-            justify-content: center;
-            flex-direction: column; }
-            #p-finished .pf-container .pf-right .pfr-row-1 .finished-slide .bbb h1 {
-              font-size: 7em;
-              line-height: 1em; }
-            #p-finished .pf-container .pf-right .pfr-row-1 .finished-slide .bbb h3 {
-              font-size: 2em;
-              margin-bottom: 0; }
-            #p-finished .pf-container .pf-right .pfr-row-1 .finished-slide .bbb p {
-              width: 40%;
-              font-size: 1.2em;
-              line-height: 1em; }
-            #p-finished .pf-container .pf-right .pfr-row-1 .finished-slide .bbb a {
-              width: 180px;
-              background-color: #fcca00;
-              display: block;
-              height: 35px;
-              line-height: 35px;
-              font-size: 1.3em;
-              text-align: center; }
-        #p-finished .pf-container .pf-right .pfr-row-1 .pickline {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          z-index: 100;
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flex;
-          display: -o-flex;
-          display: flex;
-          height: 15px; }
-          #p-finished .pf-container .pf-right .pfr-row-1 .pickline div {
-            height: 100%;
-            flex: 1;
-            margin-right: 5px;
-            background-color: #fcca00; }
-          #p-finished .pf-container .pf-right .pfr-row-1 .pickline div:last-child {
-            margin-right: 0; }
       #p-finished .pf-container .pf-right .pfr-row-2 {
         width: 100%;
         height: 20%; }
@@ -7750,6 +7688,81 @@ img ~ .legitRipple-ripple {
     height: 1440px; }
     #p-plan .pp-container {
       width: 1800px; } }
+
+.owl-carousel,
+.owl-stage-outer,
+.owl-stage,
+.owl-item {
+  height: 100%; }
+
+.owl-carousel {
+  overflow: hidden; }
+
+.owl-item {
+  background-color: yellow;
+  z-index: 1; }
+
+.item {
+  height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-left: 10%; }
+  .item h1 {
+    font-size: 7em;
+    line-height: 1em; }
+  .item h3 {
+    font-size: 2em;
+    margin-bottom: 0; }
+  .item p {
+    width: 40%;
+    font-size: 1.2em;
+    line-height: 1em; }
+  .item a {
+    width: 180px;
+    background-color: #fcca00;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.3em;
+    text-align: center; }
+
+.pickline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  height: 15px; }
+  .pickline div {
+    height: 100%;
+    flex: 1;
+    margin-right: 5px;
+    background-color: #fcca00; }
+    .pickline div a {
+      display: block;
+      height: 100%; }
+    .pickline div a.active {
+      background-color: #e4b700; }
+  .pickline div:last-child {
+    margin-right: 0; }
+
+@keyframes fill {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
 
 #about-block {
   width: 100%;

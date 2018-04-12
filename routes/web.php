@@ -17,8 +17,7 @@ Route::get('/services/{slug}', 'FrontendController@getServicePage');
 Route::get('/about', 'FrontendController@about');
 Route::get('/all-projects', 'FrontendController@projects');
 Route::get('/contacts', 'FrontendController@contacts');
-Route::get('/objects/{id}', 'FrontendController@objects')->name('object');
-Route::get('/object/{slug}', 'FrontendController@object')->name('object_page');
+Route::get('/object/{slug}', 'FrontendController@object')->name('object');
 
 // test
 Route::get('testobject', 'FrontendController@test');
