@@ -8124,7 +8124,6 @@ img ~ .legitRipple-ripple {
 
 @media only screen and (min-width: 1920px) {
   .mainImg {
-<<<<<<< HEAD
     height: 770px; }
   .mainImg h3 {
     font-size: 4em; }
@@ -8215,7 +8214,7 @@ img ~ .legitRipple-ripple {
 
 .mycontainer {
   width: 100%;
-  padding: 0 120px 50px 50px; }
+  padding: 0 120px 0 50px; }
 
 #myrotated-2 {
   position: absolute;
@@ -8224,12 +8223,6 @@ img ~ .legitRipple-ripple {
   width: 108px; }
   #myrotated-2 img {
     max-width: 100%; }
-=======
-    height: 740px; }
-    .mainImg p {
-      font-size: 1.2em;
-      line-height: 1em; } }
->>>>>>> ed23abb92ca9a346b7306f2da3f1e6074660c6ed
 
 footer {
   width: 100%;
