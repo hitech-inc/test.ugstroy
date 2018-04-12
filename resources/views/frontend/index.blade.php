@@ -5,7 +5,7 @@
 	<h3>Основано 2000</h3>
 	<h1>Мы работаем и нам доверяют</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.</p>
-	<a href="#button">Связаться с нами</a>
+	<a href="#button" class="Btn">Связаться с нами</a>
 </div>
 <div id="second-block">
 	<div class="container-2">
@@ -107,7 +107,7 @@
 				<div id="const-text">
 					<h3>#Лучшие конструкции</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consectetur temporibus veritatis amet sapiente minima ex. Iste ut qui debitis, voluptatem reiciendis aspernatur distinctio porro, nulla, nostrum totam asperiores nemo.</p>
-					<a href="#want-to-buy">Хочу купить квартиру у вас!</a>
+					<a href="#want-to-buy" class="Btn-2">Хочу купить квартиру у вас!</a>
 				</div>
 				<div id="const-building">
 					<img src="img/building.png" alt="building">

@@ -44,7 +44,6 @@
 }
 
 #nav {
-	margin-top: -15px;
 	height: 100%;
 	width: 840px;
 	float: left; 
@@ -65,7 +64,6 @@
 }
 
 #search {
-	margin-top: -15px;
 	float: right;
 	@include flex();
 	align-items: center;
@@ -243,7 +241,11 @@ and(max-width: 1439px){
 // NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY NEXT MEDIA QUERY 
 @media only screen
 and(min-width: 1920px) {
-	#nav {
-		margin-top: 0px;
-	}
+#nav {
+	margin-top: 0px;
+}
+#search {
+	margin-top: 0;
+}
+
 }
