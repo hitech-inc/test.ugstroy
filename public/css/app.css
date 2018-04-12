@@ -6885,7 +6885,7 @@ img ~ .legitRipple-ripple {
             line-height: 40px;
             text-align: center;
             font-size: 1.5em;
-            background-color: #fcca00;
+            background-color: #fcca00 !important;
             margin-left: 10px; }
         #constructions .container-construct .right #right-top #const-building {
           width: 62%;

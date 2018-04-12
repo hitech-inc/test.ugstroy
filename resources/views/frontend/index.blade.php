@@ -107,7 +107,7 @@
 				<div id="const-text">
 					<h3>#Лучшие конструкции</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consectetur temporibus veritatis amet sapiente minima ex. Iste ut qui debitis, voluptatem reiciendis aspernatur distinctio porro, nulla, nostrum totam asperiores nemo.</p>
-					<a href="#want-to-buy" class="Btn-2">Хочу купить квартиру у вас!</a>
+					<a href="#want-to-buy" class="Btn">Хочу купить квартиру у вас!</a>
 				</div>
 				<div id="const-building">
 					<img src="img/building.png" alt="building">

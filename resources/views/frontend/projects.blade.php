@@ -18,7 +18,7 @@
 			<div class="lp-center">
 				<h3>Дом вашей мечты</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, ex, dolorum! Reiciendis quas tempora ducimus rerum possimus beatae fugit dolore amet, illo minima facilis suscipit at accusamus, eligendi nemo quos soluta ut eveniet. Error in, corrupti, veritatis quae odit adipisci suscipit eveniet at fugit fugiat eum numquam inventore aliquam dignissimos iste laborum hic, sunt itaque ea dolores autem blanditiis! Amet aliquid beatae exercitationem esse, aliquam aut sed laborum animi ullam!</p>
-				<a href="#"  class="Btn-2">Стать в очередь</a>
+				<a href="#"  class="Btn">Стать в очередь</a>
 			</div>
 			<div class="lp-center">
 				<img src="/img/building2.png" alt="building">
@@ -57,7 +57,7 @@
 						<h3>15-этажный дом</h3>
 						<h1>«Төбе»</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nihil.</p>
-						<a href="#" class="Btn-2">Посмотреть</a>
+						<a href="#" class="Btn">Посмотреть</a>
 					</div>
 				</div>
 				<div class="pickline">
@@ -80,7 +80,7 @@
 						<h3>7-этажный дом</h3>
 						<h1>«Жетеу»</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nihil.</p>
-						<a href="#" class="Btn-2">Посмотреть</a>
+						<a href="#" class="Btn">Посмотреть</a>
 					</div>
 				</div>
 				<div class="pickline2">
@@ -109,7 +109,7 @@
 						<h3>Жилой комплекс</h3>
 						<h1>«Көкжиек»</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nihil.</p>
-						<a href="#" class="Btn-2">Посмотреть</a>
+						<a href="#" class="Btn">Посмотреть</a>
 					</div>
 				</div>
 				<div class="pp-pickline">
