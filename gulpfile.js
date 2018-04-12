@@ -18,7 +18,7 @@ gulp.task('sass', function () {
 // Scripts Task
 // JS
 gulp.task('scripts', function () {
-  	gulp.src(['resources/assets/js/*.js','node_modules/dropzone/dist/dropzone.js'])
+  	gulp.src(['resources/assets/js/*.js'])
     .pipe(plumber())
   	.pipe(uglify())
     .pipe(gulp.dest('public/js'));

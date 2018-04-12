@@ -20,6 +20,9 @@
 
 
 
-	<script src="/js/script.js"></script>
+
+	<script src="/js/jquery.js"></script>
+	<script src="/js/ripple.js"></script>
+	<script src="/js/app.js"></script>
 </body>
 </html>

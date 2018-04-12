@@ -1,8 +1,13 @@
-include("a.js");
-var a = 5;
-console.log('It is from assets/js');
-function include(url) {
-    var script = document.createElement('script');
-    script.src = url;
-    document.getElementsByTagName('head')[0].appendChild(script);
-}
+var xPos,yPos;
+
+$(".Btn").click(function(e){
+	xPos = event.pageX;
+	yPos = event.pageY;
+	console.log(xPos." ".yPos);
+});
+
+	$(".Btn").ripple({
+	  scaleMode: false,
+	  maxDiameter: "100%",
+	  fixedPos: [xPos, yPos]
+	});

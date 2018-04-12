@@ -1,1 +1,1 @@
-include("a.js");var a=5;function include(e){var a=document.createElement("script");a.src=e,document.getElementsByTagName("head")[0].appendChild(a)}console.log("It is from assets/js");
+var xPos,yPos;$(".Btn").click(function(o){xPos=event.pageX,yPos=event.pageY,console,log(xPos,yPos)}),$(".Btn").ripple({scaleMode:!1,maxDiameter:"100%",fixedPos:[xPos,yPos]});
