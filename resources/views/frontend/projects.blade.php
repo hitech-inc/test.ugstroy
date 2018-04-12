@@ -63,16 +63,18 @@
     </div>
 			    @endforeach
 </div> -->
-			<div class="owl-carousel owl-theme">
-				@foreach($projects as $project)
-			    <div class="item" data-hash="finished-{{$project->id}}">
-			      		<h3>{{$project->type}}</h3>
-						<h1>{{$project->title}}</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nihil.</p>
-						<a href="{{route('object',[$project->slug])}}" class="Btn">Посмотреть</a>						
-			    </div>
-			    @endforeach
-			</div>
+				<div class="owl-carousel owl-theme">
+					@foreach($projects as $project)
+				    <div class="item" data-hash="finished-{{$project->id}}" style="background-image: url('/img/f-obj.jpg');">
+				    	<div>
+				      		<h3>{{$project->type}}</h3>
+							<h1>{{$project->title}}</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nihil.</p>
+							<a href="{{route('object',[$project->slug])}}" class="Btn">Посмотреть</a>
+						</div>
+				    </div>
+				    @endforeach
+				</div>
 				<div class="pickline">
 					@foreach($projects as $project)
 					<div><a href="#finished-{{$project->id}}"></a></div>

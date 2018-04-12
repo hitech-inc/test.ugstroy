@@ -488,36 +488,43 @@ and (min-width: 1920px) {
 }
 
 .item {
+	width: 100%;
 	height: 100%;
-	@include flex();
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	background-color: rgba(0,0,0,0.4);
-	padding-left: 10%;
-	h1 {
-		font-size: 7em;
-		line-height: 1em;
-	}
-	h3 {
-		font-size: 2em;
-		margin-bottom: 0;
-	}
-	p {
-		width: 40%;
-		font-size: 1.2em;
-		line-height: 1em;
-	}
-	a {
-		width: 180px;
-		background-color: $orange-bg-color;
-		display: block;
-		height: 35px;
-		line-height: 35px;
-		font-size: 1.3em;
-		text-align: center;									
-	}
+	background-size: cover;
+	background-position: top center;
+	div {
+		height: 100%;
+		@include flex();
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		background-color: rgba(0,0,0,0.4);
+		padding-left: 10%;
+		h1 {
+			font-size: 7em;
+			line-height: 1em;
+		}
+		h3 {
+			font-size: 2em;
+			margin-bottom: 0;
+		}
+		p {
+			width: 40%;
+			font-size: 1.2em;
+			line-height: 1em;
+		}
+		a {
+			width: 180px;
+			background-color: $orange-bg-color;
+			display: block;
+			height: 35px;
+			line-height: 35px;
+			font-size: 1.3em;
+			text-align: center;									
+		}
+	}	
 }
+
 
 
 .pickline {
