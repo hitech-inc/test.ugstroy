@@ -56,6 +56,33 @@
 }
 
 @media only screen
+<<<<<<< HEAD
+and(min-width: 1920px){
+	.mainImg{
+		height: 770px;
+	}
+
+	.mainImg{
+		h3{
+			font-size: 4em;
+		}
+
+		p{
+			font-size: 1.2em;
+		}
+	}
+
+	.serviceDesc{
+		h3{
+			font-size: 2.5em;
+		}
+
+		p, a{
+			font-size: 1.5em;
+		}
+	}
+} 
+=======
 and (min-width: 1920px) {
 .mainImg {
 	height: 740px;
@@ -66,3 +93,4 @@ and (min-width: 1920px) {
 }
 
 }
+>>>>>>> ed23abb92ca9a346b7306f2da3f1e6074660c6ed

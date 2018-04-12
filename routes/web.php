@@ -20,6 +20,9 @@ Route::get('/contacts', 'FrontendController@contacts');
 Route::get('/objects/{id}', 'FrontendController@objects')->name('object');
 Route::get('/object/{slug}', 'FrontendController@object')->name('object_page');
 
+// test
+Route::get('testobject', 'FrontendController@test');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

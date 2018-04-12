@@ -73,4 +73,10 @@ class FrontendController extends Controller
         return $menu;
     }
 
+    public function test()
+    {
+        $menus = $this->getMenu();
+        return view('frontend.object', compact('menus'));
+    }
+
 }
