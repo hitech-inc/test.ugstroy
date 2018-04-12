@@ -89,9 +89,36 @@
 		<div id="myrotated-2">
 				<img src="img/gallery.png" alt="more-text">
 			</div>
-		<!-- <div></div>		 -->
 	</div>
+	<div id="c-map">
+  <div class="cm-container">
+    <div class="cm-left">
+      <img src="/img/on_map.png" alt="more-text">
+    </div>
+    <div class="cm-right">
+      <div id="map"></div>
+    </div>
+  </div>
 </div>
 </div>
+</div>
+
+<script>
+function initMap() {
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: {lat: 42.349610, lng: 69.551717}
+  });
+  var marker = new google.maps.Marker({
+    position: {lat: 42.349610, lng: 69.551717},
+    map: map,
+    title: 'Hello World!'
+  });
+
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKfwH806ZqKTrWyaP6eHXRr-75xigyovY&callback=initMap"
+    async defer></script>
 @endsection
 
