@@ -114,7 +114,7 @@
 
 #choose-block {
 	width: 100%;
-	height: 800px;
+	height: 1000px;
 	.container-flat {
 		width: 1300px;
 		height: 100%;
@@ -131,7 +131,7 @@
 			}
 		}
 		.right {
-			width: 87.5%;
+			width: 82.5%;
 			height: 100%;
 			float: right;
 			@include flex();
@@ -140,7 +140,7 @@
 			.top-line {
 				box-shadow: -2px 0 1px #ddd, 0 -2px 1px #ddd, 2px 0 1px #ddd;
 				width: 100%; 
-				height: 10%;
+				height: 8%;
 				@include flex();
 				justify-content: center;
 				align-items: center; 
@@ -169,18 +169,14 @@
 			#flat {
 				box-shadow: -2px 0 1px #ddd, 2px 0 1px #ddd;
 				width: 100%;
-				height: 70%;
-				.fbox {
-					width: 100%;
-					height: 100%;
-					background-color: #444;
-				}
+				height: 75%;
+				overflow: hidden;
 			}
 			.bot-line {
 				text-transform: uppercase;
 				box-shadow: -2px 0 1px #ddd, 0 2px 1px #ddd, 2px 0 1px #ddd;
 				width: 100%;
-				height: 10%;
+				height: 8%;
 				.bl:first-child {
 					width: 70%;
 					height: 100%;
@@ -232,3 +228,4 @@
 		}
 	}
 }  
+

@@ -60,8 +60,48 @@
 					</div>					
 				</div>
 				<div id="flat">
-					<div class="fbox">
-						<img src="" alt="">
+					<div class="fbox-blocks">
+						<a href="#third-block">						
+							<img src="/img/b31.png" alt="" class="b31">
+					        <img src="/img/b32.png" alt="" class="b32"></a>
+						<a href="#second-block">
+							<img src="/img/b21.png" alt="" class="b21">
+							<img src="/img/b22.png" alt="" class="b22">
+						</a>
+						<a href="#first-block">
+							<img src="/img/b11.png" alt="" class="b11">
+							<img src="/img/b12.png" alt="" class="b12">
+						</a>
+						<img src="/img/grass.png" alt="" class="grass">
+						<p>Выберите блок</p>
+					</div>
+					<div class="fbox-floors">	
+						<img src="/img/dom_behind.png" class="dom_behind">
+							<img src="/img/dom_light.png" alt="" class="dom_light">	
+			
+						
+							<img src="/img/dom.png" alt="" class="dom" usemap="#image-map">
+<map name="image-map">
+    <area target="" alt="" title="" href="#15" coords="424,67,6,38" shape="rect" class="area-15">
+    <area target="" alt="" title="" href="#14" coords="422,70,7,97" shape="rect" class="area-14">
+    <area target="" alt="" title="" href="#13" coords="9,100,422,126" shape="rect" class="area-13">
+    <area target="" alt="" title="" href="#12" coords="9,154,422,129" shape="rect" class="area-12">
+    <area target="" alt="" title="" href="#11" coords="7,157,422,185" shape="rect" class="area-11">
+    <area target="" alt="" title="" href="#10" coords="8,187,422,215" shape="rect" class="area-10">
+    <area target="" alt="" title="" href="#9" coords="7,246,421,218" shape="rect" class="area-9">
+    <area target="" alt="" title="" href="#8" coords="7,248,421,276" shape="rect" class="area-8">
+    <area target="" alt="" title="" href="#7" coords="8,278,420,306" shape="rect" class="area-7">
+    <area target="" alt="" title="" href="#6" coords="8,308,421,334" shape="rect" class="area-6">
+    <area target="" alt="" title="" href="#5" coords="8,336,421,363" shape="rect" class="area-5">
+    <area target="" alt="" title="" href="#4" coords="9,365,421,395" shape="rect" class="area-4">
+    <area target="" alt="" title="" href="#3" coords="9,396,421,425" shape="rect" class="area-3">
+    <area target="" alt="" title="" href="#2" coords="8,426,422,456" shape="rect" class="area-2">
+    <area target="" alt="" title="" href="#1" coords="8,458,421,483" shape="rect" class="area-1">
+</map>
+						
+						
+						<img src="/img/grass.png" alt="" class="grass">
+						<p>Выберите блок</p>
 					</div>
 				</div>
 				<div class="bot-line">
