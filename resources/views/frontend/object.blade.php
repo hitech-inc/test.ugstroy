@@ -31,6 +31,51 @@
 			</div>
 		</div>
 	</div>
+	<div id="choose-block">
+		<div class="container-flat">
+			<div class="left">
+				<img src="/img/choose.png" alt="">
+			</div>
+			<div class="right">
+				<div class="top-line">
+					<div>
+						<p>ТӨБЕ</p>
+						<p>Жилой дом</p>
+					</div>
+					<div>
+						<p>01</p>
+						<p>блок</p>
+					</div>
+					<div>
+						<p>7 / 15</p>
+						<p>количество этажей</p>
+					</div>	
+					<div>
+						<p>3x</p>
+						<p>количество комнат</p>
+					</div>	
+					<div>
+						<p>120 м<sup>2</sup></p>
+						<p>общая площадь</p>
+					</div>					
+				</div>
+				<div id="flat">
+					<div class="fbox">
+						<img src="" alt="">
+					</div>
+				</div>
+				<div class="bot-line">
+					<div class="bl">
+						<p>Вы выбрали:</p>
+						<p>Блок 1 / 13 этаж / 55 кв (SNKB1-55)</p>
+					</div>
+					<div class="bl">
+						<a href="#rrr" class="Btn">Отправить заявку</a>
+					</div>		
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="objectDesc">
 		<p>Жилой комплекс включает четыре 15-ти этажных дома. Со стороны проспект Тауке хана и бульвара Конаева предусмотрены гостевые автостоянки на 100 места. Просторная детская площадка, благоустроенная дворовая площадка, вся свободная от застройки территория засажена деревьями</p>
 		<p>Общая площадь квартир: 300000 м2</p>

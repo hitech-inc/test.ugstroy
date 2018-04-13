@@ -41,7 +41,21 @@ $(".owl-carousel").owlCarousel({
     URLhashListener:true,
     startPosition: 'URLHash'
 });
-
+$(".owl-car").owlCarousel({
+ 	loop:true,
+    margin:10,
+    responsive:{
+        0:{
+            items:4
+        }
+    },
+    autoplay:true,
+    autoplaySpeed:1000,
+	autoplayTimeout: 5000,
+    autoplayHoverPause:true,
+    URLhashListener:true,
+    startPosition: 'URLHash'
+});
 
 
 /*var numberOfSlide,
