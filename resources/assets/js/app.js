@@ -74,112 +74,25 @@ function timer() {
 
 */
 
-/*пытался сделать выбор этажа*/
-/*var heightFloorBox = 750,
-    widthFloorBox = 1072.5;
-var absoluteY,
-    absoluteX;
-
-var floor1 = '10',
-    floor2 = '15',
-    floor3 = '20',
-    floor4 = '25',
-    floor5 = '30',
-    floor6 = '35',
-    floor7 = '40',
-    floor8 = '45',
-    floor9 = '50',
-    floor10 = '55',
-    floor11 = '60',
-    floor12 = '70',
-    floor13 = '75',
-    floor14 = '80',
-    floor15 = '90';
 
 
-$(".fbox-floors").mousemove(function(e) {
-  var offset = $(this).offset();
-  var relativeX = (e.pageX - offset.left);
-  var relativeY = (e.pageY - offset.top); 
-  absoluteY = relativeY / heightFloorBox * 100;
-  absoluteX = relativeX / widthFloorBox * 100;
 
-  if(absoluteY < 6.66 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor1 + '%');
-    $('.tofloor').attr("href", "5");
-  }
 
-  if(absoluteY <  && absoluteY > 6.66 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor2 + '%');
-    $('.tofloor').attr("href", "5");
-  }
+/*Этот код написан для выбора этажа*/
 
-  if(absoluteY < 70 && absoluteY > 50 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor3 + '%');
-    $('.tofloor').attr("href", "5");
-  }
+var heightOfBlock = 750,
+    widthOfBlock = 1072.5,
+    relativeY;
 
-  if(absoluteY < 70 && absoluteY > 50 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor4 + '%');
-    $('.tofloor').attr("href", "5");
-  }
+$('area').mousemove(function(){
+    var coords = $(this).attr('coords');
+    var StringY = coords.split(",");
+    var y = Number(StringY[1]); 
+    relativeY = y/heightOfBlock * 100;
+    console.log(relativeY);
+    var bottom = 100 - relativeY - 14.6;
 
-  if(absoluteY < 70 && absoluteY > 50 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor5 + '%');
-    $('.tofloor').attr("href", "5");
-  }
 
-  if(absoluteY < 70 && absoluteY > 50 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor6 + '%');
-    $('.tofloor').attr("href", "5");
-  }
+    $('.dom_light').css('bottom', bottom + '%');
+});
 
-  if(absoluteY < 70 && absoluteY > 50 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor7 + '%');
-    $('.tofloor').attr("href", "5");
-  }
-
-  if(absoluteY < 70 && absoluteY > 50 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor8 + '%');
-    $('.tofloor').attr("href", "5");
-  }
-
-  if(absoluteY < 70 && absoluteY > 50 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor9 + '%');
-    $('.tofloor').attr("href", "5");
-  }
-
-  if(absoluteY < 70 && absoluteY > 50 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor10 + '%');
-    $('.tofloor').attr("href", "5");
-  }
-
-  if(absoluteY < 70 && absoluteY > 50 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor11 + '%');
-    $('.tofloor').attr("href", "5");
-  }
-
-  if(absoluteY < 70 && absoluteY > 50 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor12 + '%');
-    $('.tofloor').attr("href", "5");
-  }
-
-  if(absoluteY < 70 && absoluteY > 50 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor13 + '%');
-    $('.tofloor').attr("href", "5");
-  }
-
-  if(absoluteY < 70 && absoluteY > 50 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor14 + '%');
-    $('.tofloor').attr("href", "5");
-  }
-
-  if(absoluteY < 70 && absoluteY > 50 && absoluteX > 30 && absoluteX < 70){
-    $('.dom_light').css('bottom',floor15 + '%');
-    $('.tofloor').attr("href", "5");
-  }
-
-    console.log(absoluteX + '   ' + absoluteY);
-        
-
-});*/

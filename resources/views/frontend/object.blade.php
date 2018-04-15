@@ -78,30 +78,65 @@
 					<div class="fbox-floors">	
 						<img src="/img/dom_behind.png" class="dom_behind">
 							<img src="/img/dom_light.png" alt="" class="dom_light">	
-			
-						
-							<img src="/img/dom.png" alt="" class="dom" usemap="#image-map">
-<map name="image-map">
-    <area target="" alt="" title="" href="#15" coords="424,67,6,38" shape="rect" class="area-15">
-    <area target="" alt="" title="" href="#14" coords="422,70,7,97" shape="rect" class="area-14">
-    <area target="" alt="" title="" href="#13" coords="9,100,422,126" shape="rect" class="area-13">
-    <area target="" alt="" title="" href="#12" coords="9,154,422,129" shape="rect" class="area-12">
-    <area target="" alt="" title="" href="#11" coords="7,157,422,185" shape="rect" class="area-11">
-    <area target="" alt="" title="" href="#10" coords="8,187,422,215" shape="rect" class="area-10">
-    <area target="" alt="" title="" href="#9" coords="7,246,421,218" shape="rect" class="area-9">
-    <area target="" alt="" title="" href="#8" coords="7,248,421,276" shape="rect" class="area-8">
-    <area target="" alt="" title="" href="#7" coords="8,278,420,306" shape="rect" class="area-7">
-    <area target="" alt="" title="" href="#6" coords="8,308,421,334" shape="rect" class="area-6">
-    <area target="" alt="" title="" href="#5" coords="8,336,421,363" shape="rect" class="area-5">
-    <area target="" alt="" title="" href="#4" coords="9,365,421,395" shape="rect" class="area-4">
-    <area target="" alt="" title="" href="#3" coords="9,396,421,425" shape="rect" class="area-3">
-    <area target="" alt="" title="" href="#2" coords="8,426,422,456" shape="rect" class="area-2">
-    <area target="" alt="" title="" href="#1" coords="8,458,421,483" shape="rect" class="area-1">
-</map>
-						
-						
-						<img src="/img/grass.png" alt="" class="grass">
+							<img src="/img/dom.png" alt="" class="dom" usemap="#image-map-floor">
+							<map name="image-map-floor">
+							    <area target="" alt="" title="" href="#15" coords="272,45,736,76" shape="rect">
+							    <area target="" alt="" title="" href="#14" coords="272,79,735,108" shape="rect">
+							    <area target="" alt="" title="" href="#13" coords="272,112,735,143" shape="rect">
+							    <area target="" alt="" title="" href="#12" coords="274,147,738,176" shape="rect">
+							    <area target="" alt="" title="" href="#11" coords="275,180,738,209" shape="rect">
+							    <area target="" alt="" title="" href="#10" coords="272,212,738,244" shape="rect">
+							    <area target="" alt="" title="" href="#9" coords="272,247,738,277" shape="rect">
+							    <area target="" alt="" title="" href="#8" coords="274,280,738,311" shape="rect"> 
+							    <area target="" alt="" title="" href="#7" coords="275,313,735,347" shape="rect">
+							    <area target="" alt="" title="" href="#6" coords="271,351,739,379" shape="rect">
+							    <area target="" alt="" title="" href="#5" coords="274,383,738,415" shape="rect">
+							    <area target="" alt="" title="" href="#4" coords="275,419,739,447" shape="rect">
+							    <area target="" alt="" title="" href="#3" coords="274,450,738,481" shape="rect">
+							    <area target="" alt="" title="" href="#2" coords="272,485,735,514" shape="rect">
+							    <area target="" alt="" title="" href="#1" coords="272,518,736,545" shape="rect">
+							</map>
 						<p>Выберите блок</p>
+					</div>
+					<div class="fbox-plans">	
+						<img src="/img/plan.png" alt="" class="plan" usemap="#image-map-plan"> 
+						<map name="image-map-plan">
+    <area target="" alt="" title="" href="#3" coords="40,-2,44,178,183,179,179,223,292,220,289,-2" shape="poly">
+    <area target="" alt="" title="" href="#2" coords="0,160,40,160,43,184,178,183,178,226,211,226,211,315,39,314,35,333,3,332" shape="poly">
+    <area target="" alt="" title="" href="#1" coords="44,320,291,324,287,457,256,464,256,489,139,492,139,462,43,460" shape="poly">
+    <area target="" alt="" title="" href="#4" coords="293,9,508,9,509,181,404,185,402,237,334,237,338,221,298,218" shape="poly">
+    <area target="" alt="" title="" href="#5" coords="517,11,663,5,663,40,759,47,763,169,800,172,800,252,660,249,650,226,587,221,583,268,448,270,444,235,410,237,408,190,512,185" shape="poly">
+    <area target="" alt="" title="" href="#6" coords="447,276,585,276,591,232,640,232,640,274,657,261,786,255,795,332,762,335,758,457,666,462,655,489,449,489" shape="poly">
+</map>
+						<p>Выберите планировку</p>
+					</div>
+					<div class="fbox-desc">	
+						<img src="/img/plan-3.png" alt="" class="plan-3">
+						<img src="/img/plan-2.png" alt="" class="plan-2">
+						<img src="/img/plan-1.png" alt="" class="plan-1">
+						<img src="/img/planDesc.png" alt="" class="plan-3d">
+						<ol>
+							<li>Холл	11,5</li>
+							<li>Кухня	13,4</li>
+							<li>Гостиная	 17,4</li>
+							<li>Спальня 	13,9</li>
+							<li>Ванная   	3,3</li>
+							<li>С/у	 2,5</li>
+							<li>Лоджия	 2,6</li>
+						</ol>
+						<a class="requestButton">Оставить заявку</a>
+
+					</div>
+					<div class="fbox-req">	
+
+						<form action="">
+							<label for="name">Имя</label>
+							<input type="text" name="name">
+							<label for="name">Телефон</label>
+							<input type="text" name="phone">
+							<label for="name">Сообщение</label>
+							<textarea name="text"></textarea>
+						</form>
 					</div>
 				</div>
 				<div class="bot-line">
