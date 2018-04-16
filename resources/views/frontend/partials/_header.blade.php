@@ -35,3 +35,58 @@
 		</div>
 	</div>
 </div>
+
+<!-- Success modal styles -->
+<style>
+	.modal{
+		display: block; 
+		opacity: 1;
+	}
+
+	.modal-body{
+		color: #000;
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	.btn-secondary{
+		background-color: #000 !important;
+	}
+
+	#xBtn{
+		color: #000 !important;
+	}
+</style>
+
+@if (Session::has('status'))
+	<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="transform: translate(0, 50%)">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <!-- <span aria-hidden="true" id="xBtn">&times;</span> -->
+                </button>
+            </div>
+            <div class="modal-body">
+                Спасибо, Ваше сообщение отправлено!
+            </div>
+            <div class="modal-footer">
+            	<button id="successBtn" type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Success modal script -->
+<script>
+	var btn = document.getElementById("successBtn");
+	btn.addEventListener("click", closeModalSuccess);
+	function closeModalSuccess()
+	{
+		$(".modal").css({'display':'none','opacity':'0'});
+		$(".close").css({'display':'none','opacity':'0'});
+	}
+</script>
+@endif

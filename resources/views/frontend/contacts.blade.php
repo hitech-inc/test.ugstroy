@@ -5,7 +5,7 @@
   <h1>Эффективная коммуникация</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.</p>
 <!--   <a href="#button">Связаться с нами<span></span><span>Связаться с нами</span></a> -->
-  <a href="#button" class="Btn">Связаться с нами</a>
+  <a href="#modal-callback" class="Btn">Связаться с нами</a>
 </div>
 
 <div id="calls">
@@ -56,6 +56,63 @@
   </div>
 </div>
 
+<!-- Start remodal -->
+<div class="remodal-bg">
+  <div class="remodal" data-remodal-id="modal-callback">
+    <h4>Обратная связь</h4>
+    <form action="/contacts" method="post" name="myForm" onsubmit="return validateForm()">
+      {{ csrf_field() }}
+      <div class="form-group">
+        <input type="text" name="name" class="form-control" placeholder="Ваше имя" id="name">
+      </div>
+      <div class="form-group">
+        <input type="phone" id="phone_mask" name="phone" class="form-control" placeholder="+7 (XXX) XXX-XX-XX">
+      </div>
+      <div class="form-group">
+        <textarea name="text" id="" cols="30" rows="10" class="form-control" placeholder="Ваш текст">
+          
+        </textarea>
+      </div>
+      <button data-remodal-action="close" class="remodal-close"></button>
+      <br>
+      <div class="form-group">
+        <input type="submit" class="remodal-confirm form-control" style="font-size: 1.5rem"></input>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- End remodal -->
+
+<script>
+  function validateForm() {
+    //validate phone
+    var re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,17}(\s*)?$/;
+    var myPhone = document.getElementById('phone_mask').value;
+    var valid = re.test(myPhone);
+
+    // validate name input
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone_mask").value;
+        
+    if (name == ""){
+      $("#name").attr('placeholder', 'Введите Имя').val('').css({'border':'2px solid red'});
+      //return false;
+    }
+    else $("#name").css('border', '2px solid green'); 
+
+    if (phone == ""){
+      $("#phone_mask").attr('placeholder', 'Введите Номер телефона например: +7 (777) 777-7777').val('').css({'border':'2px solid red'});
+        return false;
+    }
+
+    else if(!valid) $("#phone_mask").attr('placeholder', 'Введите например: +7 (777) 777-7777').val('').css({'border':'2px solid red'});
+
+    else $("#phone_mask").css('border', '2px solid green');
+
+      return valid;
+    }
+</script>
+
 <script>
 function initMap() {
 
@@ -68,7 +125,6 @@ function initMap() {
     map: map,
     title: 'Hello World!'
   });
-
 }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKfwH806ZqKTrWyaP6eHXRr-75xigyovY&callback=initMap"

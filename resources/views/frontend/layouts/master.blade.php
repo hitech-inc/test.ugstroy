@@ -3,10 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="csrf-token" content="{{ csrf_token() }}" />
 	<title>Юг Строй Инвест</title>
 	<link rel="stylesheet" href="/css/owl.css">
 	<link rel="stylesheet" href="/css/owl.theme.css">
 	<link rel="stylesheet" href="/css/app.css">
+	<link rel="stylesheet" href="/css/remodal.css">
+	<link rel="stylesheet" href="/css/remodal-default-theme.css">
+	<link rel="stylesheet" href="/css/jquery.sweet-modal.min.css">
 	
 </head>
 <body>
@@ -20,12 +24,54 @@
 		@include('frontend.partials._footer')
 	</footer>
 
-
-
-
 	<script src="/js/jquery.js"></script>
 	<script src="/js/owl.js"></script>
 	<script src="/js/ripple.js"></script>
 	<script src="/js/app.js"></script>
+	<script src="/js/jquery.sweet-modal.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$('#phone_mask').mask('+7 (799) 999-99-99');
+		});
+	</script>
+	
+	<!-- <script>
+				$.ajaxSetup({
+        	headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          }
+        });
+				
+				$('form').on('submit', function(e){
+
+					data = $(this).serialize();
+					console.log(data);
+					url = $(this).attr('action');
+					//console.log(url);
+					$.ajax({
+						url: url,
+						type: 'post',
+						data: data,
+						success: function(data){
+							//console.log(data);
+							$.sweetModal({
+								content: 'Заявка успешно отравлена.',
+								icon: $.sweetModal.ICON_SUCCESS
+							});
+							$("#modal-callback").css({'display':'none'});
+							$(".remodal-bg").css({'display':'none'});
+							$(".remodal").css({'display':'none'});
+							$(".remodal-wrapper").css({'display':'none'});
+							$(".remodal-overlay").css({'display':'none'});
+
+						}
+					});
+					e.preventDefault();
+				});
+		</script> -->
+
+	<script src="/js/remodal.min.js"></script>
+	<script src="/js/jquery.maskedinput.js"></script>
 </body>
 </html>

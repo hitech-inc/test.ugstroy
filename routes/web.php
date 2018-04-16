@@ -16,8 +16,10 @@ Route::get('/services', 'FrontendController@services');
 Route::get('/services/{slug}', 'FrontendController@getServicePage');
 Route::get('/about', 'FrontendController@about');
 Route::get('/all-projects', 'FrontendController@projects');
-Route::get('/contacts', 'FrontendController@contacts');
+// Route::get('/contacts', 'FrontendController@contacts')->name('contacts');
 Route::get('/object/{slug}', 'FrontendController@object')->name('object');
+// Route::post('/sendmail', 'FrontendController@sendmail')->name('sendmail');
+Route::match(['get','post'],'/contacts',['uses' => 'FrontendController@contacts', 'as' => 'contacts']);
 
 // test
 Route::get('testobject', 'FrontendController@test');

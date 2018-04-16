@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Menu;
 use App\Models\Page;
 use App\Models\Project;
+use App\Mail\SendMail;
+use Mail;
 
 class FrontendController extends Controller
 {
@@ -39,11 +41,30 @@ class FrontendController extends Controller
         return view('frontend.services',compact('menus'));
     }
 
-    public function contacts()
+    public function contacts(Request $request)
     {
-        $menus = $this->getMenu();
 
-        return view('frontend.contacts',compact('menus'));
+      if($request->isMethod('post'))
+      {
+        $data = [
+          'name' => $request->name,
+          'phone' => $request->phone,
+          'text' => $request->text
+        ];
+
+        $success = "<script>
+                    <div>$.sweetModal({
+                    content: 'Сообщение успешно отпавлено.',
+                    icon: $.sweetModal.ICON_SUCCESS
+                  });</div></script>";
+
+        Mail::to('advanced315@gmail.com')->send(new SendMail($data));
+
+        return redirect()->route('contacts')->with('status', $success);
+      }
+
+      $menus = $this->getMenu();
+      return view('frontend.contacts',compact('menus'));
     }
 
     public function object($slug)
