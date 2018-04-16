@@ -73,8 +73,9 @@
 		}
 
 .objectDesc{
-	width: 100%;
+	width: 1300px;
 	padding: 50px;
+	margin: 0 auto;
 	p, ul li, ul strong{
 		color: #000;
 		font-size: 1.2rem;
@@ -229,3 +230,12 @@
 	}
 }  
 
+#blockText,
+#floorText,
+#planText,
+#sqText,
+#blockLink,
+#floorLink,
+#planLink {
+	display: none;
+}

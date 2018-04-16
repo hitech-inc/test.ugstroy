@@ -96,3 +96,87 @@ $('area').mousemove(function(){
     $('.dom_light').css('bottom', bottom + '%');
 });
 
+
+
+/***********************************/
+
+$('.blockButton').click(function(){
+    var id = $(this).data('id');
+    $('.fbox-blocks').hide();
+    $('.fbox-floors').fadeIn();
+    $('#blockLink').show();
+    $('#blockText').show();
+    document.getElementById("blockText").innerHTML = id;
+    document.getElementById("blockLink").innerHTML = id + " блок";
+});
+
+$('#blockLink').click(function(){
+    $('.fbox-req').hide();
+    $('.fbox-desc').hide();
+    $('.fbox-plans').hide();
+    $('.fbox-floors').hide();
+    $('.fbox-blocks').show();
+
+    $('#blockLink').hide();
+    $('#blockText').hide();
+    $('#floorLink').hide();
+    $('#floorText').hide();
+    $('#planLink').hide();
+    $('#planText').hide();
+    $('#sqText').hide();
+});
+/***********************************/
+
+$('.floorButton').click(function(){
+    var floor = $(this).attr('title');
+    $('.fbox-floors').hide();
+    $('.fbox-plans').fadeIn();
+    $('#floorLink').show();
+    $('#floorText').show();
+    document.getElementById("floorText").innerHTML = floor + " / 15";
+    document.getElementById("floorLink").innerHTML = floor + " этаж";
+});
+
+$('#floorLink').click(function(){
+    $('.fbox-req').hide();
+    $('.fbox-desc').hide();
+    $('.fbox-plans').hide();
+    $('.fbox-floors').show();
+
+    $('#floorLink').hide();
+    $('#floorText').hide();
+    $('#planLink').hide();
+    $('#planText').hide();
+    $('#sqText').hide();
+});
+
+/***********************************/
+
+$('.planButton').click(function(){
+    var plan = $(this).attr('title');
+    var square = $(this).data('sq');
+    $('.fbox-plans').hide();
+    $('.fbox-desc').fadeIn();
+    $('#planLink').show();
+    $('#planText').show();
+    $('#sqText').show();
+    document.getElementById("planText").innerHTML = plan;
+    document.getElementById("sqText").innerHTML = square + " м<sup>2</sup>";
+    document.getElementById("planLink").innerHTML = plan + " (SNKB1-55)";
+});
+
+$('#planLink').click(function(){
+    $('.fbox-req').hide();
+    $('.fbox-desc').hide();
+    $('.fbox-plans').show();
+
+    $('#planLink').hide();
+    $('#planText').hide();
+    $('#sqText').hide();
+});
+/********************************/
+
+$('.requestButton').click(function(){
+    $('.fbox-desc').hide();
+    $('.fbox-req').slideDown();
+});

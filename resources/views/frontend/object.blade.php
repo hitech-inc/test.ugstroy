@@ -43,36 +43,36 @@
 						<p>Жилой дом</p>
 					</div>
 					<div>
-						<p>01</p>
+						<p id="blockText">01</p>
 						<p>блок</p>
 					</div>
 					<div>
-						<p>7 / 15</p>
+						<p id="floorText">7 / 15</p>
 						<p>количество этажей</p>
 					</div>	
 					<div>
-						<p>3x</p>
+						<p id="planText">3x</p>
 						<p>количество комнат</p>
 					</div>	
 					<div>
-						<p>120 м<sup>2</sup></p>
+						<p id="sqText"></p>
 						<p>общая площадь</p>
 					</div>					
 				</div>
 				<div id="flat">
 					<div class="fbox-blocks">
-						<a href="#third-block">						
+						<a href="#third-block" class="blockButton" data-id="C">	
 							<img src="/img/b31.png" alt="" class="b31">
 					        <img src="/img/b32.png" alt="" class="b32"></a>
-						<a href="#second-block">
+						<a href="#second-block" class="blockButton" data-id="B">
 							<img src="/img/b21.png" alt="" class="b21">
 							<img src="/img/b22.png" alt="" class="b22">
 						</a>
-						<a href="#first-block">
+						<a href="#first-block" class="blockButton" data-id="A">
 							<img src="/img/b11.png" alt="" class="b11">
 							<img src="/img/b12.png" alt="" class="b12">
 						</a>
-						<img src="/img/grass.png" alt="" class="grass">
+						<img src="/img/grass.png" alt="" class="grass" >
 						<p>Выберите блок</p>
 					</div>
 					<div class="fbox-floors">	
@@ -80,33 +80,33 @@
 							<img src="/img/dom_light.png" alt="" class="dom_light">	
 							<img src="/img/dom.png" alt="" class="dom" usemap="#image-map-floor">
 							<map name="image-map-floor">
-							    <area target="" alt="" title="" href="#15" coords="272,45,736,76" shape="rect">
-							    <area target="" alt="" title="" href="#14" coords="272,79,735,108" shape="rect">
-							    <area target="" alt="" title="" href="#13" coords="272,112,735,143" shape="rect">
-							    <area target="" alt="" title="" href="#12" coords="274,147,738,176" shape="rect">
-							    <area target="" alt="" title="" href="#11" coords="275,180,738,209" shape="rect">
-							    <area target="" alt="" title="" href="#10" coords="272,212,738,244" shape="rect">
-							    <area target="" alt="" title="" href="#9" coords="272,247,738,277" shape="rect">
-							    <area target="" alt="" title="" href="#8" coords="274,280,738,311" shape="rect"> 
-							    <area target="" alt="" title="" href="#7" coords="275,313,735,347" shape="rect">
-							    <area target="" alt="" title="" href="#6" coords="271,351,739,379" shape="rect">
-							    <area target="" alt="" title="" href="#5" coords="274,383,738,415" shape="rect">
-							    <area target="" alt="" title="" href="#4" coords="275,419,739,447" shape="rect">
-							    <area target="" alt="" title="" href="#3" coords="274,450,738,481" shape="rect">
-							    <area target="" alt="" title="" href="#2" coords="272,485,735,514" shape="rect">
-							    <area target="" alt="" title="" href="#1" coords="272,518,736,545" shape="rect">
+							    <area class="floorButton" alt="" title="15" href="#15" coords="272,45,736,76" shape="rect">
+							    <area class="floorButton" alt="" title="14" href="#14" coords="272,79,735,108" shape="rect">
+							    <area class="floorButton" alt="" title="13" href="#13" coords="272,112,735,143" shape="rect">
+							    <area class="floorButton" alt="" title="12" href="#12" coords="274,147,738,176" shape="rect">
+							    <area class="floorButton" alt="" title="11" href="#11" coords="275,180,738,209" shape="rect">
+							    <area class="floorButton" alt="" title="10" href="#10" coords="272,212,738,244" shape="rect">
+							    <area class="floorButton" alt="" title="9" href="#9" coords="272,247,738,277" shape="rect">
+							    <area class="floorButton" alt="" title="8" href="#8" coords="274,280,738,311" shape="rect"> 
+							    <area class="floorButton" alt="" title="7" href="#7" coords="275,313,735,347" shape="rect">
+							    <area class="floorButton" alt="" title="6" href="#6" coords="271,351,739,379" shape="rect">
+							    <area class="floorButton" alt="" title="5" href="#5" coords="274,383,738,415" shape="rect">
+							    <area class="floorButton" alt="" title="4" href="#4" coords="275,419,739,447" shape="rect">
+							    <area class="floorButton" alt="" title="3" href="#3" coords="274,450,738,481" shape="rect">
+							    <area class="floorButton" alt="" title="2" href="#2" coords="272,485,735,514" shape="rect">
+							    <area class="floorButton" alt="" title="1" href="#1" coords="272,518,736,545" shape="rect">
 							</map>
 						<p>Выберите блок</p>
 					</div>
 					<div class="fbox-plans">	
 						<img src="/img/plan.png" alt="" class="plan" usemap="#image-map-plan"> 
 						<map name="image-map-plan">
-    <area target="" alt="" title="" href="#3" coords="40,-2,44,178,183,179,179,223,292,220,289,-2" shape="poly">
-    <area target="" alt="" title="" href="#2" coords="0,160,40,160,43,184,178,183,178,226,211,226,211,315,39,314,35,333,3,332" shape="poly">
-    <area target="" alt="" title="" href="#1" coords="44,320,291,324,287,457,256,464,256,489,139,492,139,462,43,460" shape="poly">
-    <area target="" alt="" title="" href="#4" coords="293,9,508,9,509,181,404,185,402,237,334,237,338,221,298,218" shape="poly">
-    <area target="" alt="" title="" href="#5" coords="517,11,663,5,663,40,759,47,763,169,800,172,800,252,660,249,650,226,587,221,583,268,448,270,444,235,410,237,408,190,512,185" shape="poly">
-    <area target="" alt="" title="" href="#6" coords="447,276,585,276,591,232,640,232,640,274,657,261,786,255,795,332,762,335,758,457,666,462,655,489,449,489" shape="poly">
+    <area class="planButton" alt="" title="2" href="#3" data-sq="80" coords="40,-2,44,178,183,179,179,223,292,220,289,-2" shape="poly">
+    <area class="planButton" alt="" title="1" href="#2" data-sq="50" coords="0,160,40,160,43,184,178,183,178,226,211,226,211,315,39,314,35,333,3,332" shape="poly">
+    <area class="planButton" alt="" title="2" href="#1" data-sq="92" coords="44,320,291,324,287,457,256,464,256,489,139,492,139,462,43,460" shape="poly">
+    <area class="planButton" alt="" title="2" href="#4" data-sq="85" coords="293,9,508,9,509,181,404,185,402,237,334,237,338,221,298,218" shape="poly">
+    <area class="planButton" alt="" title="3" href="#5" data-sq="120" coords="517,11,663,5,663,40,759,47,763,169,800,172,800,252,660,249,650,226,587,221,583,268,448,270,444,235,410,237,408,190,512,185" shape="poly">
+    <area class="planButton" alt="" title="3" href="#6" data-sq="135" coords="447,276,585,276,591,232,640,232,640,274,657,261,786,255,795,332,762,335,758,457,666,462,655,489,449,489" shape="poly">
 </map>
 						<p>Выберите планировку</p>
 					</div>
@@ -129,7 +129,7 @@
 					</div>
 					<div class="fbox-req">	
 
-						<form action="">
+						<form action="" id="req_form">
 							<label for="name">Имя</label>
 							<input type="text" name="name">
 							<label for="name">Телефон</label>
@@ -142,10 +142,10 @@
 				<div class="bot-line">
 					<div class="bl">
 						<p>Вы выбрали:</p>
-						<p>Блок 1 / 13 этаж / 55 кв (SNKB1-55)</p>
+						<p><a id="blockLink">Блок 1</a> / <a id="floorLink">13 этаж</a> / <a id="planLink">55 кв (SNKB1-55)</a> </p>
 					</div>
 					<div class="bl">
-						<a href="#rrr" class="Btn">Отправить заявку</a>
+						<a href="#rrr" class="Btn" type="submit" form="data">Отправить заявку</a>
 					</div>		
 				</div>
 			</div>

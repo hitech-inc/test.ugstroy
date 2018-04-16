@@ -8222,8 +8222,9 @@ img ~ .legitRipple-ripple {
         line-height: 1em; }
 
 .objectDesc {
-  width: 100%;
-  padding: 50px; }
+  width: 1300px;
+  padding: 50px;
+  margin: 0 auto; }
   .objectDesc p, .objectDesc ul li, .objectDesc ul strong {
     color: #000;
     font-size: 1.2rem;
@@ -8368,6 +8369,15 @@ img ~ .legitRipple-ripple {
             #choose-block .container-flat .right .bot-line .bl:last-child a:hover {
               background-color: #fcca00 !important; }
 
+#blockText,
+#floorText,
+#planText,
+#sqText,
+#blockLink,
+#floorLink,
+#planLink {
+  display: none; }
+
 .fbox-blocks {
   width: 100%;
   height: 100%;
@@ -8375,7 +8385,7 @@ img ~ .legitRipple-ripple {
   background-size: cover;
   background-position: top center;
   position: relative;
-  display: none; }
+  display: block; }
   .fbox-blocks img {
     position: absolute; }
   .fbox-blocks .grass {
@@ -8568,7 +8578,7 @@ a.requestButton {
   width: 100%;
   height: 100%;
   background: #f3f3f3;
-  display: block; }
+  display: none; }
   .fbox-req * {
     text-transform: uppercase;
     color: #000;
