@@ -66,7 +66,7 @@
 			<div class="row-2">
 				@foreach($services as $service)
 				@if($loop->index!=0)
-				<div><a href="{{$service->category}}/{{$service->slug}}"><img src="img/{{$service->img}}" alt="service-small"></a></div>
+				<div><a href="#service-type"><img src="img/{{$service->img}}" alt="service-small"></a></div>
 				@endif
 				@endforeach
 			</div>
