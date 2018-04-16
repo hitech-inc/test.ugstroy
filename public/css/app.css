@@ -6544,6 +6544,7 @@ img ~ .legitRipple-ripple {
         justify-content: center;
         align-items: center; }
         #more-info .container-more-info .container-more .row-more:last-child div {
+          cursor: pointer;
           flex: 0 0 23%;
           height: 75%;
           padding: 15px 20px;
@@ -6551,7 +6552,8 @@ img ~ .legitRipple-ripple {
           margin: 0 3px;
           color: #000;
           box-sizing: border-box;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          transition: height .5s ease; }
           #more-info .container-more-info .container-more .row-more:last-child div h3 {
             width: 100%; }
           #more-info .container-more-info .container-more .row-more:last-child div p {
@@ -6559,12 +6561,11 @@ img ~ .legitRipple-ripple {
             color: #000;
             line-height: 1.2em;
             font-size: 0.95em; }
-        #more-info .container-more-info .container-more .row-more:last-child div.chosen {
+        #more-info .container-more-info .container-more .row-more:last-child div:hover {
           background-color: #fcca00;
-          flex: 0 0 21%;
           height: 85%;
           color: #fff; }
-          #more-info .container-more-info .container-more .row-more:last-child div.chosen p {
+          #more-info .container-more-info .container-more .row-more:last-child div:hover p {
             color: #fff; }
     #more-info .container-more-info div:last-child {
       width: 80px;

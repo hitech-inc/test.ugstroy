@@ -46,6 +46,7 @@
 				justify-content: center;
 				align-items: center;
 				div {
+					cursor: pointer;
 					flex: 0 0 23%;
 					height: 75%;
 					padding: 15px 20px;
@@ -54,6 +55,7 @@
 					color: $main-text-color;
 					box-sizing: border-box;
 					text-transform: uppercase;
+					transition: height .5s ease;
 					h3 {
 						width: 100%;
 					}
@@ -64,13 +66,12 @@
 						font-size: 0.95em;
 					}
 				}
-				div.chosen {
+				div:hover {
 					background-color: #fcca00;
-					flex: 0 0 21%;
 					height: 85%;
 					color: $text-color;
 					p {
-						color: $text-color;
+						color: $text-color; 
 					}
 				}
 			}
