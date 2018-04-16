@@ -8372,7 +8372,7 @@ img ~ .legitRipple-ripple {
           justify-content: center;
           align-items: center; }
           #choose-block .container-flat .right .bot-line .bl:last-child a {
-            display: block;
+            display: none;
             width: 60%;
             height: 40px;
             background-color: #eee !important;
@@ -8389,6 +8389,29 @@ img ~ .legitRipple-ripple {
 #floorLink,
 #planLink {
   display: none; }
+
+#blockLink,
+#floorLink,
+#planLink,
+area {
+  cursor: pointer; }
+
+.backButton {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 2.5em !important;
+  color: #000 !important;
+  cursor: pointer;
+  box-shadow: -2px 0 3px #aaa, 0 2px 3px #aaa, 2px 0 3px #aaa, 0 -2px 3px #aaa; }
+  .backButton:hover {
+    box-shadow: -3px 0 3px #5f5f5f, 0 3px 3px #5f5f5f, 3px 0 3px #5f5f5f, 0 -3px 3px #5f5f5f; }
 
 @media only screen and (min-width: 1920px) {
   .containerObject {
@@ -8487,7 +8510,7 @@ img ~ .legitRipple-ripple {
     left: 25%; }
   .fbox-floors .dom_light {
     width: 44%;
-    bottom: 16.1%;
+    bottom: 0%;
     left: 25%; }
   .fbox-floors p {
     position: absolute;
@@ -8564,6 +8587,7 @@ a.requestButton {
   line-height: 40px;
   text-align: center;
   z-index: 3;
+  cursor: pointer;
   border-radius: 0 0 10px 10px;
   box-shadow: -1px 0 3px #ddd, 1px 0 3px #ddd, 0 1px 3px #ddd; }
   a.requestButton:after {
@@ -8599,7 +8623,8 @@ a.requestButton {
   width: 100%;
   height: 100%;
   background: #f3f3f3;
-  display: none; }
+  display: none;
+  position: relative; }
   .fbox-req * {
     text-transform: uppercase;
     color: #000;

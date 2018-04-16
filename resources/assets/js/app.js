@@ -78,21 +78,21 @@ function timer() {
 
 
 
+
 /*Этот код написан для выбора этажа*/
 
 var heightOfBlock = 750,
     widthOfBlock = 1072.5,
     relativeY;
 
-$('area').mousemove(function(){
+$('.fbox-floors area').mousemove(function(){
+
     var coords = $(this).attr('coords');
     var StringY = coords.split(",");
     var y = Number(StringY[1]); 
     relativeY = y/heightOfBlock * 100;
     console.log(relativeY);
     var bottom = 100 - relativeY - 14.6;
-
-
     $('.dom_light').css('bottom', bottom + '%');
 });
 
@@ -106,6 +106,7 @@ $('.blockButton').click(function(){
     $('.fbox-floors').fadeIn();
     $('#blockLink').show();
     $('#blockText').show();
+    $("#dis").hide();
     document.getElementById("blockText").innerHTML = id;
     document.getElementById("blockLink").innerHTML = id + " блок";
 });
@@ -117,6 +118,7 @@ $('#blockLink').click(function(){
     $('.fbox-floors').hide();
     $('.fbox-blocks').show();
 
+    $("#dis").hide();
     $('#floorLink').hide();
     $('#floorText').hide();
     $('#planLink').hide();
@@ -131,6 +133,7 @@ $('.floorButton').click(function(){
     $('.fbox-plans').fadeIn();
     $('#floorLink').show();
     $('#floorText').show();
+    $("#dis").hide();
     document.getElementById("floorText").innerHTML = floor + " / 15";
     document.getElementById("floorLink").innerHTML = floor + " этаж";
 });
@@ -141,6 +144,7 @@ $('#floorLink').click(function(){
     $('.fbox-plans').hide();
     $('.fbox-floors').show();
 
+    $("#dis").hide();
     $('#planLink').hide();
     $('#planText').hide();
     $('#sqText').hide();
@@ -156,6 +160,7 @@ $('.planButton').click(function(){
     $('#planLink').show();
     $('#planText').show();
     $('#sqText').show();
+        $("#dis").hide();
     document.getElementById("planText").innerHTML = plan;
     document.getElementById("sqText").innerHTML = square + " м<sup>2</sup>";
     document.getElementById("planLink").innerHTML = plan + " (SNKB1-55)";
@@ -166,6 +171,7 @@ $('#planLink').click(function(){
     $('.fbox-desc').hide();
     $('.fbox-plans').show();
 
+    $("#dis").hide();
     $('#sqText').hide();
 });
 /************** ОСТАВИТЬ ЗАЯВКУ ******************/
@@ -173,4 +179,39 @@ $('#planLink').click(function(){
 $('.requestButton').click(function(){
     $('.fbox-desc').hide();
     $('.fbox-req').slideDown();
+    $("#dis").show();
+});
+
+/************** КНОПКА НАЗАД OBJECT******************/
+
+$('.backButton').click(function(e){
+    e.preventDefault();
+    var id = $(this).data('id');
+    switch(id) {
+        case 1:
+            $('.fbox-floors').hide();
+            $('.fbox-blocks').show();
+            $('#floorLink').hide();
+            $('#floorText').hide();
+            $('#planLink').hide();
+            $('#planText').hide();
+            $('#sqText').hide();
+            break;
+        case 2:
+            $('.fbox-plans').hide();
+            $('.fbox-floors').show();
+            $('#planLink').hide();
+            $('#planText').hide();
+            $('#sqText').hide();
+            break;
+        case 3:
+            $('.fbox-desc').hide();
+            $('.fbox-plans').show();
+            $('#sqText').hide();
+            break;
+        case 4:
+            $('.fbox-req').hide();
+            $('.fbox-desc').show();
+            break;
+    }
 });

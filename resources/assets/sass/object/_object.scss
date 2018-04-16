@@ -212,7 +212,7 @@
 					justify-content: center;
 					align-items: center;
 					a {
-						display: block;
+						display: none;
 						width: 60%;
 						height: 40px;
 						background-color: #eee !important;
@@ -239,9 +239,32 @@
 	display: none;
 }
 
+#blockLink,
+#floorLink,
+#planLink,
+area  {
+	cursor: pointer;
+}
 
 
-
+.backButton {
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	display: block;
+	width: 44px;
+	height: 44px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 2.5em !important;
+	color: #000 !important;
+	cursor: pointer;
+	box-shadow: -2px 0 3px #aaa, 0 2px 3px #aaa, 2px 0 3px #aaa, 0 -2px 3px #aaa;
+	&:hover {
+		box-shadow: -3px 0 3px #5f5f5f, 0 3px 3px #5f5f5f, 3px 0 3px #5f5f5f, 0 -3px 3px #5f5f5f;
+	}
+}
 
 
 

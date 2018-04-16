@@ -28,7 +28,6 @@
 		}
 	}
 }
-
 a.requestButton {
 	display: block;
 	position: absolute;
@@ -42,6 +41,7 @@ a.requestButton {
 	line-height: 40px;
 	text-align: center;
 	z-index: 3;
+	cursor: pointer;
 	border-radius: 0 0 10px 10px;
 	box-shadow: -1px 0 3px #ddd, 1px 0 3px #ddd, 0 1px 3px #ddd;
 	&:after {

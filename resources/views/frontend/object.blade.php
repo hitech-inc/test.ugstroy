@@ -72,6 +72,7 @@
 						<p>Выберите блок</p>
 					</div>
 					<div class="fbox-floors">	
+						<a href="" class="backButton" data-id="1"><</a>	
 						<img src="/img/dom_behind.png" class="dom_behind">
 							<img src="/img/dom_light.png" alt="" class="dom_light">	
 							<img src="/img/dom.png" alt="" class="dom" usemap="#image-map-floor">
@@ -94,7 +95,8 @@
 							</map>
 						<p>Выберите блок</p>
 					</div>
-					<div class="fbox-plans">	
+					<div class="fbox-plans">
+						<a href="" class="backButton" data-id="2"><</a>	
 						<img src="/img/plan.png" alt="" class="plan" usemap="#image-map-plan"> 
 						<map name="image-map-plan">
     <area class="planButton" alt="" title="2" href="#3" data-sq="80" coords="40,-2,44,178,183,179,179,223,292,220,289,-2" shape="poly">
@@ -106,7 +108,8 @@
 </map>
 						<p>Выберите планировку</p>
 					</div>
-					<div class="fbox-desc">	
+					<div class="fbox-desc">
+						<a class="backButton" data-id="3"><</a>	
 						<img src="/img/plan-3.png" alt="" class="plan-3">
 						<img src="/img/plan-2.png" alt="" class="plan-2">
 						<img src="/img/plan-1.png" alt="" class="plan-1">
@@ -124,10 +127,10 @@
 
 					</div>
 					<div class="fbox-req">	
-
+						<a class="backButton" data-id="4"><</a>
 						<form action="" id="req_form">
 							<label for="name">Имя</label>
-							<input type="text" name="name">
+							<input type="text" name="name"> 
 							<label for="name">Телефон</label>
 							<input type="text" name="phone">
 							<label for="name">Сообщение</label>
@@ -141,7 +144,7 @@
 						<p><a id="blockLink">Блок 1</a> / <a id="floorLink">13 этаж</a> / <a id="planLink">55 кв (SNKB1-55)</a> </p>
 					</div>
 					<div class="bl">
-						<a href="#rrr" class="Btn" type="submit" form="data">Отправить заявку</a>
+						<a href="#rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr" class="Btn" id ="dis" type="submit" form="data">Отправить заявку</a>
 					</div>		
 				</div>
 			</div>
