@@ -10,24 +10,20 @@
 			ndard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
 			type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
 			essentially unchanged. It was popularised in the 2000s with the release of Letraset sheets containing Lorem Ipsum</p>
-			<a href="#" title="СВЯЗАТЬСЯ С НАМИ">СВЯЗАТЬСЯ С НАМИ</a>
+			<a href="#contact" class="Btn" title="СВЯЗАТЬСЯ С НАМИ">СВЯЗАТЬСЯ С НАМИ</a>
 		</div>
-		<div class="lprojects-row-3">
-			<div class="lp3-left">
+		<div class="or-right">
+			<div>
+				<p>500</p>
+				<p>Продаются квартир</p>
 			</div>
-			<div class="lp3-right">
-				<div>
-					<p>500</p>
-					<p>Продаются квартир</p>
-				</div>
-				<div>
-					<p>2000</p>
-					<p>Квартир продано</p>
-				</div>
-				<div>
-					<p>350</p>
-					<p>Ожидают</p>
-				</div>
+			<div>
+				<p>2000</p>
+				<p>Квартир продано</p>
+			</div>
+			<div>
+				<p>350</p>
+				<p>Ожидают</p>
 			</div>
 		</div>
 	</div>
@@ -210,19 +206,19 @@
 				<img src="img/gallery.png" alt="more-text">
 			</div>
 	</div>
-	<div id="c-map">
-  <div class="cm-container">
-    <div class="cm-left">
-      <img src="/img/on_map.png" alt="more-text">
-    </div>
-    <div class="cm-right">
-      <div id="map"></div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
 
+</div>
+</div>
+	<div id="c-map">
+	  <div class="cm-container">
+	    <div class="cm-left">
+	      <img src="/img/on_map.png" alt="more-text">
+	    </div>
+	    <div class="cm-right">
+	      <div id="map"></div>
+	    </div>
+	  </div>
+	</div>
 <script>
 function initMap() {
 

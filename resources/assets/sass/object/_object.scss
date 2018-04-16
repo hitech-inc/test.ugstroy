@@ -1,6 +1,5 @@
 .containerObject{
-	width: 100%;
-	max-width: 1920px;
+	width: 1349px;
 	height: auto;
 	margin: 0 auto;
 }
@@ -23,54 +22,54 @@
 		font-size: 5em;
     font-weight: unset;
 	}
+
 }
 
 .objectTopContent{
 	width: 50%;
 	a {
-		background-color: #fcca00;
-		padding: 10px 25px;
+		width: 150px;
+		height: 30px;
+		text-align: center;
+		line-height: 30px;
+		display: block;
+		color: #000;
 	}
 }
 
-.lprojects-row-3 {
-			width: 100%;
-			height: 25%;
-			.lp3-left {
-				width: 30%;
-				float: left;
-				height: 100%;
-			}
-			.lp3-right {
-				width: 70%;
-				float: right;
-				height: 100%;
-				@include flex(); 
-				background-color: $orange-bg-color;
-				justify-content: flex-end;
-				align-items: center;
-				padding-left: 5%;
-				-webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
-				clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
-				div {
-					flex: 0 0 30%;
-					text-align: left;
-					p:first-child {
-						font-size: 2.5em;
-						color: $main-text-color;
-						margin-bottom: 0;
-						line-height: 1em;
-					}
-					p:last-child {
-						text-transform: uppercase;
-						font-size: 1.5em;
-						color: $main-text-color;
-						margin-bottom: 0;
-						line-height: 1em;
-					}					
-				}
-			}
+
+.or-right {
+	width: 70%;
+	height: 16%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	@include flex(); 
+	background-color: $orange-bg-color;
+	justify-content: flex-end;
+	align-items: center;
+	padding-left: 5%;
+	-webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+	div {
+		flex: 0 0 30%;
+		text-align: left;
+		p:first-child {
+			font-size: 2.5em;
+			color: $main-text-color;
+			margin-bottom: 0;
+			line-height: 1em;
 		}
+		p:last-child {
+			text-transform: uppercase;
+			font-size: 1.5em;
+			color: $main-text-color;
+			margin-bottom: 0;
+			line-height: 1em;
+		}					
+	}
+}
+		
 
 .objectDesc{
 	width: 1300px;
@@ -238,4 +237,26 @@
 #floorLink,
 #planLink {
 	display: none;
+}
+
+
+
+
+
+
+
+
+
+@media only screen 
+and (min-width: 1920px) {
+	.containerObject{
+		width: 1903px;
+	}
+	.objectMainImg {
+		width: 100%;
+		height: 740px;
+	}
+	.objectDesc {
+		width: 100%;
+	}
 }

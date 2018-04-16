@@ -98,7 +98,7 @@ $('area').mousemove(function(){
 
 
 
-/***********************************/
+/************** ВЫБОР БЛОКА *********************/
 
 $('.blockButton').click(function(){
     var id = $(this).data('id');
@@ -117,15 +117,13 @@ $('#blockLink').click(function(){
     $('.fbox-floors').hide();
     $('.fbox-blocks').show();
 
-    $('#blockLink').hide();
-    $('#blockText').hide();
     $('#floorLink').hide();
     $('#floorText').hide();
     $('#planLink').hide();
     $('#planText').hide();
     $('#sqText').hide();
 });
-/***********************************/
+/*********** ВЫБОР ЭТАЖА ********/
 
 $('.floorButton').click(function(){
     var floor = $(this).attr('title');
@@ -143,14 +141,12 @@ $('#floorLink').click(function(){
     $('.fbox-plans').hide();
     $('.fbox-floors').show();
 
-    $('#floorLink').hide();
-    $('#floorText').hide();
     $('#planLink').hide();
     $('#planText').hide();
     $('#sqText').hide();
 });
 
-/***********************************/
+/***************** ВЫБОР ПЛАНА ******************/
 
 $('.planButton').click(function(){
     var plan = $(this).attr('title');
@@ -170,11 +166,9 @@ $('#planLink').click(function(){
     $('.fbox-desc').hide();
     $('.fbox-plans').show();
 
-    $('#planLink').hide();
-    $('#planText').hide();
     $('#sqText').hide();
 });
-/********************************/
+/************** ОСТАВИТЬ ЗАЯВКУ ******************/
 
 $('.requestButton').click(function(){
     $('.fbox-desc').hide();
