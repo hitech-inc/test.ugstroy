@@ -6512,6 +6512,7 @@ img ~ .legitRipple-ripple {
       display: flex;
       align-items: center; }
       #more-info .container-more-info #rotated img {
+        animation: slideUp 1.5s ease;
         width: 80px; }
     #more-info .container-more-info .container-more {
       width: 1140px;
@@ -6590,6 +6591,16 @@ img ~ .legitRipple-ripple {
           height: 89%; }
     #more-info .container-more-info div:last-child {
       width: 220px; } }
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    margin-top: 1000px; }
+  50% {
+    opacity: 0.4; }
+  100% {
+    opacity: 1;
+    margin-top: 0; } }
 
 #services {
   width: 100%;
