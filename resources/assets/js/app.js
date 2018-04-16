@@ -19,13 +19,14 @@ setInterval(function(){
 clearAllTimers();*/
 
 
-
+/************** ЭФФЕКТ ПАДЕНИЯ КАПЛИ ************/
 $(".Btn").ripple({
 	maxDiameter: "5em",
     dragging: false,
     scaleMode: 0
 });
 
+/************** СЛАЙДЕР НА СТРАНИЦЕ ПРОЕКТЫ ************/
 $(".owl-carousel").owlCarousel({
  	loop:true,
     margin:10,
@@ -76,28 +77,6 @@ function timer() {
 
 
 
-
-
-
-/*Этот код написан для выбора этажа*/
-
-var heightOfBlock = 750,
-    widthOfBlock = 1072.5,
-    relativeY;
-
-$('.fbox-floors area').mousemove(function(){
-
-    var coords = $(this).attr('coords');
-    var StringY = coords.split(",");
-    var y = Number(StringY[1]); 
-    relativeY = y/heightOfBlock * 100;
-    console.log(relativeY);
-    var bottom = 100 - relativeY - 14.6;
-    $('.dom_light').css('bottom', bottom + '%');
-});
-
-
-
 /************** ВЫБОР БЛОКА *********************/
 
 $('.blockButton').click(function(){
@@ -126,6 +105,20 @@ $('#blockLink').click(function(){
     $('#sqText').hide();
 });
 /*********** ВЫБОР ЭТАЖА ********/
+var heightOfBlock = 750,
+    widthOfBlock = 1072.5,
+    relativeY;
+
+$('.fbox-floors area').mousemove(function(){
+
+    var coords = $(this).attr('coords');
+    var StringY = coords.split(",");
+    var y = Number(StringY[1]); 
+    relativeY = y/heightOfBlock * 100;
+    console.log(relativeY);
+    var bottom = 100 - relativeY - 14.6;
+    $('.dom_light').css('bottom', bottom + '%');
+});
 
 $('.floorButton').click(function(){
     var floor = $(this).attr('title');
