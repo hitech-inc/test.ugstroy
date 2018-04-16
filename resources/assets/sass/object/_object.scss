@@ -260,9 +260,10 @@ area  {
 	font-size: 2.5em !important;
 	color: #000 !important;
 	cursor: pointer;
-	box-shadow: -2px 0 3px #aaa, 0 2px 3px #aaa, 2px 0 3px #aaa, 0 -2px 3px #aaa;
+	z-index: 10000;
+	box-shadow: -1px 0 2px #eee, 0 1px 2px #eee, 1px 0 2px #eee, 0 -1px 2px #eee;
 	&:hover {
-		box-shadow: -3px 0 3px #5f5f5f, 0 3px 3px #5f5f5f, 3px 0 3px #5f5f5f, 0 -3px 3px #5f5f5f;
+		box-shadow: -1px 0 2px #ddd, 0 1px 2px #ddd, 1px 0 2px #ddd, 0 -1px 2px #ddd;
 	}
 }
 
