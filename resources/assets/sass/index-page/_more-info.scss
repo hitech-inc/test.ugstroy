@@ -13,6 +13,7 @@
 			@include flex();
 			align-items: center;
 			img {
+				animation: slideUp 1.5s ease;
 				width: 80px;
 			}
 		}
@@ -46,6 +47,7 @@
 				justify-content: center;
 				align-items: center;
 				div {
+					cursor: pointer;
 					flex: 0 0 23%;
 					height: 75%;
 					padding: 15px 20px;
@@ -54,6 +56,7 @@
 					color: $main-text-color;
 					box-sizing: border-box;
 					text-transform: uppercase;
+					transition: height .5s ease;
 					h3 {
 						width: 100%;
 					}
@@ -64,13 +67,12 @@
 						font-size: 0.95em;
 					}
 				}
-				div.chosen {
+				div:hover {
 					background-color: #fcca00;
-					flex: 0 0 21%;
 					height: 85%;
 					color: $text-color;
 					p {
-						color: $text-color;
+						color: $text-color; 
 					}
 				}
 			}
@@ -129,4 +131,20 @@ and (min-width: 1920px) {
 }
 
 
+}
+
+
+
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		margin-top: 1000px;
+	}
+	50% {
+		opacity: 0.4;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
 }

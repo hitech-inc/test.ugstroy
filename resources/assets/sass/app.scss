@@ -38,10 +38,12 @@
 @import "services"; 
 
 // OBJECT PAGE
-@import "object";
-
-
-
+@import "object/object";
+@import "object/object_blocks";
+@import "object/object_floors";
+@import "object/object_plans";
+@import "object/object_desc";
+@import "object/object_req";
 // FOOTER
 
 @import "footer";

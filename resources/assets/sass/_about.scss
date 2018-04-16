@@ -25,8 +25,9 @@
 } 
 
 #about-text {
-	width: 100%;
+	width: 1349px;
 	height: 850px;
+	margin: 0 auto;
 	position: relative;
 	.text-container {
 		padding-top: 40px;
@@ -112,6 +113,7 @@ and (min-width: 1920px) {
 		}
 	}
 	#about-text {
+		width: 1903px;
 		height: 950px;
 		.text-container {
 			width: 1800px;

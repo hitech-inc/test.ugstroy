@@ -53,16 +53,6 @@
 		<div class="pf-right">
 
 			<div class="pfr-row-1">
-<!-- 				<div class="finished-slide">
-			  	@foreach($projects as $project)
-    <div class="bbb item">
-      		<h3>{{$project->type}}</h3>
-			<h1>{{$project->title}}</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nihil.</p>
-			<a href="{{route('object',[$project->slug])}}" class="Btn">Посмотреть</a>						
-    </div>
-			    @endforeach
-</div> -->
 				<div class="owl-carousel owl-theme">
 					@foreach($projects as $project)
 				    <div class="item" data-hash="finished-{{$project->id}}" style="background-image: url('/img/f-obj.jpg');">
@@ -92,17 +82,22 @@
 	<div class="pnf-container">
 		<div class="pnf-left">
 			<div class="pnfr-row-1">
-				<div class="not-finished-slide">
-					<div class="ccc">
-						<h3>7-этажный дом</h3>
-						<h1>«Жетеу»</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nihil.</p>
-						<a href="#" class="Btn">Посмотреть</a>
-					</div>
+				<div class="owl-carousel owl-theme">
+					@foreach($projects as $project)
+				    <div class="item" data-hash="not-finished-{{$project->id}}" style="background-image: url('/img/f-obj.jpg');">
+				    	<div>
+				      		<h3>{{$project->type}}</h3>
+							<h1>{{$project->title}}</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nihil.</p>
+							<a href="{{route('object',[$project->slug])}}" class="Btn">Посмотреть</a>
+						</div>
+				    </div>
+				    @endforeach
 				</div>
-				<div class="pickline2">
-					<div></div>
-					<div></div>
+				<div class="pickline">
+					@foreach($projects as $project)
+					<div><a href="#not-finished-{{$project->id}}"></a></div>
+					@endforeach
 				</div>
 			</div>
 			<div class="pnfr-row-2">
