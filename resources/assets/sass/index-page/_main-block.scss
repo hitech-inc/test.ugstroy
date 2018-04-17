@@ -15,9 +15,10 @@
 		text-transform: none;
 		font-size: 0.9em;
 		width: 50%;
+    display: none;
   }
 	a {
-		display: block;
+    display: none;
 		width: 180px;
 		height: 45px;
 		background-color: #fff;
@@ -25,10 +26,12 @@
 		font-size: 1.3em;
 	}
 	h1 {
+    display: none;
 		font-size: 3.5em;
 		font-weight: unset;
 	}
   h3 {
+    display: none;
     margin-bottom: 0;
   }
 } 

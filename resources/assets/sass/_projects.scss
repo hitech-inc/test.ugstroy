@@ -11,26 +11,29 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-  p {
-  	line-height: 1em;
-  	text-transform: none;
-	font-size: 0.9em;
-	width: 50%;
-  }
+	p {
+		display: none;
+	  	line-height: 1em;
+	  	text-transform: none;
+		font-size: 0.9em;
+		width: 50%;
+	}
 	a {
+		display: none;
 		width: 240px;
 		background-color: $orange-bg-color;
-		display: block;
 		height: 45px;
 		line-height: 45px;
 		font-size: 1.3em;
 	}
 	h1 {
+		display: none;
 		line-height: 1em;
 		font-size: 3.5em;
 		font-weight: unset;
 	}
 	h3 {
+		display: none;
 		margin-bottom: 0;
 	}
 } 

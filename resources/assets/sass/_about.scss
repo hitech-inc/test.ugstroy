@@ -12,12 +12,14 @@
 	align-items: center;
 	justify-content: center;
   p {
+  	display: none;
   	line-height: 1em;
   	text-transform: none;
 	font-size: 0.9em;
 	width: 50%;
   }
 	h1 {
+		display: none;
 		line-height: 1em;
 		font-size: 3.5em;
 		font-weight: unset;

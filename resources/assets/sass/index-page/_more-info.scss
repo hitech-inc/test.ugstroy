@@ -136,18 +136,3 @@ and (min-width: 1920px) {
 }
 
 
-
-@keyframes slideUp {
-	0% {
-		opacity: 0;
-		margin-left: -1000px;
-	}
-	50% {
-		opacity: 0.4;
-		margin-left: 50px;
-	}
-	100% {
-		opacity: 1;
-		margin-left: 0;
-	}
-}

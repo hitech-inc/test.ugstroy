@@ -15,16 +15,18 @@
 	align-items: center;
 	flex-direction: column;
 	h3 {
+		display: none;
 		text-align: center;
 		font-size: 3.5em;
-    font-weight: unset;
+    	font-weight: unset;
 	}
 
 	p {
+		display: none;
 		text-transform: none;
-    font-size: 0.9em;
-    width: 50%;
-    text-align: center;
+    	font-size: 0.9em;
+    	width: 50%;
+    	text-align: center;
 	}
 }
 
@@ -32,7 +34,7 @@
 	width: 100%;
 	padding: 50px;
 
-	.row {
+	.row { 
 		margin: 50px 0;
 	}
 }
