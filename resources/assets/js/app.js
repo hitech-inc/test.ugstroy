@@ -208,3 +208,14 @@ $('.backButton').click(function(e){
             break;
     }
 });
+
+
+/*****************/
+$(window).scroll(function(){
+    if($(window).scrollTop() >= 900){
+        $("#rotated img").show();
+    }
+})
+
+
+ 

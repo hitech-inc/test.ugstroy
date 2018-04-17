@@ -13,8 +13,10 @@
 			@include flex();
 			align-items: center;
 			img {
-				animation: slideUp 1.5s ease;
+				animation: slideUp 1s ease;
 				width: 80px;
+				display: none;
+
 			}
 		}
 		.container-more {
@@ -138,13 +140,14 @@ and (min-width: 1920px) {
 @keyframes slideUp {
 	0% {
 		opacity: 0;
-		margin-top: 1000px;
+		margin-left: -1000px;
 	}
 	50% {
 		opacity: 0.4;
+		margin-left: 50px;
 	}
 	100% {
 		opacity: 1;
-		margin-top: 0;
+		margin-left: 0;
 	}
 }
