@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="/css/remodal.css">
 	<link rel="stylesheet" href="/css/remodal-default-theme.css">
 	<link rel="stylesheet" href="/css/jquery.sweet-modal.min.css">
-	
 </head>
 <body>
 	<header>
@@ -32,6 +31,10 @@
 	<script src="/js/jquery.maskedinput.js"></script>
 	<script src="/js/app.js"></script>
 
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.7/js/imageMapResizer.min.js"></script>
+
+	@yield('scripts')
 
 </body>
 </html>

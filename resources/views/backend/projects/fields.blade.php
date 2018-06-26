@@ -28,14 +28,14 @@
 
 <!-- Area Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('area', 'Area:') !!}
-    {!! Form::text('area', null, ['class' => 'form-control']) !!}
+    {!! Form::label('img', 'Img:') !!}
+    {!! Form::text('img', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Finish Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('finish', 'Finish:') !!}
-    {!! Form::text('finish', null, ['class' => 'form-control']) !!}
+    {!! Form::label('description', 'description:') !!}
+    {!! Form::text('description', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Lat Field -->
@@ -56,6 +56,23 @@
     {!! Form::text('slug', null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- Slug Field -->
+<div class="form-group col-sm-3">
+    {!! Form::label('address', 'address:') !!}
+    {!! Form::text('address', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Slug Field -->
+<div class="form-group col-sm-3">
+    {!! Form::label('phone', 'phone:') !!}
+    {!! Form::text('phone', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Slug Field -->
+<div class="form-group col-sm-3">
+    {!! Form::label('text', 'text:') !!}
+    {!! Form::textarea('text', null, ['class' => 'form-control']) !!}
+</div>
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}

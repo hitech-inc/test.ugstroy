@@ -30,11 +30,14 @@ class Project extends Model
         'title',
         'category',
         'type',
-        'area',
-        'finish',
+        'img',
+        'description',
         'lat',
         'lng',
-        'slug'
+        'slug',
+        'address',
+        'phone',
+        'text'
     ];
 
     /**
@@ -46,11 +49,14 @@ class Project extends Model
         'title' => 'string',
         'category' => 'string',
         'type' => 'string',
-        'area' => 'string',
-        'finish' => 'string',
+        'img' => 'string',
+        'description' => 'string',
         'lat' => 'string',
         'lng' => 'string',
-        'slug' => 'string'
+        'slug' => 'string',
+        'address' => 'string',
+        'phone' => 'string',
+        'text' => 'text'
     ];
 
     /**
@@ -62,6 +68,9 @@ class Project extends Model
         'title' => 'required',
         'category' => 'required',
         'type' => 'required',
+        'img' => 'required',
+        'description' => 'required',
+        'slug' => 'required',
         'lat' => 'numeric',
         'lng' => 'numeric'
     ];

@@ -4,8 +4,7 @@
             <th>Title</th>
         <th>Category</th>
         <th>Type</th>
-        <th>Area</th>
-        <th>Finish</th>
+        <th>Img</th>
         <th>Slug</th>
             <th colspan="3">Action</th>
         </tr>
@@ -16,8 +15,7 @@
             <td>{!! $project->title !!}</td>
             <td>{!! $project->category !!}</td>
             <td>{!! $project->type !!}</td>
-            <td>{!! $project->area !!}</td>
-            <td>{!! $project->finish !!}</td>
+            <td>{!! $project->img !!}</td>
             <td>{!! $project->slug !!}</td>
             <td>
                 {!! Form::open(['route' => ['projects.destroy', $project->id], 'method' => 'delete']) !!}

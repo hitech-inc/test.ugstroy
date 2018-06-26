@@ -70,7 +70,7 @@ class FrontendController extends Controller
     public function object($slug)
     {
         $menus = $this->getMenu();
-        $object = Project::where('slug',$slug)->first();
+        $object = Project::where('slug', $slug)->first();
         return view('frontend.object',compact('menus'))->with('object', $object);
     }
 

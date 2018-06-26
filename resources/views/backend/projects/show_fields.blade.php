@@ -24,20 +24,38 @@
 
 <!-- Area Field -->
 <div class="form-group">
-    {!! Form::label('area', 'Area:') !!}
-    <p>{!! $project->area !!}</p>
+    {!! Form::label('img', 'Img:') !!}
+    <p>{!! $project->img !!}</p>
 </div>
 
 <!-- Finish Field -->
 <div class="form-group">
-    {!! Form::label('finish', 'Finish:') !!}
-    <p>{!! $project->finish !!}</p>
+    {!! Form::label('description', 'description:') !!}
+    <p>{!! $project->description !!}</p>
 </div>
 
 <!-- Slug Field -->
 <div class="form-group">
     {!! Form::label('slug', 'Slug:') !!}
     <p>{!! $project->slug !!}</p>
+</div>
+
+<!-- Slug Field -->
+<div class="form-group">
+    {!! Form::label('address', 'Address:') !!}
+    <p>{!! $project->address !!}</p>
+</div>
+
+<!-- Slug Field -->
+<div class="form-group">
+    {!! Form::label('phone', 'phone:') !!}
+    <p>{!! $project->phone !!}</p>
+</div>
+
+<!-- Slug Field -->
+<div class="form-group">
+    {!! Form::label('text', 'text:') !!}
+    <p>{!! $project->text !!}</p>
 </div>
 
 <div class="form-group">

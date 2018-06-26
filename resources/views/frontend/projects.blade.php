@@ -55,12 +55,12 @@
 			<div class="pfr-row-1">
 				<div class="owl-carousel owl-theme">
 					@foreach($projects as $project)
-				    <div class="item" data-hash="finished-{{$project->id}}" style="background-image: url('/img/f-obj.jpg');">
+				    <div class="item" data-hash="finished-{{$project->id}}" style="background-image: url('/img/objects/{{ $project->img }}');">
 				    	<div>
-				      		<h3>{{$project->type}}</h3>
-							<h1>{{$project->title}}</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nihil.</p>
-							<a href="{{route('object',[$project->slug])}}" class="Btn">Посмотреть</a>
+				      		<h3>{{ $project->type }}</h3>
+							<h1>{{ $project->title }}</h1>
+							<p>{{ $project->description }}</p>
+							<a href="/objects/{{ $project->slug }}" class="Btn">Посмотреть</a>
 						</div>
 				    </div>
 				    @endforeach
@@ -84,12 +84,12 @@
 			<div class="pnfr-row-1">
 				<div class="owl-carousel owl-theme">
 					@foreach($projects as $project)
-				    <div class="item" data-hash="not-finished-{{$project->id}}" style="background-image: url('/img/f-obj.jpg');">
+				    <div class="item" data-hash="not-finished-{{$project->id}}" style="background-image: url('/img/objects/{{ $project->img }}');">
 				    	<div>
 				      		<h3>{{$project->type}}</h3>
 							<h1>{{$project->title}}</h1>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nihil.</p>
-							<a href="{{route('object',[$project->slug])}}" class="Btn">Посмотреть</a>
+							<a href="/object/{{ $project->slug }}" class="Btn">Посмотреть</a>
 						</div>
 				    </div>
 				    @endforeach
