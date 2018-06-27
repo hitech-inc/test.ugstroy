@@ -1,6 +1,7 @@
 <table class="table table-responsive" id="projects-table">
     <thead>
         <tr>
+            <th>Id</th>
             <th>Title</th>
         <th>Category</th>
         <th>Type</th>
@@ -12,6 +13,7 @@
     <tbody>
     @foreach($projects as $project)
         <tr>
+            <td>{!! $project->id !!}</td>
             <td>{!! $project->title !!}</td>
             <td>{!! $project->category !!}</td>
             <td>{!! $project->type !!}</td>

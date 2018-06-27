@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Menu;
 use App\Models\Page;
 use App\Models\Project;
+use App\Models\Box;
 use App\Mail\SendMail;
 use Mail;
 
@@ -70,8 +71,14 @@ class FrontendController extends Controller
     public function object($slug)
     {
         $menus = $this->getMenu();
-        $object = Project::where('slug', $slug)->first();
-        return view('frontend.object',compact('menus'))->with('object', $object);
+        $object = Project::where('slug', $slug)->with('boxes')->first();
+
+        $box_block = Box::where('name', 'block')->get();
+        $box_floor = Box::where('name', 'floor')->get();
+        $box_plan = Box::where('name', 'plan')->get();
+        $box_flat = Box::where('name', 'flat')->get();
+        
+        return view('frontend.object',compact('menus','object','box_floor','box_block','box_plan','box_flat'));
     }
 
     public function getServicePage($slug)

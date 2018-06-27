@@ -18,3 +18,7 @@
     <a href="{!! route('projects.index') !!}"><i class="fa fa-edit"></i><span>Projects</span></a>
 </li>
 
+<li class="{{ Request::is('boxes*') ? 'active' : '' }}">
+    <a href="{!! route('boxes.index') !!}"><i class="fa fa-edit"></i><span>Boxes</span></a>
+</li>
+

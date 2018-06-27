@@ -42,3 +42,5 @@ Route::resource('pages', 'PageController');
 Route::resource('categories', 'CategoryController');
 Route::resource('photos', 'PhotoController');
 Route::resource('projects', 'ProjectController');
+
+Route::resource('boxes', 'BoxController');

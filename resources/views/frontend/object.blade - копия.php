@@ -83,9 +83,6 @@
     top: 13%;
     right: 7%;
 }
-.box-1 {
-	display: block;
-}
 </style>
 @endsection
 
@@ -164,20 +161,35 @@
 					<!-- End of block window -->
 					<!-- Floors window -->
 					<div class="fbox-floors" style="background-image: url('/img/objects/{{ $object->img }}');">	
-								@foreach($box_floor as $box) 
-									<div class="box_inner box-{{ $box->id }}">
-					                	{!! $box->text !!}
-					                </div>
-					            @endforeach
+						<div class="box_inner box-3">
+							<button class="startBtn floorButton" data-show="20" data-hide="3" data-floor="1">1</button>
+							<button class="startBtn floorButton" data-show="20" data-hide="3" data-floor="2">2</button>
+							<button class="startBtn floorButton" data-show="20" data-hide="3" data-floor="3">3</button>
+							<button class="startBtn floorButton" data-show="20" data-hide="3" data-floor="4">4</button>
+							<button class="startBtn floorButton" data-show="20" data-hide="3" data-floor="5">5</button>
+							<button class="startBtn floorButton" data-show="20" data-hide="3" data-floor="6">6</button>
+							<p>Выберите этаж</p>
+						</div>
 					</div>
 					<!-- End of floors  window-->
 					<!-- Plans window -->
 					<div class="fbox-plans">
-						@foreach($box_floor as $box) 
-							<div class="box_inner box-{{ $box->id }}">
-			                	{!! $box->text !!}
-			                </div>
-			            @endforeach
+						<div class="box_inner box-20">
+							<a href="" class="backButton" data-id="2"><</a>	
+							<img src="/img/plans/sapphire/plan.png" alt="" class="plan" usemap="#image-map-plan-20"> 
+
+							<map name="image-map-plan-20" id="plan-map">
+							    <area  class="planButton" data-show="35" data-hide="20" data-sq="190" alt="4-комнатная" title="4-комнатная" href="#4" coords="52,127,52,249,261,252,264,131,224,124,224,105,134,104,135,126" shape="poly">
+							    <area  class="planButton" data-show="35" data-hide="20" data-sq="190" alt="4-комнатная" title="4-комнатная" href="#4" coords="528,131,531,252,736,253,739,131,657,131,656,107,571,109,573,128" shape="poly">
+							    <area  class="planButton" data-show="36" data-hide="20" data-sq="190" alt="3-комнатная" title="3-комнатная" href="#3" coords="573,261,739,258,742,384,656,386,656,403,570,406" shape="poly">
+							    <area  class="planButton" data-show="36" data-hide="20" data-sq="160" alt="3-комнатная" title="3-комнатная" href="#3" coords="55,257,222,260,224,400,139,399,138,383,56,378" shape="poly">
+							    <area  class="planButton" data-show="37" data-hide="20" data-sq="160" alt="2-комнатная" title="2-комнатная" href="#2" coords="269,132,308,128,310,108,393,107,390,253,269,252" shape="poly">
+							    <area  class="planButton" data-show="37" data-hide="20" data-sq="190" alt="2-комнатная" title="2-комнатная" href="#2" coords="402,107,489,108,491,123,522,132,526,250,405,252" shape="poly">
+							    <area  class="planButton" data-show="38" data-hide="20" data-sq="90" alt="1-комнатная" title="1-комнатная" href="#1" coords="310,260,389,260,393,400,310,402" shape="poly">
+							    <area  class="planButton" data-show="38" data-hide="20" data-sq="90" alt="1-комнатная" title="1-комнатная" href="#1" coords="405,258,484,258,484,402,402,400" shape="poly">
+							</map>
+							<p>Выберите планировку</p>
+						</div>
 					</div>
 					<!-- End of plan  -->
 					<!-- Flat description -->

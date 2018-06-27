@@ -79,5 +79,9 @@ class Project extends Model
         'lng' => 'numeric'
     ];
 
-    
+    public function boxes()
+    {
+        return $this->morphMany('App\Models\Box', 'boxable');
+    }
+
 }
