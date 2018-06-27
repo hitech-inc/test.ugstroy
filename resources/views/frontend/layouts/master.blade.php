@@ -4,13 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="csrf-token" content="{{ csrf_token() }}" />
-	<title>Юг Строй Инвест</title>
+	<style>
+		@font-face {
+			font-family: DinPro;
+			src: url(../fonts/DinProCondMed.woff) format('woff'); }
+	</style>
+
 	<link rel="stylesheet" href="/css/owl.css">
 	<link rel="stylesheet" href="/css/owl.theme.css">
 	<link rel="stylesheet" href="/css/app.css">
 	<link rel="stylesheet" href="/css/remodal.css">
 	<link rel="stylesheet" href="/css/remodal-default-theme.css">
 	<link rel="stylesheet" href="/css/jquery.sweet-modal.min.css">
+	@yield('head')
 </head>
 <body>
 	<header>

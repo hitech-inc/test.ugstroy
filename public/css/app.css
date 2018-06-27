@@ -6038,9 +6038,7 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
-@font-face {
-  font-family: DinPro;
-  src: url(../fonts/DinProCondMed.woff); }
+
 
 * {
   color: #fff;
@@ -8564,21 +8562,7 @@ area {
   display: none; }
   .fbox-desc img {
     position: absolute; }
-  .fbox-desc .plan-3d {
-    width: 60%;
-    top: 10%;
-    left: 8%; }
-  .fbox-desc ol {
-    position: absolute;
-    right: 7%;
-    top: 22%;
-    color: #000;
-    text-transform: uppercase;
-    font-size: 2em;
-    line-height: 1.1em;
-    padding-right: 10px; }
-    .fbox-desc ol li {
-      color: #000; }
+
 
 a.requestButton {
   display: block;

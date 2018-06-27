@@ -1,13 +1,99 @@
 @extends('frontend.layouts.master')
+@section('head')
+<title>{!! $object->title !!}</title>
+<style>{!! $object->style !!}</style>
+<style>
+.flat-1 {
+	width: 36%;
+    top: 17%;
+    left: 15%;
+}
+.flat-2 {
+    width: 44%;
+    top: 18%;
+    left: 7%;
+}
+.flat-3 {
+	width: 56%;
+    top: 23%;
+    left: 1%;
+}
+.flat-4 {
+    width: 57%;
+    top: 28%;
+    left: 4%;
+}
+.plan-1 {
+	width: 29%;
+    top: 74%;
+    left: 66%;
+}
+.plan-2 {
+	width: 29%;
+    top: 74%;
+    left: 66%;
+}
+.plan-3 {
+	width: 29%;
+    top: 74%;
+    left: 66%;
+}
+.plan-4 {
+	width: 29%;
+    top: 74%;
+    left: 66%;
+}
+.fbox-desc ol {
+	display: block;
+	width: 25%;
+	position: absolute;
+	right: 7%;
+	top: 26%;
+	color: #000;
+	font-size: 2em;
+	line-height: 1.1em;
+	padding-right: 10px; 
+}
+.fbox-desc ol li {
+	width: 100%;
+	display: block;
+  	color: #000; 
+}
+.fbox-desc ol li span {
+	display: block;
+	float: right; 
+	color: #09c;
+}
+.fbox-desc ol li span sup{ 
+	color: #09c;
+}
+.plan-title {
+	position: absolute;
+    color: #000;
+    font-size: 2.5em;
+    font-family: Impact;
+    top: 6%;
+    right: 7%;
+}
+.plan-subtitle {
+	position: absolute;
+    color: #000;
+    font-size: 1.8em;
+	font-family: Helvetica;
+    top: 13%;
+    right: 7%;
+}
+</style>
+@endsection
 
 @section('content')
-<style>{!! $object->style !!}</style>
+
 <div class="containerObject">
 	<div class="objectMainImg" style="background-image: url('/img/objects/{{ $object->img }}');">
 		<div class="objectTopContent">
-			<h3 style="text-transform: uppercase;" >{{ $object->type }}</h3>
-			<h4 style="text-transform: uppercase;" >{{ $object->title }}</h4>
-			<p style="text-transform: uppercase;" >{{ $object->description }}</p>
+			<h3 style="text-transform: uppercase;    text-shadow: 1px 1px 1px #000;" >{{ $object->type }}</h3>
+			<h4 style="text-transform: uppercase;    text-shadow: 1px 1px 1px #000;" >{{ $object->title }}</h4>
+			<p style="text-transform: uppercase;    text-shadow: 1px 1px 0.5px #000;" >{{ $object->description }}</p>
 			<a href="#contact"  style="text-transform: uppercase;" class="Btn" title="Посмотреть видео">Посмотреть трейлер</a>
 		</div>
 		<div class="or-right">
@@ -109,71 +195,73 @@
 					<!-- Flat description -->
 					<div class="fbox-desc">
 						<div class="box_inner box-35">
-							<a class="backButton" data-id="3"><</a>	
-							<img src="/img/plan-3.png" alt="" class="plan-3">
-							<img src="/img/plan-2.png" alt="" class="plan-2">
-							<img src="/img/plan-1.png" alt="" class="plan-1">
-							<img src="/img/plans/sapphire/plan-4.png" alt="" class="plan-3d">
+							<a class="backButton" data-id="3"><</a>
+							<img src="/img/plans/sapphire/flat-4.png" alt="" class="flat-4">
+							<img src="/img/plans/sapphire/plan-4.png" alt="" class="plan-4">
 							<ol>
-								<li>Холл	11,5</li>
-								<li>Кухня	13,4</li>
-								<li>Гостиная	 17,4</li>
-								<li>Спальня 	13,9</li>
-								<li>Ванная   	3,3</li> 
-								<li>С/у	 2,5</li>
-								<li>Лоджия	 2,6</li>
+								<li>Холл	 <span>м<sup>2</sup></span><span>14.50</span></li>
+								<li>С/у	     <span>м<sup>2</sup></span><span>1.75</span></li>
+								<li>Ванная	 <span>м<sup>2</sup></span><span>2.96</span></li>
+								<li>Ванная 	 <span>м<sup>2</sup></span><span>5.21</span></li>
+								<li>Студия   <span>м<sup>2</sup></span><span>37.98</span></li> 
+								<li>Спальня	 <span>м<sup>2</sup></span><span>21.69</span></li>
+								<li>Спальня	 <span>м<sup>2</sup></span><span>20.97</span></li>
+								<li>Спальня	 <span>м<sup>2</sup></span><span>15.82</span></li>
+								<li>Лоджия	 <span>м<sup>2</sup></span><span>7.32</span></li>
 							</ol>
+							<p class="plan-title">4-комнатная</p>
+							<p class="plan-subtitle">Общая площадь 124.54м<sup style="color: #000;">2</sup></p>
 							<a class="requestButton">Оставить заявку</a>
 						</div>
 						<div class="box_inner box-36">
-							<a class="backButton" data-id="3"><</a>	
-							<img src="/img/plan-3.png" alt="" class="plan-3">
-							<img src="/img/plan-2.png" alt="" class="plan-2">
-							<img src="/img/plan-1.png" alt="" class="plan-1">
-							<img src="/img/plans/sapphire/plan-3.png" alt="" class="plan-3d">
+							<a class="backButton" data-id="3"><</a>
+							<img src="/img/plans/sapphire/flat-3.png" alt="" class="flat-3">
+							<img src="/img/plans/sapphire/plan-3.png" alt="" class="plan-3">
 							<ol>
-								<li>Холл	11,5</li>
-								<li>Кухня	13,4</li>
-								<li>Гостиная	 17,4</li>
-								<li>Спальня 	13,9</li>
-								<li>Ванная   	3,3</li> 
-								<li>С/у	 2,5</li>
-								<li>Лоджия	 2,6</li>
+								<li>Холл	 <span>м<sup>2</sup></span><span>14.50</span></li>
+								<li>С/у	     <span>м<sup>2</sup></span><span>1.75</span></li>
+								<li>Ванная	 <span>м<sup>2</sup></span><span>2.96</span></li>
+								<li>Re 	 <span>м<sup>2</sup></span><span>5.21</span></li>
+								<li>Студия   <span>м<sup>2</sup></span><span>37.98</span></li> 
+								<li>Спальня	 <span>м<sup>2</sup></span><span>21.69</span></li>
+								<li>Спальня	 <span>м<sup>2</sup></span><span>20.97</span></li>
+								<li>Спальня	 <span>м<sup>2</sup></span><span>15.82</span></li>
+								<li>Лоджия	 <span>м<sup>2</sup></span><span>7.32</span></li>
 							</ol>
+							<p class="plan-title">3-комнатная</p>
+							<p class="plan-subtitle">Общая площадь 101.61м<sup style="color: #000;">2</sup></p>
 							<a class="requestButton">Оставить заявку</a>
 						</div>
 						<div class="box_inner box-37">
-							<a class="backButton" data-id="3"><</a>	
-							<img src="/img/plan-3.png" alt="" class="plan-3">
-							<img src="/img/plan-2.png" alt="" class="plan-2">
-							<img src="/img/plan-1.png" alt="" class="plan-1">
-							<img src="/img/plans/sapphire/plan-2.png" alt="" class="plan-3d">
+							<a class="backButton" data-id="3"><</a>
+							<img src="/img/plans/sapphire/flat-2.png" alt="" class="flat-2">
+							<img src="/img/plans/sapphire/plan-2.png" alt="" class="plan-2">
 							<ol>
-								<li>Холл	11,5</li>
-								<li>Кухня	13,4</li>
-								<li>Гостиная	 17,4</li>
-								<li>Спальня 	13,9</li>
-								<li>Ванная   	3,3</li> 
-								<li>С/у	 2,5</li>
-								<li>Лоджия	 2,6</li>
+								<li>Холл	 <span>м<sup>2</sup></span><span>18.34</span></li>
+								<li>С/у	     <span>м<sup>2</sup></span><span>1.76</span></li>
+								<li>Ванная	 <span>м<sup>2</sup></span><span>2.76</span></li>
+								<li>Студия 	 <span>м<sup>2</sup></span><span>27.81</span></li>
+								<li>Спальня	 <span>м<sup>2</sup></span><span>24.00</span></li>
+								<li>Лоджия	 <span>м<sup>2</sup></span><span>7.56</span></li>
 							</ol>
+							<p class="plan-title">2-комнатная</p>
+							<p class="plan-subtitle">Общая площадь 78.45м<sup style="color: #000;">2</sup></p>
 							<a class="requestButton">Оставить заявку</a>
 						</div>
 						<div class="box_inner box-38">
-							<a class="backButton" data-id="3"><</a>	
-							<img src="/img/plan-3.png" alt="" class="plan-3">
-							<img src="/img/plan-2.png" alt="" class="plan-2">
-							<img src="/img/plan-1.png" alt="" class="plan-1">
-							<img src="/img/plans/sapphire/plan-1.png" alt="" class="plan-3d">
+							<a class="backButton" data-id="3"><</a>
+							<img src="/img/plans/sapphire/flat-1.png" alt="" class="flat-1">
+							<img src="/img/plans/sapphire/plan-1.png" alt="" class="plan-1">
 							<ol>
-								<li>Холл	11,5</li>
-								<li>Кухня	13,4</li>
-								<li>Гостиная	 17,4</li>
-								<li>Спальня 	13,9</li>
-								<li>Ванная   	3,3</li> 
-								<li>С/у	 2,5</li>
-								<li>Лоджия	 2,6</li>
+								<li>Холл	 <span>м<sup>2</sup></span><span>10.52</span></li>
+								<li>С/у	     <span>м<sup>2</sup></span><span>1.76</span></li>
+								<li>Ванная	 <span>м<sup>2</sup></span><span>2.76</span></li>
+								<li>Кухня 	 <span>м<sup>2</sup></span><span>14.70</span></li>
+								<li>Гостинная   <span>м<sup>2</sup></span><span>18.99</span></li> 
+								<li>Лоджия	 <span>м<sup>2</sup></span><span>7.56</span></li>
 							</ol>
+							<p class="plan-title">1-комнатная</p>
+							<p class="plan-subtitle">Общая площадь 52.51м<sup style="color: #000;">2</sup></p>
 							<a class="requestButton">Оставить заявку</a>
 						</div>
 					</div>

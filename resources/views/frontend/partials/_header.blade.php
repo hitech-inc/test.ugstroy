@@ -10,7 +10,7 @@
 <div class="menu">
 	<div class="menu-container">
 		<div class="logo">
-			<a href="#home">
+			<a href="/">
 				<img src="/img/logo.png" alt="logo">
 			</a>
 		</div>
