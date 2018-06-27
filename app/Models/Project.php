@@ -37,7 +37,9 @@ class Project extends Model
         'slug',
         'address',
         'phone',
-        'text'
+        'text',
+        'script',
+        'style'
     ];
 
     /**
@@ -56,7 +58,9 @@ class Project extends Model
         'slug' => 'string',
         'address' => 'string',
         'phone' => 'string',
-        'text' => 'text'
+        'text' => 'text',
+        'style' => 'text',
+        'script' => 'text'
     ];
 
     /**

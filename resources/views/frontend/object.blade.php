@@ -1,36 +1,26 @@
 @extends('frontend.layouts.master')
 
 @section('content')
-<style>
-	.fbox-blocks {
-		display: none;
-	}
-	.fbox-floors {
-		display: block;
-	}
-	.box-3 {
-		display: block;
-	}
-</style>
+<style>{!! $object->style !!}</style>
 <div class="containerObject">
 	<div class="objectMainImg" style="background-image: url('/img/objects/{{ $object->img }}');">
 		<div class="objectTopContent">
-			<h3>{{ $object->type }}</h3>
-			<h4>{{ $object->title }}</h4>
-			<p>{{ $object->description }}</p>
-			<a href="#contact" class="Btn" title="Посмотреть видео">Посмотреть видео</a>
+			<h3 style="text-transform: uppercase;" >{{ $object->type }}</h3>
+			<h4 style="text-transform: uppercase;" >{{ $object->title }}</h4>
+			<p style="text-transform: uppercase;" >{{ $object->description }}</p>
+			<a href="#contact"  style="text-transform: uppercase;" class="Btn" title="Посмотреть видео">Посмотреть трейлер</a>
 		</div>
 		<div class="or-right">
 			<div>
-				<p>500</p>
-				<p>Продаются квартир</p>
+				<p>48</p>
+				<p>квартир</p>
 			</div>
 			<div>
-				<p>2000</p>
+				<p>20</p>
 				<p>Квартир продано</p>
 			</div>
 			<div>
-				<p>350</p>
+				<p>10</p>
 				<p>Ожидают</p>
 			</div>
 		</div>
@@ -42,18 +32,26 @@
 			</div>
 			<div class="right">
 				<div class="top-line">
-					<div>
+					<div class="bd1">
 						<p>{{ $object->title }}</p>
 						<p>{{ $object->type }}</p>
 					</div>
-					<div>
-						<p id="planText"></p>
+					<div class="bd2">
+						<p id="blockText">01</p>
+						<p>блок</p>
+					</div>
+					<div class="bd3">
+						<p id="floorText">7 / 15</p>
+						<p>количество этажей</p>
+					</div>	
+					<div class="bd4">
+						<p id="planText">3x</p>
 						<p>количество комнат</p>
 					</div>	
-					<div>
+					<div class="bd5">
 						<p id="sqText"></p>
 						<p>общая площадь</p>
-					</div>					
+					</div>						
 				</div>
 				<div id="flat">
 					<!-- Block window -->
@@ -76,16 +74,16 @@
 					</div>
 					<!-- End of block window -->
 					<!-- Floors window -->
-					<div class="fbox-floors" style="background-image: url('/img/objects/{{ $object->img }}');display: block;">	
+					<div class="fbox-floors" style="background-image: url('/img/objects/{{ $object->img }}');">	
 						<div class="box_inner box-3">
-							<button class="startBtn floorButton" data-show="20" data-hide="3">
-								Начать
-							</button>
-							<button class="startBtn floorButton" data-show="21" data-hide="3">
-								Начать-2
-							</button>
+							<button class="startBtn floorButton" data-show="20" data-hide="3" data-floor="1">1</button>
+							<button class="startBtn floorButton" data-show="20" data-hide="3" data-floor="2">2</button>
+							<button class="startBtn floorButton" data-show="20" data-hide="3" data-floor="3">3</button>
+							<button class="startBtn floorButton" data-show="20" data-hide="3" data-floor="4">4</button>
+							<button class="startBtn floorButton" data-show="20" data-hide="3" data-floor="5">5</button>
+							<button class="startBtn floorButton" data-show="20" data-hide="3" data-floor="6">6</button>
+							<p>Выберите этаж</p>
 						</div>
-
 					</div>
 					<!-- End of floors  window-->
 					<!-- Plans window -->
@@ -95,32 +93,16 @@
 							<img src="/img/plan.png" alt="" class="plan" usemap="#image-map-plan-20"> 
 
 							<map name="image-map-plan-20" id="plan-map">
-							    <area  class="planButton" data-show="35" data-hide="20" alt="4-комнатная" title="4-комнатная" href="#4" coords="52,127,52,249,261,252,264,131,224,124,224,105,134,104,135,126" shape="poly">
-							    <area  class="planButton" data-show="35" data-hide="20" alt="4-комнатная" title="4-комнатная" href="#4" coords="528,131,531,252,736,253,739,131,657,131,656,107,571,109,573,128" shape="poly">
-							    <area  class="planButton" data-show="36" data-hide="20" alt="3-комнатная" title="3-комнатная" href="#3" coords="573,261,739,258,742,384,656,386,656,403,570,406" shape="poly">
-							    <area  class="planButton" data-show="36" data-hide="20" alt="3-комнатная" title="3-комнатная" href="#3" coords="55,257,222,260,224,400,139,399,138,383,56,378" shape="poly">
-							    <area  class="planButton" data-show="37" data-hide="20" alt="2-комнатная" title="2-комнатная" href="#2" coords="269,132,308,128,310,108,393,107,390,253,269,252" shape="poly">
-							    <area  class="planButton" data-show="37" data-hide="20" alt="2-комнатная" title="2-комнатная" href="#2" coords="402,107,489,108,491,123,522,132,526,250,405,252" shape="poly">
-							    <area  class="planButton" data-show="38" data-hide="20" alt="1-комнатная" title="1-комнатная" href="#1" coords="310,260,389,260,393,400,310,402" shape="poly">
-							    <area  class="planButton" data-show="38" data-hide="20" alt="1-комнатная" title="1-комнатная" href="#1" coords="405,258,484,258,484,402,402,400" shape="poly">
+							    <area  class="planButton" data-show="35" data-hide="20" data-sq="190" alt="4-комнатная" title="4-комнатная" href="#4" coords="52,127,52,249,261,252,264,131,224,124,224,105,134,104,135,126" shape="poly">
+							    <area  class="planButton" data-show="35" data-hide="20" data-sq="190" alt="4-комнатная" title="4-комнатная" href="#4" coords="528,131,531,252,736,253,739,131,657,131,656,107,571,109,573,128" shape="poly">
+							    <area  class="planButton" data-show="36" data-hide="20" data-sq="190" alt="3-комнатная" title="3-комнатная" href="#3" coords="573,261,739,258,742,384,656,386,656,403,570,406" shape="poly">
+							    <area  class="planButton" data-show="36" data-hide="20" data-sq="160" alt="3-комнатная" title="3-комнатная" href="#3" coords="55,257,222,260,224,400,139,399,138,383,56,378" shape="poly">
+							    <area  class="planButton" data-show="37" data-hide="20" data-sq="160" alt="2-комнатная" title="2-комнатная" href="#2" coords="269,132,308,128,310,108,393,107,390,253,269,252" shape="poly">
+							    <area  class="planButton" data-show="37" data-hide="20" data-sq="190" alt="2-комнатная" title="2-комнатная" href="#2" coords="402,107,489,108,491,123,522,132,526,250,405,252" shape="poly">
+							    <area  class="planButton" data-show="38" data-hide="20" data-sq="90" alt="1-комнатная" title="1-комнатная" href="#1" coords="310,260,389,260,393,400,310,402" shape="poly">
+							    <area  class="planButton" data-show="38" data-hide="20" data-sq="90" alt="1-комнатная" title="1-комнатная" href="#1" coords="405,258,484,258,484,402,402,400" shape="poly">
 							</map>
 							<p>Выберите планировку</p>
-						</div>
-						<div class="box_inner box-21">
-							<a href="" class="backButton" data-id="2"><</a>	
-							<img src="/img/plan.png" alt="" class="plan" usemap="#image-map-plan-21"> 
-
-							<map name="image-map-plan-21" id="plan-map">
-							    <area  class="planButton" data-show="35" data-hide="21" alt="4-комнатная" title="4-комнатная" href="#4" coords="52,127,52,249,261,252,264,131,224,124,224,105,134,104,135,126" shape="poly">
-							    <area  class="planButton" data-show="35" data-hide="21" alt="4-комнатная" title="4-комнатная" href="#4" coords="528,131,531,252,736,253,739,131,657,131,656,107,571,109,573,128" shape="poly">
-							    <area  class="planButton" data-show="36" data-hide="21" alt="3-комнатная" title="3-комнатная" href="#3" coords="573,261,739,258,742,384,656,386,656,403,570,406" shape="poly">
-							    <area  class="planButton" data-show="36" data-hide="21" alt="3-комнатная" title="3-комнатная" href="#3" coords="55,257,222,260,224,400,139,399,138,383,56,378" shape="poly">
-							    <area  class="planButton" data-show="37" data-hide="21" alt="2-комнатная" title="2-комнатная" href="#2" coords="269,132,308,128,310,108,393,107,390,253,269,252" shape="poly">
-							    <area  class="planButton" data-show="37" data-hide="21" alt="2-комнатная" title="2-комнатная" href="#2" coords="402,107,489,108,491,123,522,132,526,250,405,252" shape="poly">
-							    <area  class="planButton" data-show="38" data-hide="21" alt="1-комнатная" title="1-комнатная" href="#1" coords="310,260,389,260,393,400,310,402" shape="poly">
-							    <area  class="planButton" data-show="38" data-hide="21" alt="1-комнатная" title="1-комнатная" href="#1" coords="405,258,484,258,484,402,402,400" shape="poly">
-							</map>
-							<p>Выберите планировку 2</p>
 						</div>
 					</div>
 					<!-- End of plan  -->
@@ -212,7 +194,7 @@
 				<div class="bot-line">
 					<div class="bl">
 						<p>Вы выбрали:</p>
-						<p><a id="blockLink"><a id="planLink">55 кв (SNKB1-55)</a> </p>
+						<p><a id="blockLink" class="bd2">Блок 1</a> / <a id="floorLink" class="bd3">13 этаж</a> / <a id="planLink" class="bd4">55 кв (SNKB1-55)</a> </p>
 					</div>
 					<div class="bl">
 						<a href="#rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr" class="Btn" id ="dis" type="submit" form="data">Отправить заявку</a>
@@ -248,18 +230,7 @@
 
 /************** ВЫБОР БЛОКА *********************/
 
-/*$('.blockButton').click(function(){
-    var id = $(this).data('id');
-    $('.fbox-blocks').hide();
-    $('.fbox-floors').fadeIn();
-    $('#blockLink').show();
-    $('#blockText').show();
-    $("#dis").hide();
-    document.getElementById("blockText").innerHTML = id;
-    document.getElementById("blockLink").innerHTML = id + " блок";
-});
-
-$('#blockLink').click(function(){
+/*$('#blockLink').click(function(){
     $('.fbox-req').hide();
     $('.fbox-desc').hide();
     $('.fbox-plans').hide();
@@ -275,20 +246,8 @@ $('#blockLink').click(function(){
 });*/
 
 
-var hide_floor_box_id,
-	hide_plan_box_id,
-	show_box_id,
-	numberOfPass = 0,
-	helper;
 
-
-var box = {
-	block: 1,
-	floor: 3,
-	plan: 1,
-	flat: 1
-}
-
+{!! $object->script !!}
 
 /*********** ВЫБОР БЛОКА ********/
 $('.blockButton').click(function(){
@@ -316,7 +275,7 @@ $('.blockButton').click(function(){
 
 
 $('.floorButton').click(function(){
-    var floor = $(this).attr('title');
+    var floor = $(this).data('floor');
     $('.fbox-floors').hide();
     $('.fbox-plans').fadeIn();
     $('#floorLink').show();
@@ -335,9 +294,9 @@ $('.floorButton').click(function(){
     
 
 
-/*
+
     document.getElementById("floorText").innerHTML = floor + " / 15";
-    document.getElementById("floorLink").innerHTML = floor + " этаж";*/
+    document.getElementById("floorLink").innerHTML = floor + " этаж";
 });
 
 
@@ -366,7 +325,7 @@ $('.planButton').click(function(){
 
     document.getElementById("planText").innerHTML = plan;
     document.getElementById("sqText").innerHTML = square + " м<sup>2</sup>";
-    document.getElementById("planLink").innerHTML = plan + " (SNKB1-55)";
+    document.getElementById("planLink").innerHTML = plan + "";
 });
 
 /************** ОСТАВИТЬ ЗАЯВКУ ******************/

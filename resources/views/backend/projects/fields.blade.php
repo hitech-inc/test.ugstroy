@@ -56,23 +56,36 @@
     {!! Form::text('slug', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Slug Field -->
+<!-- Address Field -->
 <div class="form-group col-sm-3">
     {!! Form::label('address', 'address:') !!}
     {!! Form::text('address', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Slug Field -->
+<!-- Phone Field -->
 <div class="form-group col-sm-3">
     {!! Form::label('phone', 'phone:') !!}
     {!! Form::text('phone', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Slug Field -->
-<div class="form-group col-sm-3">
+<!-- Text Field -->
+<div class="form-group col-sm-4">
     {!! Form::label('text', 'text:') !!}
     {!! Form::textarea('text', null, ['class' => 'form-control']) !!}
 </div>
+
+<!-- Script Field -->
+<div class="form-group col-sm-4">
+    {!! Form::label('script', 'script:') !!}
+    {!! Form::textarea('script', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Style Field -->
+<div class="form-group col-sm-4">
+    {!! Form::label('style', 'style:') !!}
+    {!! Form::textarea('style', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}

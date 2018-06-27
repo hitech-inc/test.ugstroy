@@ -4,9 +4,9 @@
 <div class="containerObject">
 	<div class="objectMainImg">
 		<div class="objectTopContent">
-			<h3>{{ $object->type }}</h3>
-			<h4>{{ $object->title }}</h4>
-			<p>{{ $object->finish }}</p>
+			<h3 style="text-transform: uppercase;">{{ $object->type }}</h3>
+			<h4 style="text-transform: uppercase;">{{ $object->title }}</h4>
+			<p style="text-transform: uppercase;">{{ $object->finish }}</p>
 			<a href="#contact" class="Btn" title="СВЯЗАТЬСЯ С НАМИ">СВЯЗАТЬСЯ С НАМИ</a>
 		</div>
 		<div class="or-right">

@@ -57,6 +57,16 @@
     {!! Form::label('text', 'text:') !!}
     <p>{!! $project->text !!}</p>
 </div>
+<!-- Script Field -->
+<div class="form-group">
+    {!! Form::label('script', 'script:') !!}
+    <p>{!! $project->script !!}</p>
+</div>
+<!-- Style Field -->
+<div class="form-group">
+    {!! Form::label('style', 'style:') !!}
+    <p>{!! $project->style !!}</p>
+</div>
 
 <div class="form-group">
     {!! Form::label('lat', 'Lat:') !!}

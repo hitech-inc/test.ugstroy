@@ -8401,6 +8401,7 @@ area {
   cursor: pointer; }
 
 .backButton {
+  user-select: none;
   position: absolute;
   top: 7%;
   left: 5%;
@@ -8804,24 +8805,28 @@ footer {
 .startBtn {
   display: block;
   position: relative;
-  width: 100px;
+  width: 50px;
   height: 50px;
   background-color: #fcca00;
-  border-radius: 25px;
   line-height: 50px;
   text-transform: uppercase;
   border: 0;
   cursor: pointer;
-  top: 49%;
-  left: 45%;
+  top: 20%;
+  left: 90%;
+  border: 1.5px solid #000;
   font-size: 1.5em;
   outline: 0 !important;
+  color: #000;
+  user-select: none;
 }
 
 .startBtn:active {
   background-color: #fcca00c4; 
   border: 1px solid #fcca00;
   line-height: 52px;
+  color: #fff;
+
 }
 
 .box_inner {
