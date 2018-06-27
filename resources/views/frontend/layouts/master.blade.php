@@ -24,15 +24,13 @@
 	</footer>
 
 	<script src="/js/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.7/js/imageMapResizer.min.js"></script>
 	<script src="/js/owl.js"></script>
 	<script src="/js/ripple.js"></script>
 	<script src="/js/jquery.sweet-modal.min.js"></script>
 	<script src="/js/remodal.min.js"></script>
 	<script src="/js/jquery.maskedinput.js"></script>
 	<script src="/js/app.js"></script>
-
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.7/js/imageMapResizer.min.js"></script>
 
 	@yield('scripts')
 
