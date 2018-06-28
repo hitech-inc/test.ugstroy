@@ -71,12 +71,15 @@ class FrontendController extends Controller
     public function object($slug)
     {
         $menus = $this->getMenu();
-        $object = Project::where('slug', $slug)->with('boxes')->first();
 
-        $box_block = Box::where('name', 'block')->get();
-        $box_floor = Box::where('name', 'floor')->get();
-        $box_plan = Box::where('name', 'plan')->get();
-        $box_flat = Box::where('name', 'flat')->get();
+        $object = Project::where('slug', $slug)->with('boxes')->first();
+        $object_id = Project::where('slug', $slug)->first()->id;
+
+        
+        $box_block = $object->boxes()->where(['boxable_id'=> $object_id, 'name' => 'block'])->get();
+        $box_floor = $object->boxes()->where(['boxable_id'=> $object_id, 'name' => 'floor'])->get();
+        $box_plan  = $object->boxes()->where(['boxable_id'=> $object_id, 'name' => 'plan'])->get();
+        $box_flat  = $object->boxes()->where(['boxable_id'=> $object_id, 'name' => 'flat'])->get();
         
         return view('frontend.object',compact('menus','object','box_floor','box_block','box_plan','box_flat'));
     }

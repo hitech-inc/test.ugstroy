@@ -10,12 +10,22 @@
 <!-- Name Field -->
 <div class="form-group col-sm-4">
     {!! Form::label('name', 'Name:') !!}
-    <select name="name" class="form-control">
-        <option value="block">Block</option>
-        <option value="floor">Floor</option>
-        <option value="plan" >Plan</option>
-        <option value="flat">Flat</option>
-    </select>
+    {!! Form::select('name', ['block' => 'Block', 'floor' => 'Floor', 'plan' => 'Plan' , 'flat' => 'Flat'], null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Tutorial Block -->
+<style>
+    .ret *{
+        font-size: 0.8em;
+        margin: 0px;
+        padding: 1px;
+    }
+</style>
+<div class="form-group col-sm-4 ret">
+    <p><b style="font-size: 1em;">Краткий справочник</b></p>
+    <p>Поле <b>name</b></p>
+    <p>Если вы выбрали имя <b>block :</b></p>
+    <p>a class="blockButton" data-show="Id окна выбора этажа который нужно показать" data-hide="Id окна выбора блока который нужно скрыть" data-block="Номер блока"</a></p>
 </div>
 
 <!-- Text Field -->
