@@ -94,6 +94,11 @@
 					                	{!! $box->text !!}
 					                </div>
 					            @endforeach
+						<div class="box_inner box-7">
+							<a href="#a" class="blockButton" data-show="8" data-hide="7" data-block="A">A</a>
+							<a href="#b" class="blockButton bb2" data-show="9" data-hide="7" data-block="B">B</a>
+							<p class="shadow">Выберите блок</p>		
+						</div>
 					</div>
 					<!-- End of block window -->
 					<!-- Floors window -->
@@ -103,6 +108,30 @@
 					                	{!! $box->text !!}
 					                </div>
 					            @endforeach
+					            <div class="box_inner box-8">
+					            	<a class="backButton" data-id="1"><</a>	
+				                	<button class="startBtn floorButton" data-show="10" data-hide="8" data-floor="1">1</button>
+									<button class="startBtn floorButton" data-show="11" data-hide="8" data-floor="2">2</button>
+									<button class="startBtn floorButton" data-show="11" data-hide="8" data-floor="3">3</button>
+									<button class="startBtn floorButton" data-show="11" data-hide="8" data-floor="4">4</button>
+									<button class="startBtn floorButton" data-show="11" data-hide="8" data-floor="5">5</button>
+									<button class="startBtn floorButton" data-show="11" data-hide="8" data-floor="6">6</button>
+									<button class="startBtn floorButton" data-show="11" data-hide="8" data-floor="7">7</button>
+									<button class="startBtn floorButton" data-show="12" data-hide="8" data-floor="8">8</button>
+									<p>Выберите этаж</p>
+				                </div>
+				          		<div class="box_inner box-9">
+				          			<a class="backButton" data-id="1"><</a>	
+				                	<button class="startBtn floorButton" data-show="13" data-hide="9" data-floor="1">1</button>
+									<button class="startBtn floorButton" data-show="14" data-hide="9" data-floor="2">2</button>
+									<button class="startBtn floorButton" data-show="14" data-hide="9" data-floor="3">3</button>
+									<button class="startBtn floorButton" data-show="14" data-hide="9" data-floor="4">4</button>
+									<button class="startBtn floorButton" data-show="14" data-hide="9" data-floor="5">5</button>
+									<button class="startBtn floorButton" data-show="14" data-hide="9" data-floor="6">6</button>
+									<button class="startBtn floorButton" data-show="14" data-hide="9" data-floor="7">7</button>
+									<button class="startBtn floorButton" data-show="15" data-hide="9" data-floor="8">8</button>
+									<p>Выберите этаж</p>
+				                </div>
 					</div>
 					<!-- End of floors  window-->
 					<!-- Plans window -->
@@ -112,6 +141,98 @@
 					                	{!! $box->text !!}
 					                </div>
 					            @endforeach
+<style>
+	.plan.plan-a1 {
+		position: absolute;
+		width: 80%;
+		top: 34%;
+		left: 10%;
+	}
+	.plan.plan-a2 {
+	    position: absolute;
+	    width: 55%;
+	    top: 29%;
+	    left: 22%;
+	}
+	.svgMap a {
+		cursor: pointer;
+	}
+	.svgMap a:hover path {
+		fill: #f0ff0066;
+	}
+</style>
+					            <div class="box_inner box-10">
+					               <a href="" class="backButton" data-id="2"><</a>	
+										<img src="/img/plans/izumrud/A1.png" alt="" class="plan plan-a1" usemap="#image-map-plan-10" id="image-map-1"> 
+
+										<svg viewbox="0 0 910 283" class="plan plan-a1 svgMap">
+											<a title="3-комнатная" class="planButton" data-show="16" data-hide="10" data-sq="1">
+												<path d="m 4.806338,7.4366194 180.237672,-0.8010563 1.60212,132.1742969 -87.315144,1.60211 0.801054,42.45599 -33.644364,4.00528 2.403169,93.72359 L 0,283 v 0 z" fill="#00000022" >
+											</a>
+											<a title="2-комнатная" class="planButton" data-show="17" data-hide="10" data-sq="1">
+												<path d="m 190.75534,133.69011 0.53135,10.09569 -1.0627,1.59405 -88.73577,0.53136 1.0627,37.72598 -1.59406,4.78217 -29.224351,-0.53135 -1.062704,90.32982 H 278.4284 L 276.303,134.75282 Z" fill="#00000022" >
+											</a>
+											<a title="5-комнатная" class="planButton" data-show="18" data-hide="10" data-sq="1">
+												<path d="m 283.74192,6.6970033 174.81478,0.531352 h 3.18812 l -0.53136,273.1148847 -179.06559,-1.0627 z" fill="#00000022" >
+											</a>
+
+											<a title="3-комнатная" class="planButton" data-show="19" data-hide="10" data-sq="1">
+												<path d="m 466.52698,6.6970033 122.7423,0.531352 -1.59406,136.5574447 43.03951,0.53135 0.53135,134.43203 -166.8445,-2.1254 z" fill="#00000022" >
+											</a>
+											<a title="3-комнатная" class="planButton" data-show="20" data-hide="10" data-sq="1">
+												<path d="m 903.82961,191.60747 -85.01631,-3.18811 2.65676,-60.04277 -97.76875,-0.53135 -0.53135,15.40921 -91.39253,0.53135 1.0627,133.90068 272.58354,1.59406 z" fill="#00000022" >
+											</a>
+											<a title="2-комнатная" class="planButton" data-show="21" data-hide="10" data-sq="1">
+												<path d="m 723.16996,6.6970033 181.72235,-2.1254076 1.59406,182.7850643 -83.9536,-0.53136 -0.53135,-63.23087 -99.36281,2.1254 z" fill="#00000022" >
+											</a>																						
+										</svg>
+										<p>Выберите планировку</p> 	
+					            </div>
+
+					            <div class="box_inner box-11">
+					               <a href="" class="backButton" data-id="2"><</a>	
+										<img src="/img/plans/izumrud/A2-7.png" alt="" class="plan plan-a1" usemap="#image-map-plan-10" id="image-map-1"> 
+
+										<svg viewbox="0 0 910 283" class="plan plan-a1 svgMap">																					
+										</svg>
+										<p>Выберите планировку</p> 	
+					            </div>
+
+					        	<div class="box_inner box-12">
+					               <a href="" class="backButton" data-id="2"><</a>	
+										<img src="/img/plans/izumrud/A8.png" alt="" class="plan plan-a1" usemap="#image-map-plan-10" id="image-map-1"> 
+
+										<svg viewbox="0 0 910 283" class="plan plan-a1 svgMap">																					
+										</svg>
+										<p>Выберите планировку</p> 	
+					            </div>
+
+					            <div class="box_inner box-13">
+					               <a href="" class="backButton" data-id="2"><</a>	
+										<img src="/img/plans/izumrud/B1.png" alt="" class="plan plan-a2" usemap="#image-map-plan-10" id="image-map-1"> 
+
+										<svg viewbox="0 0 910 283" class="plan plan-a2 svgMap">																					
+										</svg>
+										<p>Выберите планировку</p> 	
+					            </div>
+
+					            <div class="box_inner box-14">
+					               <a href="" class="backButton" data-id="2"><</a>	
+										<img src="/img/plans/izumrud/B2-7.png" alt="" class="plan plan-a2" usemap="#image-map-plan-10" id="image-map-1"> 
+
+										<svg viewbox="0 0 910 283" class="plan plan-a2 svgMap">																					
+										</svg>
+										<p>Выберите планировку</p> 	
+					            </div>
+
+					            <div class="box_inner box-15">
+					               <a href="" class="backButton" data-id="2"><</a>	
+										<img src="/img/plans/izumrud/B8.png" alt="" class="plan plan-a2" usemap="#image-map-plan-10" id="image-map-1"> 
+
+										<svg viewbox="0 0 910 283" class="plan plan-a2 svgMap">																					
+										</svg>
+										<p>Выберите планировку</p> 	
+					            </div>
 					</div>
 					<!-- End of plan  -->
 					<!-- Flat description -->
@@ -171,7 +292,6 @@
 
 
 @section('scripts')
-
 
 <script>
 	
@@ -353,7 +473,7 @@ $('.backButton').click(function(e){
 
 
 </script>
-<script>$(document).ready(function(e){$("map").imageMapResize();});</script>
+
 <script>
 function initMap() {
   var image = "/img/marker.png"
