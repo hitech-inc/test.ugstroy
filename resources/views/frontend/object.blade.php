@@ -58,16 +58,6 @@
 					</div>						
 				</div>
 				<div id="flat">
-					<style>
-						.box-7 {
-							display: block;
-							background-image: url('/img/objects/izumrud/izumrud.jpg');
-						}
-						.bb2 {
-							top: 50%;
-							left: 55%;
-						}
-					</style>
 					<!-- Block window -->
 					<div class="fbox-blocks">
 
@@ -110,42 +100,13 @@
 					<div class="fbox-desc">
 
 								@foreach($box_flat as $box) 
-
 									<div class="box_inner box-{{ $box->id }}">
 										<a class="backButton" data-id="3"><</a>
 					                	{!! $box->text !!}
+					                	 <a class="requestButton">Оставить заявку</a>
 					                </div>
-					                <a class="requestButton">Оставить заявку</a>
 					            @endforeach
-<style>
-.flat-img {
-	width: 28%;
-	top: 16%;
-	left: 8%;
-	position: absolute;
-}
-.fi1 {
-	width: 28%;
-	top: 16%;
-	left: 8%;
-}
 
-</style>
-					            <div class="box_inner box-">
-					                
-<img src="/img/plans/izumrud/A1/1.png" alt="" class="flat-img fi6">
-<ol>
-	<li>Гостинная	 <span>м<sup>2</sup></span><span>24.3</span></li>
-	<li>Кухня	     <span>м<sup>2</sup></span><span>20.0</span></li>
-	<li>Спальня	 <span>м<sup>2</sup></span><span>21.9</span></li>
-	<li>Сан. узел	 <span>м<sup>2</sup></span><span>6.0</span></li>
-	<li>Сан. узел	 <span>м<sup>2</sup></span><span>6.0</span></li>
-	<li>Холл	 <span>м<sup>2</sup></span><span>30.6</span></li>
-</ol>
-<p class="flat-title">2-комнатная</p>
-<p class="flat-subtitle">Общая площадь 108.0<sup style="color: #000;">2</sup></p>
-										
-					            </div>
 					</div>
 					<!-- End of flat description  -->
 					<!-- Request window -->

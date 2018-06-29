@@ -8921,29 +8921,10 @@ footer {
 .svgMap a:hover path {
   fill: #f0ff0066;
 }
-.blockButton {
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: #fcca00;
-  color: #fff;
-  cursor: pointer;
+.flat-img {
+
   position: absolute;
-  top: 50%;
-  left: 45%;
-  font-size: 2em;
-  border: 1px solid #000;
-  text-align: center;
-  line-height: 50px;
 }
-.blockButton:active {
-              line-height: 55px;
-              background-color: #fcca00c3;
-            }
-  .flat-img {
-    width: 40%;
-    position: absolute;
-  }
 .flat-title,
 .flat-subtitle,
 .flat-ol {
@@ -8996,12 +8977,15 @@ font-size: 1em;
     right: 7%;
 }
 
+
+.fbox-blocks,
 .fbox-floors,
 .fbox-plans,
 .fbox-desc {
   background: url('../img/fbox-bg.jpg');
 }
 
+.fbox-blocks .box_inner,
 .fbox-floors .box_inner,
 .fbox-plans .box_inner,
 .fbox-desc .box_inner {
