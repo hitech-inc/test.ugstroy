@@ -8871,22 +8871,22 @@ footer {
 
 
 .startBtn {
-  display: block;
-  position: relative;
-  width: 50px;
-  height: 50px;
-  background-color: #fcca00;
-  line-height: 50px;
-  text-transform: uppercase;
-  border: 0;
-  cursor: pointer;
-  top: 20%;
-  left: 90%;
-  border: 1.5px solid #000;
-  font-size: 1.5em;
-  outline: 0 !important;
-  color: #000;
-  user-select: none;
+    /* display: block; */
+    position: relative;
+    width: 110px;
+    height: 60px;
+    background-color: #fcca00;
+    line-height: 60px;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    top: 20%;
+    left: 10%;
+    border: 1.5px solid #000;
+    font-size: 2em;
+    outline: 0 !important;
+    color: #000;
+    user-select: none;
 }
 
 .startBtn:active {
@@ -8914,4 +8914,96 @@ footer {
 
 .shadow {
   text-shadow: 0 0 5px #fff;
+}
+.svgMap a {
+  cursor: pointer;
+}
+.svgMap a:hover path {
+  fill: #f0ff0066;
+}
+.blockButton {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #fcca00;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  font-size: 2em;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 50px;
+}
+.blockButton:active {
+              line-height: 55px;
+              background-color: #fcca00c3;
+            }
+  .flat-img {
+    width: 40%;
+    position: absolute;
+  }
+.flat-title,
+.flat-subtitle,
+.flat-ol {
+  position: absolute;
+}
+
+.fbox-desc ol {
+  display: block;
+  width: 25%;
+  position: absolute;
+  right: 7%;
+  top: 26%;
+  color: #000;
+  font-size: 1.5em;
+  line-height: 1.1em;
+  padding-right: 10px; 
+}
+@media (max-width: 768px) {
+.fbox-desc ol {
+font-size: 1em;
+}
+}
+.fbox-desc ol li {
+  width: 100%;
+  display: block;
+    color: #000; 
+}
+.fbox-desc ol li span {
+  display: block;
+  float: right; 
+  color: #09c;
+}
+.fbox-desc ol li span sup{ 
+  color: #09c;
+}
+.flat-title {
+  position: absolute;
+    color: #000;
+    font-size: 2.5em;
+    font-family: Impact;
+    top: 6%;
+    right: 7%;
+}
+.flat-subtitle {
+  position: absolute;
+    color: #000;
+    font-size: 1.8em;
+  font-family: Helvetica;
+    top: 13%;
+    right: 7%;
+}
+
+.fbox-floors,
+.fbox-plans,
+.fbox-desc {
+  background: url('../img/fbox-bg.jpg');
+}
+
+.fbox-floors .box_inner,
+.fbox-plans .box_inner,
+.fbox-desc .box_inner {
+  background: #ffffff80;
 }
