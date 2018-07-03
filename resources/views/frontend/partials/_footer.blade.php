@@ -1,24 +1,26 @@
-<div class="footer-container">
+<div class="footer-container myContainer">
 	<div id="contacts">
 		<div class="cont">
 			<div><span></span></div>
 			<div>
-				<p>РК,Шымкент, ул. Мира 25</p>
-				<p>РК,Шымкент, ул. Мира 25</p>
+
+				<p style="padding-top: 10px; margin-bottom: 0;">
+Г.ШЫМКЕНТ УЛ.Х.ДУЛАТИ (БЫВ.К.МАРКСА), 201А</p>
+<p></p>
 			</div>
 		</div>
 		<div class="cont">
 			<div><span></span></div>
 			<div>
-				<p>info@primer.com</p>
-				<p>primer.com.kz</p>
+				<p style="padding-top: 10px; margin-bottom: 0;">E-mail</p>
+				<p style="margin-bottom: 0;">iugstroyinvest@mail.ru</p>
 			</div>
 		</div>
 		<div class="cont">
 			<div><span></span></div>
 			<div>
-				<p>+7(777)777 77 77</p>
-				<p>+7(777)777 77 77</p>
+				<p style="padding-top: 10px; margin-bottom: 0;">+7(7252) 42 11 44</p>
+				<p style="margin-bottom: 0;">+7(7252) 27 11 44</p>
 			</div>
 		</div>
 	</div>
@@ -28,16 +30,28 @@
 		</div>
 		<div class="links-bot">
 			<div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id veniam optio eaque vero, libero asperiores inventore natus odit quasi deleniti, ex aperiam. Natus beatae</p>
+				<a href="/">
+					<img src="/img/logo.png" alt="logo" style="width: 100%; background: #ffffffe3; padding: 15px;">
+				</a>
 			</div>
 			<div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a harum minus blanditiis vitae nulla ex accusantium neque laborum voluptates, adipisci</p>
+				<p>
+					<a href="/" class="flink">Главная</a>
+					<a href="/about" class="flink">О компании</a>
+					<a href="/services" class="flink">Услуги</a>
+					<a href="/all-projects" class="flink">Проекты</a>
+					<a href="/contacts" class="flink">Контакты</a>
+				</p>
 			</div>
 			<div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dignissimos earum provident temporibus minima, exercitationem ipsa animi ducimus tempora odit, doloremque ipsam incidunt deserunt</p>
+				<p>
+					<a class="flink ss">Проекты</a>
+					<a href="/objects/sapphire" class="flink">Жилой дом "Сапфир"</a>
+					<a href="/objects/izumrud" class="flink">Жилой дом "Изумруд"</a>
+				</p>
 			</div>
 			<div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sed, amet doloremque. Facilis, esse, nostrum. Est placeat doloremque, necessitatibus hic beatae velit</p>
+				<p>В августе 2003 года образовалась строительная компания «ЮгСтройИнвест», которую возглавил Юрий Иванович Иванов. В этом же году было положено начало строительству первого 6-этажного жилого дома со встроенно-пристроенными помещениями по ул. Пирогова в Ставрополе.</p>
 			</div>
 		</div>
 	</div>

@@ -4,10 +4,7 @@
 <div class="containerServices">
 	<div class="mainImg">
 		<h3>все по расчету лучших инженеров</h3>
-		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's sta
-		ndard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
-		type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
-		essentially unchanged. It was popularised in the 2000s with the release of Letraset sheets containing Lorem Ipsum</p>
+		<p>Достойные материалы прислали инженеры из многих городов – Шымкента, Караганды, Усть-Каменогорска, Атырауа, Уральска, Павлодара, Астаны, Алматы, Атырау</p>
 	</div>
 	<div class="servicesLists">
 		<div class="row" style="margin-top: 0">

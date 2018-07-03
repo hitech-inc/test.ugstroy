@@ -7,7 +7,7 @@
 </div> -->
 	<p>Время работы 09:00 - 18:00 (Пн-Пт) +7(7252)555555</p>
 </div>
-<div class="menu">
+<div class="menu myContainer">
 	<div class="menu-container">
 		<div class="logo">
 			<a href="/">
@@ -34,7 +34,7 @@
 			</form>
 		</div>
 	</div>
-</div>
+
 
 <!-- Success modal styles -->
 <style>

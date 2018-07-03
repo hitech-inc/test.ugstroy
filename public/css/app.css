@@ -6209,14 +6209,27 @@ img ~ .legitRipple-ripple {
 
 .menu {
   width: 100%;
-  height: 130px; }
+  height: 130px; 
+position: relative;}
 
 .menu-container {
-  width: 1200px;
+  width: 98%;
   height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto; 
+  position: absolute;
+  top: 0;
+  left: 0;
+
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;
+justify-content: space-between;
+align-items: center;}
 
 .logo {
+  width: 15%;
   float: left;
   height: 100%; }
   .logo a {
@@ -6224,12 +6237,11 @@ img ~ .legitRipple-ripple {
     height: 100%;
     line-height: 130px; }
     .logo a img {
-      width: 180px;
+      width: 100%;
       vertical-align: middle; }
 
 #nav {
   height: 100%;
-  width: 840px;
   float: left;
   text-align: center; }
   #nav ul {
@@ -6239,7 +6251,6 @@ img ~ .legitRipple-ripple {
     #nav ul li {
       display: inline-block;
       margin: 0 auto;
-      width: 80px;
       padding: 0 10px;
       text-transform: uppercase;
       line-height: 130px; }
@@ -6252,7 +6263,7 @@ img ~ .legitRipple-ripple {
   display: -o-flex;
   display: flex;
   align-items: center;
-  width: 180px;
+  width: 15%;
   height: 100%; }
   #search input {
     color: #000;
@@ -6277,11 +6288,7 @@ img ~ .legitRipple-ripple {
       line-height: 130px; }
       .logo a img {
         width: 100%; }
-  #nav {
-    margin-top: -15px;
-    width: 720px; }
     #nav ul li {
-      width: 80px;
       padding: 0 10px;
       line-height: 130px; }
   #search {
@@ -6305,11 +6312,7 @@ img ~ .legitRipple-ripple {
     line-height: 130px; }
     .logo a img {
       width: 180px; }
-  #nav {
-    margin-top: 0;
-    width: 840px; }
     #nav ul li {
-      width: 80px;
       padding: 0 10px;
       line-height: 130px; }
   #search {
@@ -6333,11 +6336,7 @@ img ~ .legitRipple-ripple {
     line-height: 130px; }
     .logo a img {
       width: 180px; }
-  #nav {
-    margin-top: -15px;
-    width: 840px; }
     #nav ul li {
-      width: 80px;
       padding: 0 10px;
       line-height: 130px; }
   #search {
@@ -6357,7 +6356,7 @@ img ~ .legitRipple-ripple {
 #main-block {
   width: 100%;
   height: 536px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../img/main.jpg");
@@ -6375,7 +6374,8 @@ img ~ .legitRipple-ripple {
     text-transform: none;
     font-size: 0.9em;
     width: 50%;
-    display: none; }
+    display: none; 
+    font-family: Verdana;}
   #main-block a {
     display: none;
     width: 180px;
@@ -6395,7 +6395,7 @@ img ~ .legitRipple-ripple {
   #main-block {
     width: 100%;
     height: 396px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url("../img/main.jpg");
@@ -6427,8 +6427,8 @@ img ~ .legitRipple-ripple {
 @media only screen and (min-width: 1920px) {
   #main-block {
     width: 100%;
-    height: 770px;
-    background-size: contain;
+    height: 870px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url("../img/main.jpg");
@@ -6463,16 +6463,19 @@ img ~ .legitRipple-ripple {
 
 #second-block {
   width: 100%;
-  height: 400px;
+  padding: 50px 0;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
   align-items: center;
-  background: #f7f7f7; }
+ /*  background: #f7f7f7; */
+ background:#353230; }
   #second-block * {
-    color: #000; }
+    color: #fff;  }
+      #second-block p {
+    font-family: Verdana;}
   #second-block .container-2 {
     width: 1140px;
     height: 80%;
@@ -6483,7 +6486,8 @@ img ~ .legitRipple-ripple {
     display: -o-flex;
     display: flex;
     align-items: center;
-    overflow: hidden; }
+    overflow: hidden; 
+    font-family: Verdana; }
     #second-block .container-2 div {
       padding: 0px 5%; }
       #second-block .container-2 div h3 {
@@ -6494,7 +6498,6 @@ img ~ .legitRipple-ripple {
   width: 100%;
   height: 570px; }
   #more-info .container-more-info {
-    width: 1300px;
     height: 100%;
     margin: 0 auto;
     display: -webkit-flex;
@@ -6535,7 +6538,11 @@ img ~ .legitRipple-ripple {
           margin: 0 auto;
           text-transform: uppercase;
           line-height: 1em;
-          color: #000; }
+          color: #000; 
+          font-family: Verdana;
+        text-transform: lowercase;
+    font-size: 0.9em;}
+
       #more-info .container-more-info .container-more .row-more:last-child {
         width: 100%;
         height: 75%;
@@ -6563,7 +6570,9 @@ img ~ .legitRipple-ripple {
             text-align: left;
             color: #000;
             line-height: 1.2em;
-            font-size: 0.95em; }
+            font-size: 0.8em; 
+
+          font-family: Verdana;}
         #more-info .container-more-info .container-more .row-more:last-child div:hover {
           background-color: #fcca00;
           height: 85%;
@@ -6599,7 +6608,6 @@ img ~ .legitRipple-ripple {
   height: 450px; }
   #services .container-serve {
     margin: 0 auto;
-    width: 1349px;
     height: 100%; }
     #services .container-serve .serve:first-child {
       height: 100%;
@@ -6633,7 +6641,9 @@ img ~ .legitRipple-ripple {
           margin-bottom: 0;
           line-height: 1em; }
         #services .container-serve .serve:last-child .row-1 h4 {
-          font-size: 2em; }
+          font-size: 0.8em;
+    font-weight: 600;
+    font-family: Verdana;}
       #services .container-serve .serve:last-child .row-2 {
         width: 100%;
         height: 68%;
@@ -6730,7 +6740,6 @@ img ~ .legitRipple-ripple {
   width: 100%;
   height: 550px; }
   #projects .wrapper-projects {
-    width: 1300px;
     height: 100%;
     margin: 0 auto;
     display: -webkit-flex;
@@ -6766,7 +6775,8 @@ img ~ .legitRipple-ripple {
           font-size: 2em;
           margin-bottom: 0; }
         #projects .wrapper-projects .container-projects .projects-row-1 h4 {
-          font-size: 2em; }
+          font-size: 0.8em;
+    font-family: Verdana;}
       #projects .wrapper-projects .container-projects .projects-row-2 {
         width: 80%;
         height: 70%;
@@ -6784,28 +6794,28 @@ img ~ .legitRipple-ripple {
           height: 41%; }
         #projects .wrapper-projects .container-projects .projects-row-2 div:nth-child(1) {
           flex: 0 0 43%;
-          background-image: url(../img/project-1.jpg);
+          background-image: url(../img/objects/izumrud/izumrud.jpg);
           height: 55%; }
         #projects .wrapper-projects .container-projects .projects-row-2 div:nth-child(2) {
           flex: 0 0 27%;
-          background-image: url(../img/project-2.jpg);
+          background-image: url(../img/objects/sapphire/sapphire_big.jpg);
           height: 55%; }
         #projects .wrapper-projects .container-projects .projects-row-2 div:nth-child(3) {
           flex: 0 0 27%;
-          background-image: url(../img/project-3.jpg);
+          background-image: url(../img/objects/izumrud/img-1.jpg);
           height: 55%; }
         #projects .wrapper-projects .container-projects .projects-row-2 div:nth-child(4) {
           flex: 0 0 28%;
-          background-image: url(../img/project-4.jpg); }
+          background-image: url(../img/objects/izumrud/img-2.jpg); }
         #projects .wrapper-projects .container-projects .projects-row-2 div:nth-child(5) {
           flex: 0 0 20%;
-          background-image: url(../img/project-5.jpg); }
+          background-image: url(../img/objects/izumrud/img-3.jpg); }
         #projects .wrapper-projects .container-projects .projects-row-2 div:nth-child(6) {
           flex: 0 0 20%;
-          background-image: url(../img/project-6.jpg); }
+          background-image: url(../img/objects/sapphire/img-3.png); }
         #projects .wrapper-projects .container-projects .projects-row-2 div:nth-child(7) {
           flex: 0 0 28%;
-          background-image: url(../img/project-7.jpg); }
+          background-image: url(../img/objects/sapphire/img-2.png); }
     #projects .wrapper-projects div:last-child {
       height: 100%;
       width: 80px; }
@@ -6830,7 +6840,6 @@ img ~ .legitRipple-ripple {
   width: 100%;
   height: 450px; }
   #constructions .container-construct {
-    width: 1349px;
     height: 100%;
     margin: 0 auto; }
     #constructions .container-construct .left {
@@ -6879,7 +6888,10 @@ img ~ .legitRipple-ripple {
             font-size: 2em; }
           #constructions .container-construct .right #right-top #const-text p {
             color: #000;
-            font-size: 0.9em;
+            font-size: 0.8em;
+            text-transform: lowercase;
+            
+    font-family: Verdana;
             line-height: 1em;
             margin-bottom: 25px; }
           #constructions .container-construct .right #right-top #const-text a {
@@ -6897,7 +6909,7 @@ img ~ .legitRipple-ripple {
           height: 100%;
           overflow: hidden; }
           #constructions .container-construct .right #right-top #const-building img {
-            width: 100%; }
+            width: 104%; }
       #constructions .container-construct .right #right-bot {
         width: 95%;
         height: 25%;
@@ -7286,6 +7298,7 @@ img ~ .legitRipple-ripple {
     line-height: 1em;
     text-transform: none;
     font-size: 0.9em;
+    font-family: Verdana;
     width: 50%; }
   #projects-block a {
     display: none;
@@ -7341,9 +7354,11 @@ img ~ .legitRipple-ripple {
           font-size: 3em;
           margin-bottom: 0; }
         #projects-last .container-last-projects .lprojects-row-2 .lp-center:first-child p {
-          text-transform: uppercase;
-          color: #000;
-          line-height: 1.3em; }
+    text-transform: initial;
+    color: #000;
+    font-family: Verdana;
+    line-height: 1.3em;
+    font-size: 0.8em;}
         #projects-last .container-last-projects .lprojects-row-2 .lp-center:first-child a {
           width: 220px;
           background-color: #fcca00;
@@ -7431,10 +7446,12 @@ img ~ .legitRipple-ripple {
         width: 100%;
         height: 20%; }
         #p-finished .pf-container .pf-right .pfr-row-2 p {
-          padding-top: 2%;
-          color: #000;
-          line-height: 1em;
-          font-size: 1.2em; }
+padding-top: 2%;
+    color: #000;
+    line-height: 1em;
+    font-family: Verdana;
+    font-size: 1em;
+    text-transform: initial;}
 
 #p-not-finished {
   width: 100%;
@@ -7520,10 +7537,12 @@ img ~ .legitRipple-ripple {
         width: 100%;
         height: 20%; }
         #p-not-finished .pnf-container .pnf-left .pnfr-row-2 p {
-          padding-top: 2%;
-          color: #000;
-          line-height: 1em;
-          font-size: 1.2em; }
+padding-top: 2%;
+    color: #000;
+    line-height: 1em;
+    font-family: Verdana;
+    font-size: 1em;
+    text-transform: initial;}
     #p-not-finished .pnf-container .pnf-right {
       float: right;
       height: 100%;
@@ -7603,7 +7622,11 @@ img ~ .legitRipple-ripple {
             #p-plan .pp-container .pp-right .pp-row-1 .pp-slide .ddd p {
               width: 40%;
               font-size: 1.2em;
-              line-height: 1em; }
+              line-height: 1em; 
+              font-family: Verdana;
+              text-transform: lowercase;
+              
+            }
             #p-plan .pp-container .pp-right .pp-row-1 .pp-slide .ddd a {
               width: 180px;
               background-color: #fcca00;
@@ -7635,10 +7658,12 @@ img ~ .legitRipple-ripple {
         width: 100%;
         height: 15%; }
         #p-plan .pp-container .pp-right .pp-row-2 p {
-          padding-top: 2%;
-          color: #000;
-          line-height: 1em;
-          font-size: 1.2em; }
+padding-top: 2%;
+    color: #000;
+    line-height: 1em;
+    font-family: Verdana;
+    font-size: 1em;
+    text-transform: initial;}
       #p-plan .pp-container .pp-right .pp-row-3 {
         height: 15%;
         width: 100%;
@@ -7735,7 +7760,9 @@ img ~ .legitRipple-ripple {
     .item div p {
       width: 40%;
       font-size: 1.2em;
-      line-height: 1em; }
+      line-height: 1em; 
+        font-family: Verdana;
+    text-transform: initial;}
     .item div a {
       width: 180px;
       background-color: #fcca00;
@@ -7794,11 +7821,12 @@ img ~ .legitRipple-ripple {
   align-items: center;
   justify-content: center; }
   #about-block p {
-    display: none;
+display: none;
     line-height: 1em;
     text-transform: none;
-    font-size: 0.9em;
-    width: 50%; }
+    font-size: 1em;
+    font-family: Verdana;
+    width: 50%;}
   #about-block h1 {
     display: none;
     line-height: 1em;
@@ -7807,22 +7835,22 @@ img ~ .legitRipple-ripple {
 
 #about-text {
   width: 1349px;
-  height: 850px;
+    padding-bottom: 180px;
   margin: 0 auto;
   position: relative; }
   #about-text .text-container {
     padding-top: 40px;
     width: 1240px;
     height: 100%;
-    margin: 0 auto;
-    text-transform: uppercase; }
+    margin: 0 auto; }
     #about-text .text-container h3 {
       font-size: 2.5em;
       color: #000;
       text-align: center;
       margin-bottom: 25px; }
     #about-text .text-container p {
-      font-size: 1.2em;
+      font-size: 1em;
+      font-family: Verdana;
       color: #000;
       line-height: 1.3em;
       margin-bottom: 25px; }
@@ -7832,9 +7860,11 @@ img ~ .legitRipple-ripple {
     right: 0;
     width: 39%;
     height: 39%;
+    z-index: -1;
     overflow: hidden; }
     #about-text #worker img {
-      width: 100%; }
+      width: 100%; 
+      opacity: 0.35;}
   #about-text #stats {
     position: absolute;
     bottom: 0;
@@ -7918,7 +7948,10 @@ img ~ .legitRipple-ripple {
     line-height: 1em;
     text-transform: none;
     font-size: 0.9em;
-    width: 50%; }
+    width: 50%; 
+    font-family: Verdana;
+
+  }
   #contacts-block a {
     display: none;
     width: 240px;
@@ -7965,10 +7998,12 @@ img ~ .legitRipple-ripple {
           color: #000;
           font-size: 2.5em; }
         #calls .c-container .c-left .cl-right p {
-          color: #000;
-          font-size: 2em;
-          line-height: 1em;
-          margin-bottom: 0; }
+color: #000;
+    font-size: 1.3em;
+    /* line-height: 1em; */
+    text-transform: none;
+    font-family: Verdana;
+    margin-bottom: 0;}
         #calls .c-container .c-left .cl-right div {
           width: 100%;
           height: 50px;
@@ -8139,7 +8174,8 @@ img ~ .legitRipple-ripple {
   .mainImg p {
     display: none;
     text-transform: none;
-    font-size: 0.9em;
+        font-size: 0.9em;
+    font-family: Verdana;
     width: 50%;
     text-align: center; }
 
@@ -8153,12 +8189,15 @@ img ~ .legitRipple-ripple {
   max-width: 100%; }
 
 .serviceDesc h3, .serviceDesc p {
-  color: #000;
-  text-transform: uppercase; }
-
+  color: #000;}
+.serviceDesc p {
+  font-family: Verdana;
+}
 .serviceDesc a {
   color: #949494;
-  text-transform: uppercase; }
+  text-transform: uppercase; 
+display: none;
+}
 
 @media only screen and (min-width: 1920px) {
   .mainImg {
@@ -8189,6 +8228,7 @@ img ~ .legitRipple-ripple {
   box-shadow: -2px 0 1px #ddd, 0 -2px 1px #ddd, 2px 0 1px #ddd;
   width: 100%;
   height: 8%;
+  padding: 5px 0;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -8224,10 +8264,15 @@ img ~ .legitRipple-ripple {
 #choose-block {
   height: 420px;
 }
+.myContainer {
+  width: 100%;
+}
 @media (min-width: 576px) {
   .containerObject,
   #choose-block .container-flat,
-  .cm-container {
+  .cm-container,
+  .myContainer,
+  .menu-container {
     width: 560px;
   }
   .container-flat .right {
@@ -8236,11 +8281,14 @@ img ~ .legitRipple-ripple {
   .container-flat .right #flat {
     height: 300px;
   }
+
 }
 @media (min-width: 768px) {
   .containerObject,
   #choose-block .container-flat,
-  .cm-container {
+  .cm-container,
+  .myContainer,
+  .menu-container {
     width: 740px;
   }
   .container-flat .right {
@@ -8256,7 +8304,9 @@ img ~ .legitRipple-ripple {
 @media (min-width: 992px) {
   .containerObject,
   #choose-block .container-flat,
-  .cm-container {
+  .cm-container,
+  .myContainer,
+  .menu-container {
     width: 960px;
   }
   .container-flat .right {
@@ -8272,7 +8322,9 @@ img ~ .legitRipple-ripple {
 @media (min-width: 1200px) {
   .containerObject,
   #choose-block .container-flat,
-  .cm-container {
+  .cm-container,
+  .myContainer,
+  .menu-container {
     width: 1140px;
   }
   .container-flat .right {
@@ -8286,7 +8338,9 @@ img ~ .legitRipple-ripple {
 @media (min-width: 1300px) {
   .containerObject,
   #choose-block .container-flat,
-  .cm-container {
+  .cm-container,
+  .myContainer,
+  .menu-container {
     width: 1300px;
   }
   .container-flat .right {
@@ -8369,11 +8423,14 @@ img ~ .legitRipple-ripple {
   margin: 0 auto; }
   .objectDesc p, .objectDesc ul li, .objectDesc ul strong {
     color: #000;
-    font-size: 1.2rem;
+    font-family: Verdana;
+    font-size: 1rem;
     list-style: none;
     line-height: 1em; }
   .objectDesc p {
-    margin-bottom: 0; }
+    margin-bottom: 10px;
+    text-align: justify;
+      }
 
 .galleryImg {
   max-width: 100%;
@@ -8736,17 +8793,15 @@ a.requestButton {
 
 footer {
   width: 100%;
-  height: 540px;
   background-image: url(../img/footer-bg.jpg);
   background-size: cover; }
 
 .footer-container {
-  width: 1349px;
-  height: 500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 50px; }
   .footer-container #contacts {
     width: 100%;
-    height: 25%;
+    padding: 10px 0;
     background: rgba(31, 45, 48, 0.39);
     display: -webkit-flex;
     display: -moz-flex;
@@ -8757,8 +8812,7 @@ footer {
     align-items: center;
     text-transform: uppercase; }
     .footer-container #contacts .cont {
-      flex: 0 0 28%;
-      height: 70%; }
+      flex: 0 0 28%; }
       .footer-container #contacts .cont div:first-child {
         float: left;
         width: 50%;
@@ -8768,7 +8822,6 @@ footer {
           float: right;
           display: block;
           margin: 0 auto;
-          margin-top: 16px;
           width: 55px;
           height: 55px;
           background-size: contain; }
@@ -8784,7 +8837,10 @@ footer {
         justify-content: center;
         flex-direction: column; }
         .footer-container #contacts .cont div:last-child p {
-          height: 10%; }
+          height: 0%;
+    font-size: 0.7em;
+    /* font-weight: 600; */
+    font-family: Verdana;}
     .footer-container #contacts .cont:nth-child(1) div:first-child span {
       background-image: url(../img/icon-1.png); }
     .footer-container #contacts .cont:nth-child(2) div:first-child span {
@@ -8792,14 +8848,11 @@ footer {
     .footer-container #contacts .cont:nth-child(3) div:first-child span {
       background-image: url(../img/icon-3.png); }
   .footer-container #links {
-    width: 100%;
-    height: 75%; }
+    width: 100%;padding: 50px 0;}
     .footer-container #links .links-top {
-      width: 100%;
-      height: 65%; }
+      width: 100%; }
     .footer-container #links .links-bot {
       width: 100%;
-      height: 35%;
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
@@ -8812,9 +8865,9 @@ footer {
           width: 85%;
           margin: 0 auto;
           color: #fff;
-          text-transform: uppercase;
           line-height: 20px;
-          font-size: 1em; }
+          font-size: 0.9em;
+          font-family: Verdana; }
 
 #copyright {
   width: 100%;
@@ -8990,4 +9043,61 @@ font-size: 1em;
 .fbox-plans .box_inner,
 .fbox-desc .box_inner {
   background: #ffffff80;
+}
+.fbox-blocks {
+  background: url('http://images.all-free-download.com/images/graphicthumb/hd_sky_picture_05_hd_pictures_166299.jpg');
+}
+
+.videoBlock {
+display: none;
+
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%; 
+  background-color: #000000b3;
+  top: 0;
+  left: 0;
+}
+
+.videoBlock video {
+  width: 75%;
+
+}
+
+.closeVideo {
+  position: absolute;
+  user-select: none;
+  cursor: pointer;
+  top: 3%;
+  right: 3%;
+  color: #fff;
+  font-size: 2em;
+  font-family: Impact;
+}
+
+.myContainerFluid{
+  width: 100%;
+}
+
+.menu.myContainer {
+  margin: 0 auto;
+}
+
+.flink {
+color: #fff;
+display: block;
+user-select: none;
+font-family: Verdana;
+font-size: 0.9em;
+}
+
+.flink[href^="/"]:hover {
+  color: blue;
+}
+
+.flink.ss {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }

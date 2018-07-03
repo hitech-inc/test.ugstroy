@@ -2,9 +2,8 @@
 @section('content')
 
 <div id="projects-block">
-	<h3>Многоквартирные дома</h3>
-	<h1>Жилой комплекс "Сұңқар"</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.</p>
+	<h1>Жилые многоквартирные дома</h1>
+	<p>Индивидуальный проект жилых зданий, многоквартирных комплексов. Проектирование офисных  и общественных помещений</p>
 	<a href="#button"  class="Btn">Посмотреть все проекты</a>
 </div>
 
@@ -12,12 +11,11 @@
 	<div class="container-last-projects">
 		<div class="lprojects-row-1">
 			<h3>Последние проекты</h3>
-			<h4>Lorem ipsum dolor sit amet, consectetur</h4>
 		</div>
 		<div class="lprojects-row-2"> 
 			<div class="lp-center">
 				<h3>Дом вашей мечты</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, ex, dolorum! Reiciendis quas tempora ducimus rerum possimus beatae fugit dolore amet, illo minima facilis suscipit at accusamus, eligendi nemo quos soluta ut eveniet. Error in, corrupti, veritatis quae odit adipisci suscipit eveniet at fugit fugiat eum numquam inventore aliquam dignissimos iste laborum hic, sunt itaque ea dolores autem blanditiis! Amet aliquid beatae exercitationem esse, aliquam aut sed laborum animi ullam!</p>
+				<p>Это именно то место, где мы чувствуем себя в безопасности, где мы отдыхаем, пополняем свои силы, храним тайны. У каждого человека есть свой «идеальный дом». Для кого-то это уютный особняк на окраине города, для другого – современная квартира в центре города. Мы все разные, и каждому из нас нужно своё семейное гнёздышко. Давайте узнаем, какой дом подходит вам? </p>
 				<a href="#"  class="Btn">Стать в очередь</a>
 			</div>
 			<div class="lp-center">
@@ -73,7 +71,7 @@
 			</div>
 
 			<div class="pfr-row-2">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis repellendus perspiciatis libero debitis temporibus laudantium nam, distinctio deleniti enim dignissimos. Excepturi delectus, modi, eos culpa non facilis officia, nisi, eius animi possimus sit veritatis! Ab ducimus, officia facilis obcaecati enim.</p>
+				<p>Это именно то место, где мы чувствуем себя в безопасности, где мы отдыхаем, пополняем свои силы, храним тайны. У каждого человека есть свой «идеальный дом». Для кого-то это уютный особняк на окраине города, для другого – современная квартира в центре города. Мы все разные, и каждому из нас нужно своё семейное гнёздышко. Давайте узнаем, какой дом подходит вам? Возможно, результат вас удивит!</p>
 			</div>
 		</div>
 	</div>
@@ -86,10 +84,10 @@
 					@foreach($projects as $project)
 				    <div class="item" data-hash="not-finished-{{$project->id}}" style="background-image: url('/img/objects/{{ $project->img }}');">
 				    	<div>
-				      		<h3>{{$project->type}}</h3>
-							<h1>{{$project->title}}</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nihil.</p>
-							<a href="/object/{{ $project->slug }}" class="Btn">Посмотреть</a>
+				      		<h3>{{ $project->type }}</h3>
+							<h1>{{ $project->title }}</h1>
+							<p>{{ $project->description }}</p>
+							<a href="/objects/{{ $project->slug }}" class="Btn">Посмотреть</a>
 						</div>
 				    </div>
 				    @endforeach
@@ -101,7 +99,7 @@
 				</div>
 			</div>
 			<div class="pnfr-row-2">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis repellendus perspiciatis libero debitis temporibus laudantium nam, distinctio deleniti enim dignissimos. Excepturi delectus, modi, eos culpa non facilis officia, nisi, eius animi possimus sit veritatis! Ab ducimus, officia facilis obcaecati enim.</p>
+				<p>Это именно то место, где мы чувствуем себя в безопасности, где мы отдыхаем, пополняем свои силы, храним тайны. У каждого человека есть свой «идеальный дом». Для кого-то это уютный особняк на окраине города, для другого – современная квартира в центре города. Мы все разные, и каждому из нас нужно своё семейное гнёздышко. Давайте узнаем, какой дом подходит вам? Возможно, результат вас удивит!</p>
 			</div>			
 		</div>
 		<div class="pnf-right">
@@ -120,7 +118,7 @@
 					<div class="ddd">
 						<h3>Жилой комплекс</h3>
 						<h1>«Көкжиек»</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nihil.</p>
+						<p>20-этажный многоквартирный небоскреб</p>
 						<a href="#" class="Btn">Посмотреть</a>
 					</div>
 				</div>
@@ -129,7 +127,7 @@
 				</div>
 			</div>
 			<div class="pp-row-2">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur blanditiis, esse optio reprehenderit expedita possimus, sapiente odio rerum reiciendis nihil praesentium veritatis distinctio commodi eum, aut laboriosam et accusantium alias id enim. Distinctio obcaecati libero deleniti, totam voluptatum neque, repellendus! Dolores, ipsum animi mollitia fugit nam accusantium quidem veritatis ratione.</p>
+				<p>Это именно то место, где мы чувствуем себя в безопасности, где мы отдыхаем, пополняем свои силы, храним тайны. У каждого человека есть свой «идеальный дом». Для кого-то это уютный особняк на окраине города, для другого – современная квартира в центре города. Мы все разные, и каждому из нас нужно своё семейное гнёздышко. Давайте узнаем, какой дом подходит вам? Возможно, результат вас удивит!</p>
 			</div>
 			<div class="pp-row-3">
 				<div>

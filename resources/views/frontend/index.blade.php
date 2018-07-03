@@ -1,50 +1,50 @@
 @extends('frontend.layouts.master')
 @section('content')
 
-<div id="main-block">
-	<h3>Основано 2000</h3>
+<div id="main-block" class="myContainer">
+	<h3>Основано 2003</h3>
 	<h1>Мы работаем и нам доверяют</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.</p>
+	<p>Наша компания это коллектив профессионалов, в компании работают все необходимые отделы для профессиональной реализации самых сложных проектов, начиная от собственного конструкторского бюро, и до отдела механизации строительства</p>
 	<a href="/contacts" class="Btn">Связаться с нами</a>
 </div>
 <div id="second-block">
-	<div class="container-2">
+	<div class="container-2 myContainer">
 		<div>
 			<h3>Высокий рейтинг</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.</p>
+			<p>Мы уверены в качестве наших домов и всем клиентам предоставляем гарантию сроком на 5 лет</p>
+		</div>
+		<div>
+			<h3>Выгодная инвестиция</h3>
+			<p>Возможность приобрести дом в рассрочку или с использованием ипотечного кредита любого банка</p>
 		</div>
 		<div>
 			<h3>Высокое качество</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.</p>
-		</div>
-		<div>
-			<h3>Бюджетный</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.</p>
+			<p>Постоянный контроль качества материалов и строительно-монтажных работ</p>
 		</div>
 	</div>
 </div>
 <div id="more-info">
-	<div class="container-more-info">
+	<div class="container-more-info myContainer">
 		<div id="rotated">
 			<img src="img/more.png" alt="more">
 		</div>
 		<div class="container-more">
 			<div class="row-more">
 				<h3>Узнать больше</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel facere quas, doloremque aliquid commodi ea odit</p>
+				<p>КОМПАНИЯ ПРИСТУПИЛА К СООРУЖЕНИЮ ТОРГОВО-ОФИСНОГО ЦЕНТРА</p>
 			</div>
 			<div class="row-more">
 				<div>
 					<h3>Высокий рейтинг</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto reprehenderit doloribus id eum, pariatur modi corporis quae amet blanditiis neque velit optio tenetur, magnam obcaecati tempore, dicta hic delectus dolor corrupti laudantium esse sequi fugiat. Suscipit praesentium ullam nobis animi.</p>
+					<p>Мы профессиональная специализированная строительная компания наша специализация - современные эффективные фасады зданий</p>
 				</div>
 				<div class="chosen">
 					<h3>Высокое качество</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima et neque officiis impedit porro quo reiciendis aspernatur omnis dignissimos, culpa quia nam hic quisquam at tempora quasi deserunt. Repellendus, eum.</p>
+					<p>Работаем на лицензированных специализированных комплексах для проектирования и расчетов прочности конструкций</p>
 				</div>
 				<div>
 					<h3>Бюджетный</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis molestiae voluptatum, odio tenetur doloremque earum! Ipsa nisi deserunt quod earum tempore esse debitis impedit nulla. Quam a quos ad tempore neque laudantium quisquam nesciunt vitae, maiores eveniet, aperiam alias vero.</p>
+					<p>Наша компания это коллектив профессионалов, в компании работают все необходимые отделы для профессиональной реализации самых сложных проектов, начиная от собственного конструкторского бюро, и до отдела механизации строительства</p>
 				</div>
 			</div>
 		</div>
@@ -52,7 +52,7 @@
 	</div>
 </div>
 <div id="services">
-	<div class="container-serve">
+	<div class="container-serve myContainer">
 		<div class="serve">
 			<div>
 				<a href="{{$service->category}}/{{$service->slug}}"><img src="img/{{$service->img}}" alt="service-big"></a>
@@ -61,12 +61,12 @@
 		<div class="serve">
 			<div class="row-1">
 				<h3>Наши услуги</h3>
-				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>	
+				<h4>ДОСТРОЙКА И РЕКОНСТРУКЦИЯ ДОМОВ</h4>	
 			</div>
 			<div class="row-2">
 				@foreach($services as $service)
 				@if($loop->index!=0)
-				<div><a href="#service-type"><img src="img/{{$service->img}}" alt="service-small"></a></div>
+				<div><a href="#service-type" class=><img src="img/{{$service->img}}" alt="service-small"></a></div>
 				@endif
 				@endforeach
 			</div>
@@ -74,14 +74,14 @@
 	</div>
 </div>
 <div id="projects">
-	<div class="wrapper-projects">
+	<div class="wrapper-projects myContainer">
 		<div id="rotated-2">
 			<img src="img/projects-text.png" alt="more-text">
 		</div>
 		<div class="container-projects">
 			<div class="projects-row-1">
 				<h3>Последние проекты</h3>
-				<h4>Lorem ipsum dolor sit amet, consectetur</h4>
+				<h4>Жилые дома уже построенные в Шымкенте</h4>
 			</div>
 			<div class="projects-row-2">
 				<div></div>
@@ -97,7 +97,7 @@
 	</div>
 </div>
 <div id="constructions">
-	<div class="container-construct">
+	<div class="container-construct myContainerFluid">
 		<div class="left">
 			<div class="block-1"></div>
 			<div class="block-2"></div>
@@ -106,7 +106,7 @@
 			<div id="right-top">
 				<div id="const-text">
 					<h3>#Лучшие конструкции</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consectetur temporibus veritatis amet sapiente minima ex. Iste ut qui debitis, voluptatem reiciendis aspernatur distinctio porro, nulla, nostrum totam asperiores nemo.</p>
+					<p>При превосходно найденном планировочном решении проектs интересны  своей эстетикой и работой с временными наслоениями</p>
 					<a href="#want-to-buy" class="Btn">Хочу купить квартиру у вас!</a>
 				</div>
 				<div id="const-building">
@@ -162,7 +162,7 @@
 		</div>
 	</div>
 </div> -->
-<div id="team">
+<!-- <div id="team">
 	<div class="container-team">
 		<h3>Наша команда</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, dolor</p>
@@ -193,7 +193,7 @@
 			</div>
 		</div>		
 	</div>
-</div>
+</div> -->
 <!-- <div id="last-news">
 	<div class="container-news">
 		<div class="news-row-1">
@@ -243,7 +243,7 @@
 		</div>
 	</div>
 </div> -->
-<div id="sponsors">
+<!-- <div id="sponsors">
 	<div class="container-sponsors">
 			<h3>Наши спонсоры</h3>
 		<div class="sponsors-row">
@@ -265,6 +265,6 @@
 		</div>		
 	</div>
 </div>
-
+ -->
 
 @endsection

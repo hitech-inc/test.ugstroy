@@ -2,8 +2,8 @@
 @section('content')
 
 <div id="contacts-block">
-  <h1>Эффективная коммуникация</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam, omnis perspiciatis reprehenderit temporibus sint porro libero. Id aut nam animi eveniet perferendis repudiandae aperiam, mollitia expedita officia consectetur laboriosam.</p>
+  <h1>Как с нами связаться</h1>
+  <p>Вы можете связаться с нами любым удобным для вас способом: через сайт, через почту, позвонив на телефон или встретиться лично</p>
 <!--   <a href="#button">Связаться с нами<span></span><span>Связаться с нами</span></a> -->
   <a href="#modal-callback" class="Btn">Связаться с нами</a>
 </div>
@@ -15,17 +15,23 @@
         <img src="/img/call.png" alt="">
       </div>
       <div class="cl-right">
-        <h3>г.Шымкент, Казахстан ул.Мира, 25</h3>
+        <h3>г.Шымкент ул.Х.Дулати (быв.К.Маркса), 201А</h3>
         <p>Режим работы:</p>
         <p>Пн-Пт с 9:00 до 18:00</p>
         <p>Сб с 9:00 до 13:00</p>
         <div>
             <span class="clrsa"></span>
-            <p>+7 7252 55 55 55</p>
+            <p>+7 (7252) 42 11 44</p><br>
+          </div>
+          <div>
+            <p style="margin-left: 45px;">+7 (7252) 27 11 44</p><br>
+          </div>
+          <div>
+            <p style="margin-left: 45px;">+7 (707) 556 30 06</p>
           </div>
           <div>
             <span class="clrsb"></span> 
-            <p>info@stroy.kz</p>
+            <p>iugstroyinvest@mail.ru</p>
           </div>  
       </div>
     </div>
@@ -118,12 +124,12 @@ function initMap() {
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 16,
-    center: {lat: 42.349610, lng: 69.551717}
+    center: {lat: 42.345495 , lng: 69.606408}
   });
   var marker = new google.maps.Marker({
-    position: {lat: 42.349610, lng: 69.551717},
+    position: {lat: 42.345495, lng: 69.606408},
     map: map,
-    title: 'Hello World!'
+    title: 'Наш офис!'
   });
 }
 </script>
@@ -131,3 +137,10 @@ function initMap() {
     async defer></script>
 @endsection
 
+@section('scripts')
+<script>
+  /*======================*/
+
+
+</script>
+@endsection

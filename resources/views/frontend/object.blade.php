@@ -8,10 +8,10 @@
 
 	<div class="objectMainImg" style="background-image: url('/img/objects/{{ $object->img }}');">
 		<div class="objectTopContent">
-			<h3 style="text-transform: uppercase;    text-shadow: 1px 1px 1px #000;" >{{ $object->type }}</h3>
+			<h3 style="   text-shadow: 1px 1px 1px #000;" >{{ $object->type }}</h3>
 			<h4 style="text-transform: uppercase;    text-shadow: 1px 1px 1px #000;" >{{ $object->title }}</h4>
-			<p style="text-transform: uppercase;    text-shadow: 1px 1px 0.5px #000;" >{{ $object->description }}</p>
-			<a href="#contact"  style="text-transform: uppercase;" class="Btn" title="Посмотреть видео">Посмотреть трейлер</a>
+			<p style="    font-family: Verdana; font-weight: 600;    text-shadow: 1px 1px 0.5px #000;" >{{ $object->description }}</p>
+			<a href="#contact"  style="text-transform: uppercase;" class="Btn showVideo" title="Посмотреть видео">Посмотреть видео</a>
 		</div>
 		<div class="or-right">
 			<div>
@@ -325,12 +325,12 @@ function initMap() {
   var image = "/img/marker.png"
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 16,
-    center: {lat: 42.349610, lng: 69.551717}
+    center: {lat: {{ $object->lat }}, lng: {{ $object->lng }}}
   });
   var marker = new google.maps.Marker({
-    position: {lat: 42.349610, lng: 69.551717},
+    position: {lat: {{ $object->lat }}, lng: {{ $object->lng }}},
     map: map,
-    title: 'ЖК',
+    title: '{{ $object->title }}',
     icon: image
   });
 
