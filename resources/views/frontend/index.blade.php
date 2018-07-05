@@ -55,7 +55,7 @@
 	<div class="container-serve myContainer">
 		<div class="serve">
 			<div>
-				<a href="{{$service->category}}/{{$service->slug}}"><img src="img/{{$service->img}}" alt="service-big"></a>
+				<a><img src="img/{{$service->img}}" alt="service-big"></a>
 			</div>
 		</div>
 		<div class="serve">
@@ -107,7 +107,7 @@
 				<div id="const-text">
 					<h3>#Лучшие конструкции</h3>
 					<p>При превосходно найденном планировочном решении проектs интересны  своей эстетикой и работой с временными наслоениями</p>
-					<a href="#want-to-buy" class="Btn">Хочу купить квартиру у вас!</a>
+					<a href="/all-projects" class="Btn">Хочу купить квартиру у вас!</a>
 				</div>
 				<div id="const-building">
 					<img src="img/building.png" alt="building">

@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 @section('content')
 
-<div id="contacts-block">
+<div id="contacts-block" class="siteMainImg">
   <h1>Как с нами связаться</h1>
   <p>Вы можете связаться с нами любым удобным для вас способом: через сайт, через почту, позвонив на телефон или встретиться лично</p>
 <!--   <a href="#button">Связаться с нами<span></span><span>Связаться с нами</span></a> -->

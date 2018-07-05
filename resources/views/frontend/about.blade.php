@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 @section('content')
 
-<div id="about-block">
+<div id="about-block" class="siteMainImg">
   <h1>Качество проверенное временем</h1>
   <p>Постройки ЮгСтройИнвест отличается качеством, проверенным временем, есть авторские работы, получившие гран при международных конкурсов </p>
 </div>

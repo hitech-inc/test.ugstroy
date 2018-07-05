@@ -7279,7 +7279,7 @@ align-items: center;}
 #projects-block {
   width: 100%;
   height: 536px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../img/projects-bg.jpg");
@@ -7806,7 +7806,7 @@ padding-top: 2%;
 #about-block {
   width: 100%;
   height: 536px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../img/about-bg.jpg");
@@ -7929,7 +7929,7 @@ display: none;
 #contacts-block {
   width: 100%;
   height: 536px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../img/contacts-bg.jpg");
@@ -9101,3 +9101,21 @@ font-size: 0.9em;
   font-size: 1.2em;
   margin-bottom: 20px;
 }
+
+
+@media only screen and (min-width: 1920px){
+  .siteMainImg {
+      height: 740px !important;
+  }
+}
+
+
+.owl-theme {
+  height: 100%;
+}
+
+.owl-theme *,
+.menu-container *{
+  user-select: none;
+}
+

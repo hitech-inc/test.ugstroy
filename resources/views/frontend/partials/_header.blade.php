@@ -29,9 +29,9 @@
 			</ul>
 		</div>
 		<div id="search">
-			<form action="">
-				<input type="search" placeholder="ПОИСК">
-			</form>
+<!-- 			<form action="">
+	<input type="search" placeholder="ПОИСК">
+</form> -->
 		</div>
 	</div>
 

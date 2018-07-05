@@ -31,8 +31,10 @@ class FrontendController extends Controller
     public function projects()
     {
         $menus = $this->getMenu();
-        $projects = Project::all();
-        return view('frontend.projects',compact('menus','projects'));
+        
+        $sapphire = Project::where('slug','sapphire')->first();
+        $izumrud = Project::where('slug','izumrud')->first();
+        return view('frontend.projects',compact('menus','sapphire','izumrud'));
     }
 
     public function services()

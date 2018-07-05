@@ -1,12 +1,13 @@
 @extends('frontend.layouts.master')
 @section('content')
 
-<div id="projects-block">
+<div id="projects-block" class="siteMainImg">
 	<h1>Жилые многоквартирные дома</h1>
 	<p>Индивидуальный проект жилых зданий, многоквартирных комплексов. Проектирование офисных  и общественных помещений</p>
-	<a href="#button"  class="Btn">Посмотреть все проекты</a>
+	<a href="#p-finished"  class="Btn">Посмотреть проекты</a>
 </div>
 
+<!-- Last Projects Buildings block -->
 <div id="projects-last">
 	<div class="container-last-projects">
 		<div class="lprojects-row-1">
@@ -16,7 +17,7 @@
 			<div class="lp-center">
 				<h3>Дом вашей мечты</h3>
 				<p>Это именно то место, где мы чувствуем себя в безопасности, где мы отдыхаем, пополняем свои силы, храним тайны. У каждого человека есть свой «идеальный дом». Для кого-то это уютный особняк на окраине города, для другого – современная квартира в центре города. Мы все разные, и каждому из нас нужно своё семейное гнёздышко. Давайте узнаем, какой дом подходит вам? </p>
-				<a href="#"  class="Btn">Стать в очередь</a>
+				<a href="#p-finished"  class="Btn">Посмотреть проекты</a>
 			</div>
 			<div class="lp-center">
 				<img src="/img/building2.png" alt="building">
@@ -43,6 +44,7 @@
 	</div>
 </div>
 
+<!-- Finished Buildings block -->
 <div id="p-finished">
 	<div class="pf-container">
 		<div class="pf-left">
@@ -51,22 +53,20 @@
 		<div class="pf-right">
 
 			<div class="pfr-row-1">
-				<div class="owl-carousel owl-theme">
-					@foreach($projects as $project)
-				    <div class="item" data-hash="finished-{{$project->id}}" style="background-image: url('/img/objects/{{ $project->img }}');">
+				<div class="owl-theme">
+				    <div class="item" data-hash="finished-{{$sapphire->id}}" style="background-image: url('/img/objects/{{ $sapphire->img }}');">
 				    	<div>
-				      		<h3>{{ $project->type }}</h3>
-							<h1>{{ $project->title }}</h1>
-							<p>{{ $project->description }}</p>
-							<a href="/objects/{{ $project->slug }}" class="Btn">Посмотреть</a>
+				      		<h3>{{ $sapphire->type }}</h3>
+							<h1>{{ $sapphire->title }}</h1>
+							<p>{{ $sapphire->description }}</p>
+							<a href="/objects/{{ $sapphire->slug }}" class="Btn">Посмотреть</a>
 						</div>
 				    </div>
-				    @endforeach
 				</div>
 				<div class="pickline">
-					@foreach($projects as $project)
-					<div><a href="#finished-{{$project->id}}"></a></div>
-					@endforeach
+
+					<!-- <div><a href="#finished-project->id"></a></div> -->
+
 				</div>
 			</div>
 
@@ -76,26 +76,26 @@
 		</div>
 	</div>
 </div>
+
+<!-- Not Finished Buildings block -->
 <div id="p-not-finished">
 	<div class="pnf-container">
 		<div class="pnf-left">
 			<div class="pnfr-row-1">
-				<div class="owl-carousel owl-theme">
-					@foreach($projects as $project)
-				    <div class="item" data-hash="not-finished-{{$project->id}}" style="background-image: url('/img/objects/{{ $project->img }}');">
+				<div class="owl-theme">
+				    <div class="item" data-hash="not-finished-{{$izumrud->id}}" style="background-image: url('/img/objects/{{ $izumrud->img }}');">
 				    	<div>
-				      		<h3>{{ $project->type }}</h3>
-							<h1>{{ $project->title }}</h1>
-							<p>{{ $project->description }}</p>
-							<a href="/objects/{{ $project->slug }}" class="Btn">Посмотреть</a>
+				      		<h3>{{ $izumrud->type }}</h3>
+							<h1>{{ $izumrud->title }}</h1>
+							<p>{{ $izumrud->description }}</p>
+							<a href="/objects/{{ $izumrud->slug }}" class="Btn">Посмотреть</a>
 						</div>
 				    </div>
-				    @endforeach
 				</div>
 				<div class="pickline">
-					@foreach($projects as $project)
-					<div><a href="#not-finished-{{$project->id}}"></a></div>
-					@endforeach
+			
+<!-- 					<div><a href="#not-finished-project->id"></a></div> -->
+				
 				</div>
 			</div>
 			<div class="pnfr-row-2">
@@ -103,11 +103,11 @@
 			</div>			
 		</div>
 		<div class="pnf-right">
-			<img src="/img/not-finished.png" alt="more-text">
+			<img src="/img/finished.png" alt="more-text">
 		</div>
 	</div>
 </div>
-<div id="p-plan">
+<!-- <div id="p-plan">
 	<div class="pp-container">
 		<div class="pp-left">
 			<img src="/img/planned.png" alt="more-text">
@@ -147,6 +147,6 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 @endsection
 
