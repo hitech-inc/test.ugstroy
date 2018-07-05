@@ -155,7 +155,7 @@ $(document).ready(function(){
         'position' : 'relative'
     });
     $(".mainImg p").show(); 
-    /********* INDEX PAGE ***************/
+    /********* Projects PAGE ***************/
     $("#projects-block h3").css({
         'animation':'slideTop 0.3s ease',
         'position' : 'relative'

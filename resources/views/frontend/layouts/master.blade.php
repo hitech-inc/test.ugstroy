@@ -12,6 +12,7 @@
 
 	<link rel="stylesheet" href="/css/owl.css">
 	<link rel="stylesheet" href="/css/owl.theme.css">
+	<link rel="stylesheet" href="/css/animate.css">
 	<link rel="stylesheet" href="/css/app.css">
 	<link rel="stylesheet" href="/css/remodal.css">
 	<link rel="stylesheet" href="/css/remodal-default-theme.css">

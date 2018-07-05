@@ -9,15 +9,15 @@
 </div>
 <div id="second-block">
 	<div class="container-2 myContainer">
-		<div>
+		<div  class="wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="-10">
 			<h3>Высокий рейтинг</h3>
 			<p>Мы уверены в качестве наших домов и всем клиентам предоставляем гарантию сроком на 5 лет</p>
 		</div>
-		<div>
+		<div  class="wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="-10" data-wow-delay="0.5s">
 			<h3>Выгодная инвестиция</h3>
 			<p>Возможность приобрести дом в рассрочку или с использованием ипотечного кредита любого банка</p>
 		</div>
-		<div>
+		<div  class="wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="-10" data-wow-delay="1s">
 			<h3>Высокое качество</h3>
 			<p>Постоянный контроль качества материалов и строительно-монтажных работ</p>
 		</div>
@@ -26,23 +26,23 @@
 <div id="more-info">
 	<div class="container-more-info myContainer">
 		<div id="rotated">
-			<img src="img/more.png" alt="more">
+			<img src="img/more.png" alt="more" class="wow slideInLeft" data-wow-duration="0.8s" data-wow-offset="-200">
 		</div>
 		<div class="container-more">
 			<div class="row-more">
-				<h3>Узнать больше</h3>
-				<p>КОМПАНИЯ ПРИСТУПИЛА К СООРУЖЕНИЮ ТОРГОВО-ОФИСНОГО ЦЕНТРА</p>
+				<h3 class="wow zoomIn" data-wow-duration="1s" data-wow-offset="-10">Узнать больше</h3>
+				<p class="wow zoomIn" data-wow-duration="1s" data-wow-offset="-10">КОМПАНИЯ ПРИСТУПИЛА К СООРУЖЕНИЮ ТОРГОВО-ОФИСНОГО ЦЕНТРА</p>
 			</div>
 			<div class="row-more">
-				<div>
+				<div  class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="-10">
 					<h3>Высокий рейтинг</h3>
 					<p>Мы профессиональная специализированная строительная компания наша специализация - современные эффективные фасады зданий</p>
 				</div>
-				<div class="chosen">
+				<div  class="chosen wow fadeInUp" data-wow-duration="1s" data-wow-offset="-10" data-wow-delay="0.5s">
 					<h3>Высокое качество</h3>
 					<p>Работаем на лицензированных специализированных комплексах для проектирования и расчетов прочности конструкций</p>
 				</div>
-				<div>
+				<div  class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="-10" data-wow-delay="1s">
 					<h3>Бюджетный</h3>
 					<p>Наша компания это коллектив профессионалов, в компании работают все необходимые отделы для профессиональной реализации самых сложных проектов, начиная от собственного конструкторского бюро, и до отдела механизации строительства</p>
 				</div>
@@ -53,20 +53,20 @@
 </div>
 <div id="services">
 	<div class="container-serve myContainer">
-		<div class="serve">
+		<div class="serve wow fadeInLeft" data-wow-duration="1s" data-wow-offset="-10">
 			<div>
 				<a><img src="img/{{$service->img}}" alt="service-big"></a>
 			</div>
 		</div>
 		<div class="serve">
 			<div class="row-1">
-				<h3>Наши услуги</h3>
-				<h4>ДОСТРОЙКА И РЕКОНСТРУКЦИЯ ДОМОВ</h4>	
+				<h3 class="wow fadeIn" data-wow-duration="1s" data-wow-offset="-100">Наши услуги</h3>
+				<h4 class="wow fadeIn" data-wow-duration="1s" data-wow-offset="-100">ДОСТРОЙКА И РЕКОНСТРУКЦИЯ ДОМОВ</h4>	
 			</div>
 			<div class="row-2">
 				@foreach($services as $service)
 				@if($loop->index!=0)
-				<div><a href="#service-type" class=><img src="img/{{$service->img}}" alt="service-small"></a></div>
+				<div class="wow fadeInRight" data-wow-duration="1s" data-wow-offset="-50"><a href="#service-type" class=><img src="img/{{$service->img}}" alt="service-small"></a></div>
 				@endif
 				@endforeach
 			</div>
@@ -76,21 +76,21 @@
 <div id="projects">
 	<div class="wrapper-projects myContainer">
 		<div id="rotated-2">
-			<img src="img/projects-text.png" alt="more-text">
+			<img src="img/projects-text.png" alt="more-text" class="wow fadeInLeft" data-wow-duration="1s" data-wow-offset="-10">
 		</div>
 		<div class="container-projects">
 			<div class="projects-row-1">
-				<h3>Последние проекты</h3>
-				<h4>Жилые дома уже построенные в Шымкенте</h4>
+				<h3 class="wow zoomIn" data-wow-duration="1s" data-wow-offset="-100">Последние проекты</h3>
+				<h4 class="wow zoomIn" data-wow-duration="1s" data-wow-offset="-100">Жилые дома уже построенные в Шымкенте</h4>
 			</div>
 			<div class="projects-row-2">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
+				<div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="-100"></div>
+				<div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="-100"></div>
+				<div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="-100"></div>
+				<div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="-100"></div>
+				<div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="-100"></div>
+				<div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="-100"></div>
+				<div class="wow zoomIn" data-wow-duration="1s" data-wow-offset="-100"></div>
 			</div>
 		</div>
 		<div></div>		
@@ -99,36 +99,36 @@
 <div id="constructions">
 	<div class="container-construct myContainerFluid">
 		<div class="left">
-			<div class="block-1"></div>
-			<div class="block-2"></div>
+			<div class="block-1 wow fadeInLeft" data-wow-duration="1s" data-wow-offset="-100"></div>
+			<div class="block-2 wow fadeInLeft" data-wow-duration="1s" data-wow-offset="-100"></div>
 		</div>
 		<div class="right">
 			<div id="right-top">
 				<div id="const-text">
-					<h3>#Лучшие конструкции</h3>
-					<p>При превосходно найденном планировочном решении проектs интересны  своей эстетикой и работой с временными наслоениями</p>
+					<h3 class="wow fadeIn" data-wow-duration="1s" data-wow-offset="-100">#Лучшие конструкции</h3>
+					<p class="wow fadeIn" data-wow-duration="1s" data-wow-offset="-100">При превосходно найденном планировочном решении проектs интересны  своей эстетикой и работой с временными наслоениями</p>
 					<a href="/all-projects" class="Btn">Хочу купить квартиру у вас!</a>
 				</div>
 				<div id="const-building">
-					<img src="img/building.png" alt="building">
+					<img src="img/building.png" alt="building" class="wow fadeInRight" data-wow-duration="1s" data-wow-offset="-10">
 				</div>
 			</div>
 			<div id="right-bot">
 				<div>
-					<p>598</p>
-					<p>Проекты</p>
+					<p class="wow zoomIn" data-wow-duration="0.7s" data-wow-offset="-10">598</p>
+					<p class="wow zoomIn" data-wow-duration="0.7s" data-wow-offset="-10">Проекты</p>
 				</div>
 				<div>
-					<p>5128</p>
-					<p>Клиенты</p>
+					<p class="wow zoomIn" data-wow-duration="0.7s" data-wow-offset="-10">5128</p>
+					<p class="wow zoomIn" data-wow-duration="0.7s" data-wow-offset="-10">Клиенты</p>
 				</div>
 				<div>
-					<p>4390</p>
-					<p>Успешно</p>
+					<p class="wow zoomIn" data-wow-duration="0.7s" data-wow-offset="-10">4390</p>
+					<p class="wow zoomIn" data-wow-duration="0.7s" data-wow-offset="-10">Успешно</p>
 				</div>
 				<div>
-					<p>109</p>
-					<p>Награды</p>
+					<p class="wow zoomIn" data-wow-duration="0.7s" data-wow-offset="-10">109</p>
+					<p class="wow zoomIn" data-wow-duration="0.7s" data-wow-offset="-10">Награды</p>
 				</div>
 			</div>
 		</div>
@@ -266,5 +266,15 @@
 	</div>
 </div>
  -->
+
+@endsection
+
+
+@section('scripts')
+
+<script src="/js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
 
 @endsection
